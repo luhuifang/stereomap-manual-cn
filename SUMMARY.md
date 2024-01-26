@@ -1,4 +1,4 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Page 2](page-2.md)
+* [Getting Started](getting-started.md)
