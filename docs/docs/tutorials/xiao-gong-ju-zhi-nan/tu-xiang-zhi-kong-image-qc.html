@@ -1,0 +1,624 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>图像质控-Image QC · StereoMap User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../sheng-xin-fen-xi/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../xia-zai.html">
+            
+                <a href="../../xia-zai.html">
+            
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../kuai-su-kai-shi.html">
+            
+                <a href="../../kuai-su-kai-shi.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../shi-yong-zhi-nan.html">
+            
+                <a href="../shi-yong-zhi-nan.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ke-shi-hua-zhi-nan.html">
+            
+                <a href="../ke-shi-hua-zhi-nan.html">
+            
+                    
+                    可视化指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tu-xiang-chu-li-zhi-nan/">
+            
+                <a href="../tu-xiang-chu-li-zhi-nan/">
+            
+                    
+                    图像处理指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../tu-xiang-chu-li-zhi-nan/he-ran-se-tu-xiang.html">
+            
+                <a href="../tu-xiang-chu-li-zhi-nan/he-ran-se-tu-xiang.html">
+            
+                    
+                    核染色图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../tu-xiang-chu-li-zhi-nan/he-ran-se-+-mian-yi-ying-guang-tu-xiang.html">
+            
+                <a href="../tu-xiang-chu-li-zhi-nan/he-ran-se-+-mian-yi-ying-guang-tu-xiang.html">
+            
+                    
+                    核染色 + 免疫荧光图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../tu-xiang-chu-li-zhi-nan/he-tu-xiang.html">
+            
+                <a href="../tu-xiang-chu-li-zhi-nan/he-tu-xiang.html">
+            
+                    
+                    H&E图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    小工具指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.1" data-path="tu-xiang-zhi-kong-image-qc.html">
+            
+                <a href="tu-xiang-zhi-kong-image-qc.html">
+            
+                    
+                    图像质控-Image QC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../sheng-xin-fen-xi/">
+            
+                <a href="../sheng-xin-fen-xi/">
+            
+                    
+                    生信分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../sheng-xin-fen-xi/stereo-seq-t-ff.html">
+            
+                <a href="../sheng-xin-fen-xi/stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../sheng-xin-fen-xi/stereo-seq-n-ffpe.html">
+            
+                <a href="../sheng-xin-fen-xi/stereo-seq-n-ffpe.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">技术支持</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../ji-shu-zhi-chi/jian-yi-he-zhi-chi.html">
+            
+                <a href="../../ji-shu-zhi-chi/jian-yi-he-zhi-chi.html">
+            
+                    
+                    建议和支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">发版说明</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../fa-ban-shuo-ming/stereomap-fa-ban-shuo-ming.html">
+            
+                <a href="../../fa-ban-shuo-ming/stereomap-fa-ban-shuo-ming.html">
+            
+                    
+                    StereoMap 发版说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >图像质控-Image QC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><b></b>&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</a></li><ul><li><span class="title-icon "></span><a href="#qc-&#x5165;&#x53E3;"><b></b>QC &#x5165;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><b></b>&#x56FE;&#x50CF;&#x7C7B;&#x578B; </a></li><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x7C7B;&#x578B;-"><b></b>&#x6570;&#x636E;&#x7C7B;&#x578B; </a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><b></b>&#x6587;&#x4EF6;&#x683C;&#x5F0F; </a></li></ul><li><span class="title-icon "></span><a href="#qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;"><b></b>QC &#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;</a></li><li><span class="title-icon "></span><a href="#qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;"><b></b>QC &#x64CD;&#x4F5C;&#x6307;&#x5357;</a></li><li><span class="title-icon "></span><a href="#qc-&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><b></b>QC &#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi"><b></b>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssDNA &#x6216;&#x8005; DAPI</a></li><li><span class="title-icon "></span><a href="#&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif"><b></b>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;DAPI+mIF</a></li><li><span class="title-icon "></span><a href="#he&#x56FE;&#x50CF;&#xFF1A;he"><b></b>H&amp;E&#x56FE;&#x50CF;&#xFF1A;H&amp;E</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;"><b></b>&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><b></b>&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><b></b>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;</a></li></ul></ul></ul></div><a href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><a name="&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</h1>
+<p>&#x56FE;&#x50CF;&#x8D28;&#x63A7; (Image QC) &#x7528;&#x4E8E;&#x8BC4;&#x4F30; Stereo-seq &#x5B9E;&#x9A8C;&#x62CD;&#x6444;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5728; Stereo-seq &#x5206;&#x6790;&#x6D41;&#x7A0B;&#x8F6F;&#x4EF6;&#x5305;(SAW) &#x4E2D;&#x51C6;&#x786E;&#x7684;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x3002;</p>
+<h2 id="qc-&#x5165;&#x53E3;"><a name="qc-&#x5165;&#x53E3;" class="anchor-navigation-ex-anchor" href="#qc-&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x5165;&#x53E3;</h2>
+<p>&#x4ECE; StereoMap &#x542F;&#x52A8;&#x9875;&#x7684; <strong>Tools</strong> &#x8FDB;&#x5165; <strong>Image QC</strong>&#x3002;</p>
+<figure><a href="../../.gitbook/assets/image%20QC%20entry%20(1).png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image QC entry (1).png" alt=""></a><figcaption></figcaption></figure>
+
+<h2 id="&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><a name="&#x56FE;&#x50CF;&#x7C7B;&#x578B;-" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x56FE;&#x50CF;&#x7C7B;&#x578B;</strong> <a href="#input-image-recommendation" id="input-image-recommendation"></a></h2>
+<p>&#x652F;&#x6301;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x5305;&#x62EC;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;ssDNA &#x6216; DAPI &#xFF09;&#x3001;&#x4E00;&#x5F20;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;DAPI&#xFF09;&#x548C;&#x6700;&#x591A;&#x516D;&#x5F20;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF08; IF &#x56FE;&#x50CF;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x5F69;&#x8272;&#x56FE;&#x50CF;&#xFF08; H&amp;E &#x56FE;&#x50CF;&#xFF09;&#xFF0C;&#x63A8;&#x8350;&#x7684;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x662F;TIFF&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x9488;&#x5BF9;&#x90E8;&#x5206;&#x663E;&#x5FAE;&#x955C;&#x8F93;&#x51FA;&#x7684;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;&#x4E5F;&#x505A;&#x4E86;&#x9002;&#x914D;&#xFF0C;&#x6BD4;&#x5982;&#x8521;&#x53F8;&#x7684; CZI &#x6587;&#x4EF6;&#x6216; Motic &#x7684;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x786E;&#x5B9A;&#x60A8;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x9002;&#x7528;&#x4E8E; Stereo-seq &#x5B9E;&#x9A8C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003; <strong>STOmics &#x663E;&#x5FAE;&#x955C;&#x8BC4;&#x4F30;&#x53C2;&#x8003;&#x624B;&#x518C;</strong>&#x4EE5;&#x8BC4;&#x4F30;&#x60A8;&#x7684;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE; <a href="https://www.stomics.tech/" target="_blank">STOmics</a> &gt; <a href="https://www.stomics.tech/resources/Documents" target="_blank">&#x6587;&#x6863;&#x5E93;</a>&#x4E2D;&#x8BBF;&#x95EE;&#x8BE5;&#x6307;&#x5357;&#x3002;</p>
+<h3 id="&#x6570;&#x636E;&#x7C7B;&#x578B;-"><a name="&#x6570;&#x636E;&#x7C7B;&#x578B;-" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7C7B;&#x578B;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x7C7B;&#x578B; <a href="#image-data-types" id="image-data-types"></a></h3>
+<table><thead><tr><th width="148">&#x56FE;&#x50CF;&#x7C7B;&#x578B;</th><th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th><th>&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th></tr></thead><tbody><tr><td>&#x6838;&#x67D3;&#x8272;</td><td><p>8 bit /16 bit &#x7684;&#x5355;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</p><p><em>&#x63A8;&#x8350;&#x8BE5;&#x6570;&#x636E;&#x683C;&#x5F0F;</em></p></td><td><p>TIFF &#x6587;&#x4EF6; (<code>.tif</code> or <code>.tiff</code>) </p><p>CZI  (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</p></td></tr><tr><td>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;</td><td>8 bit /16 bit &#x591A;&#x5F20;&#x5355;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</td><td>TIFF &#x6587;&#x4EF6;(<code>.tif</code> or <code>.tiff</code>) </td></tr><tr><td>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;</td><td><p>8 bit /16 bit &#x5355;&#x5F20;&#x591A;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</p><p><em>&#x53EA;&#x9002;&#x914D;&#x4E86;&#x8521;&#x53F8;&#x7684;&#x591A;&#x901A;&#x9053;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;</em></p></td><td>CZI  (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td></tr><tr><td>H&amp;E</td><td>24 bit /48 bit &#x7684;&#x5355;&#x5F20;&#x5F69;&#x8272;&#x56FE;&#x50CF;</td><td><p>TIFF  &#x6587;&#x4EF6;(<code>.tif</code> or <code>.tiff</code>) </p><p>CZI  (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</p></td></tr></tbody></table>
+
+<h3 id="&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><a name="&#x6587;&#x4EF6;&#x683C;&#x5F0F;-" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x683C;&#x5F0F; <a href="#image-file-format" id="image-file-format"></a></h3>
+<table><thead><tr><th width="216">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="490">&#x663E;&#x5FAE;&#x955C;&#x578B;&#x53F7;</th></tr></thead><tbody><tr><td><code>.tif</code> or <code>.tiff</code> file</td><td><ul><li>&#x4E0D;&#x533A;&#x5206;</li></ul></td></tr><tr><td>QC&#x540E;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code> </td><td><ul><li><strong>&#x56FE;&#x50CF;&#x8D28;&#x63A7;</strong>&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;TAR.GZ</li></ul></td></tr><tr><td><code>.tif</code>&#x683C;&#x5F0F;&#x7684;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><ul><li>Customized Motic</li><li> STOmics Go Optical</li><li>Leica DM6 B</li></ul></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><ul><li><code>.czi</code> file from ZEISS Axio Scan.Z1</li><li><code>.czi</code> file from ZEISS Axioscan 7</li></ul></td></tr></tbody></table>
+
+<p>&#x8BF7;&#x67E5;&#x9605; <a href="tu-xiang-zhi-kong-image-qc.html#qc-cao-zuo-zhi-nan">QC &#x64CD;&#x4F5C;&#x6307;&#x5357;</a>&#x83B7;&#x53D6;&#x6BCF;&#x79CD;&#x67D3;&#x8272;&#x7684;&#x8F93;&#x5165;&#x6570;&#x636E;&#x793A;&#x4F8B;&#x3002;</p>
+<h2 id="qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;"><a name="qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;" class="anchor-navigation-ex-anchor" href="#qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;</h2>
+<p>&#x56FE;&#x50CF;&#x7684;&#x8D28;&#x91CF;&#x76F4;&#x63A5;&#x53CD;&#x6620;&#x4E86;&#x663E;&#x5FAE;&#x955C;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x548C;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x52A3;&#x3002;&#x56FE;&#x50CF;&#x7684;&#x57FA;&#x672C;&#x7684;&#x8BC4;&#x4F30;&#x5305;&#x62EC; track &#x7EBF;&#x8BC4;&#x4F30;&#x53CA;&#x62FC;&#x63A5;&#x8BC4;&#x4F30;&#xFF0C;&#x5F53;&#x7136;&#x53EF;&#x80FD;&#x4F1A;&#x6839;&#x636E;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x589E;&#x52A0;&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;&#x8BC4;&#x4F30;&#x548C;&#x6821;&#x51C6;&#x8BC4;&#x4F30;&#x3002;&#x6BCF;&#x79CD;&#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x7EC4;&#x5408;&#x53CA;&#x8BC4;&#x4F30;&#x6807;&#x51C6;&#x4F1A;&#x4F9D;&#x636E;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x800C;&#x7565;&#x6709;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>Track&#x7EBF;&#x8BC4;&#x4F30;</strong>&#xFF1A;Track &#x662F;&#x523B;&#x5728;Stereo-seq&#x82AF;&#x7247;&#x8868;&#x9762;&#x7684;&#x6807;&#x8BB0;&#x7EBF;&#x3002; &#x663E;&#x5FAE;&#x955C;&#x62CD;&#x6444;&#x7684;&#x56FE;&#x50CF;&#x548C;&#x7A7A;&#x95F4;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x68C0;&#x6D4B;&#x5230; track&#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x6A21;&#x6001;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x56FE;&#x50CF;&#x8DDF;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x5BF9;&#x9F50;&#x3002;Track &#x7EBF;&#x5F97;&#x5206;&#x7EFC;&#x5408;&#x8003;&#x8651;&#x4E86; track &#x7EBF;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#xFF08;&#x662F;&#x5426;&#x53EF;&#x89C1;&#xFF09;&#x53CA;&#x76F8;&#x90BB; track &#x7EBF;&#x7684;&#x6570;&#x91CF;&#x7B49;&#x56E0;&#x7D20;&#xFF0C;&#x7B97;&#x6CD5;&#x6839;&#x636E;&#x68C0;&#x6D4B;&#x7684; track &#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x56FE;&#x50CF;&#x7684;&#x89D2;&#x5EA6;&#x3001;&#x5C3A;&#x5EA6;&#x548C;&#x4F4D;&#x7F6E;&#x7B49;&#x5E76;&#x63A8;&#x5BFC;&#x51FA;&#x56FE;&#x50CF;&#x7684;&#x5168;&#x5C40;&#x6A21;&#x677F;&#xFF0C;&#x4EE5;&#x8BC4;&#x4F30;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x6210;&#x529F;&#x914D;&#x51C6;&#x3002;</li>
+<li> <strong>&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;&#x8BC4;&#x4F30;</strong>&#xFF1A; &#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;&#x5206;&#x6570;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x8BC4;&#x4F30;&#x7EC6;&#x80DE;&#x5206;&#x5272;&#x7ED3;&#x679C;&#x53EF;&#x884C;&#x6027;&#x7684;&#x53C2;&#x8003;&#x3002;&#x8BA1;&#x7B97;&#x7684;&#x65B9;&#x5F0F;&#x4E3A;&#xFF1A;&#x8FD0;&#x7528;&#x8BAD;&#x7EC3;&#x597D;&#x7684;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x5BF9;&#x8F93;&#x5165;&#x7684;&#x56FE;&#x50CF;&#x8FDB;&#x884C;&#x5207;&#x5206;&#xFF0C;&#x5C06;&#x5207;&#x5206;&#x540E;&#x7684;&#x56FE;&#x50CF;&#x5206;&#x4E3A;&#x597D;&#x3001;&#x4E2D;&#x5EA6;&#x6A21;&#x7CCA;&#x3001;&#x91CD;&#x5EA6;&#x6A21;&#x7CCA;&#x3001;&#x8F7B;&#x5FAE;&#x8FC7;&#x66DD;&#x548C;&#x91CD;&#x5EA6;&#x8FC7;&#x66DD;&#x4E94;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x5BF9;&#x6BCF;&#x79CD;&#x5206;&#x7C7B;&#x8D4B;&#x4E88;&#x4E0D;&#x540C;&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x6700;&#x540E;&#x8BA1;&#x7B97;&#x6574;&#x4E2A;&#x56FE;&#x50CF;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#x5F97;&#x5206;&#x3002;</li>
+<li><strong>&#x663E;&#x5FAE;&#x955C;&#x62FC;&#x63A5;&#x7A33;&#x5B9A;&#x6027;&#xFF1A;</strong>&#x5C06;&#x663E;&#x5FAE;&#x955C;&#x62CD;&#x6444;&#x7684;&#x6BCF;&#x4E2A; FOV &#x5C0F;&#x56FE;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6574;&#x4E2A;&#x7EC4;&#x7EC7;&#x5F62;&#x6001;&#x7684;&#x5168;&#x666F;&#x56FE;&#x50CF;&#x3002;&#x5728;&#x56FE;&#x50CF;&#x62CD;&#x6444;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#xFF1A;&#x663E;&#x5FAE;&#x955C;&#x9707;&#x52A8;&#x6216;&#x8005;&#x79FB;&#x52A8;&#x3001;&#x5B9E;&#x9A8C;&#x5BA4;&#x53F0;&#x9762;&#x5916;&#x90E8;&#x5E72;&#x6270;&#x6216;&#x8005;&#x62FC;&#x63A5;&#x7B97;&#x6CD5;&#x4E0D;&#x4F73;&#x7B49;&#x539F;&#x56E0;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x62FC;&#x63A5;&#x7684;&#x5168;&#x666F;&#x56FE;&#x50CF;&#x9519;&#x4F4D;&#xFF0C;&#x5BF9;&#x56FE;&#x50CF;&#x7684;&#x51C6;&#x786E;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;&#x9020;&#x6210;&#x5F71;&#x54CD;&#x3002;&#x5728;<strong>&#x56FE;&#x50CF; QC</strong> &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x62FC;&#x63A5;&#x597D;&#x7684;&#x5168;&#x666F;&#x56FE;&#x50CF;&#x88C1;&#x6210;&#x4E0D;&#x540C;&#x7684; FOV&#xFF0C;&#x8BC4;&#x4F30;&#x76F8;&#x90BB; FOV &#x91CD;&#x53E0;&#x533A;&#x57DF;&#x7965;&#x5F62;&#x6001;&#x7279;&#x5F81;&#x7684;&#x76F8;&#x4F3C;&#x6027;&#xFF0C;&#x786E;&#x5B9A;&#x62FC;&#x63A5;&#x6548;&#x679C;&#x3002;</li>
+<li><strong>&#x56FE;&#x50CF;&#x6821;&#x51C6;</strong>&#xFF1A;&#x5728;&#x4E00;&#x4E2A;&#x82AF;&#x7247;&#x7684;&#x591A;&#x7EC4;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x6BCF;&#x7EC4;&#x56FE;&#x50CF;&#x7684;&#x62FC;&#x63A5;&#x3001;&#x914D;&#x51C6;&#x548C;&#x7EC4;&#x7EC7;&#x533A;&#x57DF;&#x8303;&#x56F4;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x4E25;&#x683C;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x624D;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x8DDF;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x5BF9;&#x9F50;&#x3002;&#x7531;&#x4E8E;&#x67D3;&#x8272;&#x6761;&#x4EF6;&#x548C;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x8DDF;&#x77E9;&#x9635;&#x914D;&#x51C6;&#x7684;&#x56FE;&#x50CF;&#x4EC5;&#x5728; DAPI &#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x4E2D;&#x53EF;&#x89C1;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x5176;&#x5B83; IF &#x56FE;&#x50CF;&#x9996;&#x5148;&#x8DDF; DAPI &#x56FE;&#x50CF;&#x5BF9;&#x9F50;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x914D;&#x51C6;&#x53C2;&#x6570;&#x5C06;&#x5404;&#x4E2A;&#x56FE;&#x50CF;&#x4E0E;&#x7A7A;&#x95F4;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x505A;&#x914D;&#x51C6;&#xFF0C;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7684;&#x76F8;&#x4F3C;&#x6027;&#x548C;&#x7279;&#x5F81;&#x504F;&#x79FB;&#x8BC4;&#x4F30;&#x4E24;&#x5F20;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x5BF9;&#x9F50;&#x3002;&#x8BE5;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x4EC5;&#x9002;&#x7528;&#x4E8E;DAPI+mIF&#x7684;&#x5355;&#x901A;&#x9053;&#x56FE;&#x50CF;&#x573A;&#x666F;&#x3002;</li>
+</ul>
+<table><thead><tr><th width="148">&#x8BC4;&#x4F30;&#x6307;&#x6807;</th><th>&#x5206;&#x6570;</th><th>&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><strong>Track&#x7EBF;&#x8BC4;&#x4F30;</strong></td><td><ul><li>&#x2265; 60&#xFF0C;&#x7B97;&#x6CD5;&#x68C0;&#x6D4B;&#x5230;&#x8DB3;&#x591F;&#x6570;&#x91CF;&#x7684;&#x5408;&#x4E2A;&#x7684; track &#x7EBF;&#xFF0C;&#x56FE;&#x50CF;&#x53EF;&#x4EE5;&#x4E0E;&#x7A7A;&#x95F4;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x505A;&#x81EA;&#x52A8;&#x914D;&#x51C6;&#x3002;</li><li>&lt; 60&#xFF0C;&#x7B97;&#x6CD5;&#x68C0;&#x6D4B;&#x5230;&#x8F83;&#x5C11;&#x7684; track &#x7EBF;&#x6216;&#x8005;&#x672A;&#x68C0;&#x6D4B;&#x51FA; track&#x7EBF;&#xFF0C;&#x65E0;&#x6CD5;&#x63A8;&#x5BFC;&#x51FA;&#x5168;&#x5C40;&#x6A21;&#x677F;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x62CD;&#x7167;&#x3002;</li></ul><p><em>QC &#x662F;&#x5426;&#x901A;&#x8FC7;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;</em></p></td><td><a href="../../.gitbook/assets/trackline%20detection.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/trackline detection.png" alt=""></a></td></tr><tr><td><strong>&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;</strong></td><td><p></p><ul><li> &#x2265; 80&#xFF0C;&#x56FE;&#x50CF;&#x7684;&#x8D28;&#x91CF;&#x8F83;&#x597D;&#xFF0C;&#x7B97;&#x6CD5;&#x6709;&#x5F88;&#x5927;&#x7684;&#x6982;&#x7387;&#x53EF;&#x4EE5;&#x51C6;&#x786E;&#x8BC6;&#x522B;&#x6216;&#x8005;&#x5206;&#x5272;&#x7EC6;&#x80DE;&#x3002;</li><li>&lt; 80&#xFF0C;SAW &#x5185;&#x7F6E;&#x7684;&#x7EC6;&#x80DE;&#x5206;&#x5272;&#x7B97;&#x6CD5;&#x81EA;&#x52A8;&#x5206;&#x5272;&#x7684;&#x6210;&#x529F;&#x7387;&#x53EF;&#x80FD;&#x8F83;&#x4F4E;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x610F;&#x5473;&#x7740;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x7EC6;&#x80DE;&#x3002;</li></ul><p><em>QC &#x4E2D;&#x503E;&#x5411;&#x4E8E;&#x901A;&#x8FC7;&#x7684;&#x6307;&#x6807;&#x3002;</em></p></td><td><a href="../../.gitbook/assets/image%20clarity.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image clarity.png" alt=""></a></td></tr><tr><td><strong>&#x663E;&#x5FAE;&#x955C;&#x7A33;&#x5B9A;&#x6027;&#x8BC4;&#x4F30;&#xFF08;&#x62FC;&#x63A5;&#x8BC4;&#x4F30;&#xFF09;</strong></td><td><ul><li>&#x2265; 60&#xFF0C;&#x8D85;&#x8FC7; 30% &#x7684; FOV &#x4E0E;&#x76F8;&#x90BB; FOV &#x7684;&#x91CD;&#x53E0;&#x533A;&#x57DF;&#x5177;&#x6709;&#x6E05;&#x6670;&#x76F8;&#x4F3C;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B; FOV &#x7684;&#x5E73;&#x5747;&#x7279;&#x5F81;&#x504F;&#x79FB;&#x5206;&#x6570;&#x5927;&#x4E8E; 0.7&#x3002;</li><li>&lt; 60&#xFF0C;&#x8D85;&#x8FC7; 30% &#x7684; FOV &#x4E0E;&#x76F8;&#x90BB; FOV &#x7684;&#x91CD;&#x53E0;&#x533A;&#x57DF;&#x5177;&#x6709;&#x6A21;&#x7CCA;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B; FOV &#x7684;&#x5E73;&#x5747;&#x7279;&#x5F81;&#x504F;&#x79FB;&#x5206;&#x6570;&#x5C0F;&#x4E8E; 0.7&#x3002;</li></ul><p><em>&#x6709;&#x6761;&#x4EF6;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF0C;&#x53EA;&#x9002;&#x7528;&#x4E8E; mIF &#x7684;&#x5C0F;&#x56FE;&#x3002;</em></p></td><td><a href="../../.gitbook/assets/stitching%20evaluation.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/stitching evaluation.png" alt=""></a></td></tr><tr><td><strong>&#x6821;&#x51C6;&#x8BC4;&#x4F30;</strong></td><td><ul><li>&#x901A;&#x8FC7;&#xFF0C;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;DAPI&#xFF09;&#x4E0E;&#x53E6;&#x4E00;&#x56FE;&#x50CF;(IF)&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x91CF; &#x2264; 20 &#x50CF;&#x7D20;&#xFF0C;&#x4E14;&#x56FE;&#x50CF;&#x7684;&#x5F62;&#x6001;&#x76F8;&#x4F3C;&#x5EA6; &#x2265; 1%&#x3002;</li><li>&#x672A;&#x901A;&#x8FC7;&#xFF0C;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;DAPI&#xFF09;&#x4E0E;&#x53E6;&#x4E00;&#x56FE;&#x50CF;(IF)&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x91CF; &gt; 20 &#x50CF;&#x7D20;&#xFF0C;&#x6216;&#x8005;&#x56FE;&#x50CF;&#x7684;&#x5F62;&#x6001;&#x76F8;&#x4F3C;&#x5EA6; &lt; 1%&#x3002;</li></ul><p> <em>&#x6709;&#x6761;&#x4EF6;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF0C;&#x53EA;&#x9002;&#x7528;&#x4E8E;mIF&#x3002;</em></p></td><td><a href="../../.gitbook/assets/image%20calibration.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image calibration.png" alt=""></a></td></tr></tbody></table>
+
+<p>&#x5907;&#x6CE8;&#xFF1A;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <strong>STOmics &#x663E;&#x5FAE;&#x955C;&#x8BC4;&#x4F30;&#x53C2;&#x8003;&#x624B;&#x518C;</strong>&#x7684; <strong>4.3 &#x7AE0;&#x8282;&#x56FE;&#x7247;&#x793A;&#x4F8B;</strong>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x56FE;&#x50CF;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;<strong>&#x3002;</strong></p>
+<h2 id="qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;"><a name="qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;" class="anchor-navigation-ex-anchor" href="#qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x64CD;&#x4F5C;&#x6307;&#x5357;</h2>
+<p>&#x56FE;&#x50CF; QC &#x7684;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure><a href="../../.gitbook/assets/image%20QC%20interface.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image QC interface.png" alt=""></a><figcaption></figcaption></figure>
+
+<p>&#x6253;&#x5F00;&#x56FE;&#x50CF; QC &#x5C0F;&#x5DE5;&#x5177;&#xFF0C;&#x62D6;&#x5165;&#x5F85;QC&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x586B;&#x5199; <strong>Chip SN</strong>&#x3001;<strong>Operator</strong>&#x3001;<strong>Image Path</strong> &#x548C; <strong>Staining Types</strong> &#x7B49;&#x4FE1;&#x606F;<strong>&#xFF0C;</strong>&#x70B9;&#x51FB; <strong>Run</strong> &#x6309;&#x94AE;&#xFF0C;&#x53EF;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x7684;&#x8BC4;&#x4F30;&#x3002;</p>
+<table><thead><tr><th width="185">Image information</th><th>Description and example</th></tr></thead><tbody><tr><td><strong>Chip SN</strong></td><td>Stereo-seq &#x82AF;&#x7247;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; Stereo-seq &#x82AF;&#x7247;&#x5E95;&#x90E8;&#x627E;&#x5230;&#x3002;<br><br><em>E.g. S1 (1x1) &#x82AF;&#x7247;: SS200000135TL_D1, C02533C</em><br><em>S0.5 (0.5x0.5) &#x82AF;&#x7247;: FP200009107_E414, B03210C211</em><br>&#x5927;&#x82AF;&#x7247;<em>: S200000108BR_A3A4, D02070C3D3</em><br><em>&#x8BF7;&#x786E;&#x4FDD;&#x586B;&#x5199;&#x7684; SN &#x8DDF;&#x5B9E;&#x9645;&#x62CD;&#x6444;&#x56FE;&#x50CF;&#x7684; SN &#x662F;&#x5BF9;&#x5E94;&#x7684;&#x3002;</em></td></tr><tr><td><strong>Operator</strong></td><td>&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x5EFA;&#x8BAE;&#x8F93;&#x5165;&#x62CD;&#x6444;&#x4EBA;&#x5458;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x3002;</td></tr><tr><td><strong>Image Path</strong></td><td>&#x5F85; QC &#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x62D6;&#x5165;&#x540E;&#x81EA;&#x52A8;&#x586B;&#x5145;&#x3002;<br><br><em>&#x5EFA;&#x8BAE;&#x62D6;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E2D;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x3002;</em></td></tr><tr><td><strong>Staining Types</strong></td><td>&#x56FE;&#x50CF;&#x7684;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#xFF0C;&#x5305;&#x62EC; ssDNA&#xFF0C;DAPI&#xFF0C;DAPI+mIF&#x548C;H&amp;E&#x3002;</td></tr><tr><td><strong>Upload</strong></td><td><p>&#x5C06;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x4E0A;&#x4F20;&#x5230; <a href="https://cloud.stomics.tech/" target="_blank">STOmcis Cloud</a> &#x6216;&#x8005;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x9009;&#x9879;&#x5305;&#x62EC;&#xFF1A;</p><ul><li>No&#xFF1A;&#x4E0D;&#x4E0A;&#x4F20;&#x3002;</li><li>QC Input Files &#xFF1A;&#x4EC5;&#x4E0A;&#x4F20;&#x5F85; QC &#x7684;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x3002;</li><li>QC Output Files (TAR.GZ): &#x4EC5;&#x4E0A;&#x4F20; QC &#x540E;&#x7684;&#x6587;&#x4EF6;&#x3002;</li><li>Select all: &#x4E0A;&#x4F20;&#x5F85; QC &#x7684;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x53CA; QC &#x540E;&#x7684;&#x6587;&#x4EF6;.</li></ul><p>&#x53EF;&#x4EE5;&#x67E5;&#x9605;<a href="tu-xiang-zhi-kong-image-qc.html#shang-chuan-she-zhi">&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;</a>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p></td></tr><tr><td><strong>Remark</strong></td><td>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x6216;&#x8005; QC &#x7684;&#x989D;&#x5916;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x5404;&#x7C7B;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x3002;</td></tr></tbody></table>
+
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x82E5;&#x62CD;&#x7167;&#x65F6;&#x5DF2;&#x7ECF;&#x8F93;&#x5165;&#x82AF;&#x7247;&#x53F7;&#x548C;&#x62CD;&#x56FE;&#x4EBA;&#x5458;&#x90AE;&#x7BB1;&#xFF0C;&#x8FD9;&#x4E24;&#x680F;&#x4F1A;&#x81EA;&#x52A8;&#x8BFB;&#x53D6;&#x82AF;&#x7247;&#x53F7;&#x548C;&#x62CD;&#x56FE;&#x4EBA;&#x5458;&#x5E76;&#x663E;&#x793A;&#xFF0C;&#x5982;&#x679C;&#x5185;&#x5BB9;&#x91CD;&#x65B0;&#x586B;&#x5199;&#xFF0C;&#x5219;&#x5C06;&#x8986;&#x76D6;&#x62CD;&#x7167;&#x65F6;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6B64;&#x529F;&#x80FD;&#x53EF;&#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x62CD;&#x7167;&#x65F6;&#x7684;&#x586B;&#x5199;&#x9519;&#x8BEF;&#x3002;</p>
+</div></div><p></p>
+<p>&#x5982;&#x679C;&#x60A8;&#x8F93;&#x5165;&#x7684;&#x56FE;&#x50CF;&#x4E3A; TIFF &#x683C;&#x5F0F;&#x7684;&#x62FC;&#x63A5;&#x5927;&#x56FE;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C06;&#x63D0;&#x793A;&#x60A8;&#x63D0;&#x4F9B;&#x989D;&#x5916;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x5BF9;&#x4E8E;&#x51C6;&#x786E;&#x63A8;&#x5BFC;&#x6A21;&#x677F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x5982;&#x4E0B;&#x663E;&#x5FAE;&#x955C;&#x914D;&#x7F6E;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x63A8;&#x8350;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4F46;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x5C3D;&#x53EF;&#x80FD;&#x8DDF;&#x663E;&#x5FAE;&#x955C;&#x5DE5;&#x7A0B;&#x5E08;&#x6C9F;&#x901A;&#x83B7;&#x53D6;&#x51C6;&#x786E;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<figure><a href="../../.gitbook/assets/image%20QC%20interface%20microscope%20info.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image QC interface microscope info.png" alt=""></a><figcaption></figcaption></figure>
+
+<p>&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x5168;&#x6D41;&#x7A0B;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x6B65;&#x9AA4;&#xFF1A;<strong>&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x8BC4;&#x4F30;&#x548C;&#x56FE;&#x50CF;&#x538B;&#x7F29;</strong>&#x3002;&#x5982;&#x679C;&#x60A8;&#x9009;&#x62E9;&#x4E86;<strong>&#x4E0A;&#x4F20;</strong>&#xFF0C;&#x4F1A;&#x589E;&#x52A0;&#x56FE;&#x50CF;&#x4E0A;&#x4F20;&#x7684;&#x8FDB;&#x5EA6;&#x53CA;&#x72B6;&#x6001;&#xFF0C;&#x56FE;&#x50CF;&#x6210;&#x529F;&#x4E0A;&#x4F20;&#x4E5F;&#x662F;&#x60A8;&#x8D28;&#x63A7;&#x5168;&#x6D41;&#x7A0B;&#x4E2D;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#x3002;QC &#x5168;&#x6D41;&#x7A0B;&#x8FD0;&#x884C;&#x5B8C;&#x6210;&#xFF0C;&#x754C;&#x9762;&#x4F1A;&#x5C55;&#x793A;&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x6307;&#x6807;&#x7684;&#x72B6;&#x6001;&#x3001;&#x5206;&#x6570;&#x3001;&#x8017;&#x65F6;&#x3001;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x53CA;&#x8FDB;&#x4E00;&#x6B65;&#x5206;&#x6790;&#x7684;&#x5EFA;&#x8BAE;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<figure><a href="../../.gitbook/assets/image%20QC%20pass.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image QC pass.png" alt=""></a><figcaption></figcaption></figure>
+
+<p>QC &#x8FD0;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; <strong>StereoMapWorkspace</strong> -&gt; <strong>QC</strong> &#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x4E2D;&#x67E5;&#x770B; QC &#x540E;&#x7684;&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#xFF0C;<a href="../../xia-zai.html#bao-cun"><strong>&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;</strong></a>&#x53EF;&#x4EE5;&#x5728;<a href="../../xia-zai.html#she-zhi"><strong>&#x8BBE;&#x7F6E;</strong></a>&#x4E2D;&#x66F4;&#x6539;&#x3002;</p>
+<figure><a href="../../.gitbook/assets/image%20QC%20output%20(1).png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/image QC output (1).png" alt=""></a><figcaption></figcaption></figure>
+
+<p>&#x5982;&#x679C;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x662F; QC &#x6210;&#x529F;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--image-tar</code>&#x53C2;&#x6570;&#xFF0C;&#x5C06; QC &#x8F93;&#x51FA;&#x7684;<code>.tar.gz</code>&#x7ED9;&#x5230;<code>SAW count</code>&#x6A21;&#x5757;&#x5C06;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x8DDF;&#x77E9;&#x9635;&#x6570;&#x636E;&#x4E00;&#x8D77;&#x5206;&#x6790;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E; QC &#x672A;&#x901A;&#x8FC7;&#xFF0C;&#x53C8;&#x60F3;&#x505A;&#x56FE;&#x50CF;&#x8DDF;&#x77E9;&#x9635;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x5C55;&#x793A;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x8F93;&#x5165;<a href="../tu-xiang-chu-li-zhi-nan">Image Processing</a> &#x505A;&#x624B;&#x52A8;&#x5904;&#x7406;&#x540E;&#x518D;&#x63A5;&#x56DE; SAW&#x3002;</p>
+<h2 id="qc-&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><a name="qc-&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#qc-&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x8F93;&#x5165;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</h2>
+<h3 id="&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi"><a name="&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssDNA &#x6216;&#x8005; DAPI</strong></h3>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;:</p>
+<table><thead><tr><th width="243">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th>&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../.gitbook/assets/nuclei-input%20tif.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/nuclei-input tif.png" alt=""></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code> </td><td><a href="../../.gitbook/assets/nuclei-input%20tar.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/nuclei-input tar.png" alt=""></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;</td><td><p></p><ul><li>Motic:</li></ul><p><a href="../../.gitbook/assets/nuclei-input%20tiles-motic.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/nuclei-input tiles-motic.png" alt=""></a></p><ul><li>STOmics Go Optical:</li></ul><p><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input%20tiles-STOmicsGoOptical.webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input tiles-STOmicsGoOptical.webp" alt=""></a></p><ul><li>Leica:</li></ul><p><a href="../../.gitbook/assets/nuclei-input%20tiles-leica.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/nuclei-input tiles-leica.png" alt=""></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><a href="../../.gitbook/assets/nuclei-input%20czi.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/nuclei-input czi.png" alt=""></a></td></tr></tbody></table>
+
+<p>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x57FA;&#x4E8E; <a href="tu-xiang-zhi-kong-image-qc.html#qc-biao-zhun">Track &#x7EBF;&#x8BC4;&#x4F30;</a>&#x548C;<a href="tu-xiang-zhi-kong-image-qc.html#qc-biao-zhun">&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;</a>&#xFF0C;<a href="tu-xiang-zhi-kong-image-qc.html#qc-biao-zhun">track &#x7EBF;&#x8BC4;&#x4F30;</a> QC &#x662F;&#x5426;&#x901A;&#x8FC7;&#x7684;&#x4E3B;&#x8981;&#x6307;&#x6807;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x5F20; S1 &#x7684;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;10 &#x500D;&#x7269;&#x955C;&#xFF0C;8 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6;20,000 &#x50CF;&#x7D20; x 20,000 &#x50CF;&#x7D20;&#xFF09;QC &#x7684;&#x65F6;&#x957F;&#x5927;&#x7EA6;&#x4E3A; 2.5 &#x5206;&#x949F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x56FE;&#x50CF;&#x8F83;&#x5927;&#x6216;&#x4F4D;&#x6DF1;&#x5EA6;&#x4E3A; 16 &#x4F4D;&#xFF0C;&#x5219; QC &#x7684;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x4F1A;&#x76F8;&#x5BF9;&#x66F4;&#x957F;&#x3002;</p>
+</div></div><p></p>
+<h3 id="&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif"><a name="&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;DAPI+mIF</strong></h3>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x8BF7;&#x5C06;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6216;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x5939;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#x91CD;&#x65B0;&#x547D;&#x540D;&#xFF0C;&#x4EE5;&#x4FBF;&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x53CA; IF &#x7684;&#x4ECE;&#x540D;&#x79F0;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&quot;&lt;&gt;&quot;&#x5185;&#x662F;&#x9700;&#x8981;&#x66FF;&#x6362;&#x7684;&#x4FE1;&#x606F;&#x3002; </p>
+<ul>
+<li>DAPI: &lt;&#x82AF;&#x7247;&#x53F7;&gt;</li>
+<li>IF: &lt;&#x82AF;&#x7247;&#x53F7;&gt;_\<if名称>_IF</if名称></li>
+</ul>
+</div></div><p></p>
+<table><thead><tr><th width="258">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="486">&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../.gitbook/assets/mif-input%20tif.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input tif.png" alt=""></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code> </td><td><a href="../../.gitbook/assets/mif-input%20tar.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input tar.png" alt=""></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><p></p><ul><li>Motic:</li></ul><p><a href="../../.gitbook/assets/mif-input%20tiles-motic.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input tiles-motic.png" alt=""></a></p><ul><li>STOmics Go Optical:</li></ul><p><a href="../../.gitbook/assets/mif-input%20tiles-STOmicsGoOptical.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input tiles-STOmicsGoOptical.png" alt=""></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><p></p><ul><li>Zeiss multi-page <code>.czi</code></li></ul><p><a href="../../.gitbook/assets/mif-input%20czi.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input czi.png" alt=""></a></p><p></p></td></tr></tbody></table>
+
+<p>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x57FA;&#x4E8E;&#xFF1A;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">track&#x7EBF;&#x8BC4;&#x4F30;</a>&#x3001;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;&#x8BC4;&#x4F30;</a>&#x3001;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x62FC;&#x63A5;&#x8BC4;&#x4F30;</a>&#x548C;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x6821;&#x51C6;&#x8BC4;&#x4F30;</a>&#x56DB;&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x9664;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x56FE;&#x50CF;&#x6E05;&#x6670;&#x5EA6;</a>&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x4E0D;&#x505A;&#x4E3A; QC &#x662F;&#x5426;&#x901A;&#x8FC7;&#x7684;&#x6761;&#x4EF6;&#x5916;&#xFF0C;&#x5176;&#x5B83;&#x4E09;&#x4E2A;&#x6307;&#x6807;&#x90FD;&#x662F; QC &#x662F;&#x5426;&#x901A;&#x8FC7;&#x7684;&#x4E3B;&#x8981;&#x6307;&#x6807;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x5F20; S1 &#x7684;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x52A0;&#x4E8C;&#x5F20;IF&#x56FE;&#x50CF;&#xFF08;10 &#x500D;&#x7269;&#x955C;&#xFF0C;8 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6; 20,000&#x50CF;&#x7D20; x 20,000&#x50CF;&#x7D20;&#xFF09;QC &#x7684;&#x65F6;&#x957F;&#x5927;&#x7EA6;&#x4E3A; 3 &#x5206;&#x949F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x8F93;&#x5165;&#x7684;&#x662F;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;&#x6216;&#x8005; 16 &#x4F4D;&#x6DF1;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x9884;&#x671F;&#x7684;&#x65F6;&#x95F4;&#x5C06;&#x4F1A;&#x66F4;&#x957F;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x989D;&#x5916;&#x589E;&#x52A0;&#x89E3;&#x6790;&#x7684;&#x65F6;&#x957F;&#x53CA;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x62FC;&#x63A5;&#x8BC4;&#x4F30;</a>&#xFF0C;&#x6BCF;&#x5F20;&#x56FE;&#x50CF;&#x7684;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x62FC;&#x63A5;&#x8BC4;&#x4F30;</a>&#x5927;&#x7EA6;&#x4E3A; 2 &#x5206;&#x949F;&#x3002;</p>
+</div></div><p></p>
+<h3 id="he&#x56FE;&#x50CF;&#xFF1A;he"><a name="he&#x56FE;&#x50CF;&#xFF1A;he" class="anchor-navigation-ex-anchor" href="#he&#x56FE;&#x50CF;&#xFF1A;he"><i class="fa fa-link" aria-hidden="true"></i></a><strong>H&amp;E&#x56FE;&#x50CF;&#xFF1A;H&amp;E</strong></h3>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#xFF1A;</p>
+<table><thead><tr><th width="258">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="489">&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../.gitbook/assets/HE-input%20tif.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/HE-input tif.png" alt=""></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code></td><td><a href="../../.gitbook/assets/HE-input%20tar.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/HE-input tar.png" alt=""></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><p></p><ul><li>Motic:</li></ul><p><a href="../../.gitbook/assets/HE-input%20tiles-motic.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/HE-input tiles-motic.png" alt=""></a></p><ul><li>STOmics Go Spatial:</li></ul><p><a href="../../.gitbook/assets/mif-input%20tiles-STOmicsGoOptical%20(1).png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/mif-input tiles-STOmicsGoOptical (1).png" alt=""></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><a href="../../.gitbook/assets/HE-input%20czi.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/HE-input czi.png" alt=""></a></td></tr></tbody></table>
+
+<p>H&amp;E &#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x662F;&#x57FA;&#x4E8E;<a href="tu-xiang-zhi-kong-image-qc.html#qc-zhi-biao-ji-biao-zhun"> track &#x7EBF;&#x8BC4;&#x4F30;</a>&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x663E;&#x5FAE;&#x955C;&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6E05;&#x6670;&#x7684; track &#x7EBF;&#x662F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B97;&#x6CD5;&#x6765;&#x8BF4;&#xFF0C;&#x8BC6;&#x522B; H&amp;E &#x5F69;&#x8272;&#x56FE;&#x50CF;&#x7684; track &#x7EBF;&#x6BD4;&#x7070;&#x5EA6;&#x56FE;&#x50CF;&#x5177;&#x6709;&#x66F4;&#x5927;&#x7684;&#x6311;&#x6218;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x5F20; S1 &#x7684;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;10 &#x500D;&#x7269;&#x955C;&#xFF0C;48 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6; 20,000 &#x50CF;&#x7D20; x 20,000&#x50CF;&#x7D20;&#xFF09;QC &#x7684;&#x65F6;&#x957F;&#x5927;&#x7EA6;&#x4E3A; 4 &#x5206;&#x949F;&#x3002;</p>
+<p>&#x56E0; H&amp;E &#x56FE;&#x50CF;&#x662F;&#x4E00;&#x79CD;&#x5F69;&#x8272;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x5176;&#x5927;&#x5C0F;&#x7EA6;&#x4E3A;&#x7070;&#x5EA6;&#x56FE;&#x50CF;&#x7684;&#x4E09;&#x500D;&#xFF0C;&#x56E0;&#x6B64;&#x56FE;&#x50CF;&#x89E3;&#x6790;&#x65F6;&#x95F4;&#x5C06;&#x4F1A;&#x66F4;&#x957F;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x4E3A;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;&#x6216;&#x8005; QC &#x540E;&#x7684;<code>.tar.gz</code>&#x7531;&#x4E8E;&#x56FE;&#x50CF;&#x62FC;&#x63A5;&#x548C;&#x89E3;&#x6790;&#x65F6;&#x95F4;&#x8F83;&#x957F;&#xFF0C;&#x9884;&#x671F;&#x7684;&#x65F6;&#x95F4;&#x6210;&#x672C;&#x4E5F;&#x4F1A;&#x66F4;&#x9AD8;&#x3002;</p>
+</div></div><p></p>
+<h2 id="&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;"><a name="&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;</h2>
+<p>&#x4E3B;&#x8981;&#x914D;&#x7F6E; QC &#x540E;&#x56FE;&#x50CF;&#x7684;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#xFF0C;&#x5305;&#x62EC; HPC &#x6216;&#x8005;&#x4E91;&#x4E0A;&#x4F20;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x4E8E;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#x6709;&#x4EFB;&#x4F55;&#x7591;&#x95EE;&#xFF0C;&#x8BF7;&#x968F;&#x65F6;&#x4E0E; FAS &#x6C9F;&#x901A;&#x3002;</p>
+<h3 id="&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><a name="&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;</h3>
+<div>
+
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc%20upload%20settings%20(1).webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc upload settings (1).webp" alt=""></a><figcaption></figcaption></figure>
+
+
+
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc%20upload%20type%20(1).webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc upload type (1).webp" alt=""></a><figcaption></figcaption></figure>
+
+
+
+<figure><a href="../../.gitbook/assets/qc%20upload%20region%20(1).png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/qc upload region (1).png" alt=""></a><figcaption></figcaption></figure>
+
+</div>
+
+<table><thead><tr><th width="183">&#x4E0A;&#x4F20;&#x7C7B;&#x578B;</th><th>&#x63CF;&#x8FF0;</th><th>&#x533A;&#x57DF;</th></tr></thead><tbody><tr><td>ALICLOUD</td><td><a href="https://cn.aliyun.com/" target="_blank">ALICLOUD</a> &#x4E3A;&#x963F;&#x91CC;&#x4E91;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#xFF0C;&#x9002;&#x5408;&#x5C06;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x90E8;&#x7F72;&#x5728;&#x963F;&#x91CC;&#x4E91;&#x7684;&#x7247;&#x533A;&#x7528;&#x6237;&#x3002;&#x5982;&#x6709;&#x5176;&#x4ED6;&#x65B0;&#x589E;&#x7247;&#x533A;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x603B;&#x90E8; FAS&#xFF0C;&#x5E2E;&#x52A9;&#x66F4;&#x65B0;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x8868;&#x3002;</td><td><ul><li>SINGAPORE, AP</li></ul></td></tr><tr><td>AWS</td><td><a href="https://aws.amazon.com/cn/" target="_blank">AWS</a> &#x4E3A;&#x4E9A;&#x9A6C;&#x900A;&#x4E91;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#xFF0C;&#x9002;&#x5408;&#x5C06;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x90E8;&#x7F72;&#x5728; AWS &#x4E91;&#x7684;&#x7247;&#x533A;&#x7528;&#x6237;&#x3002;&#x5982;&#x6709;&#x5176;&#x4ED6;&#x65B0;&#x589E;&#x7247;&#x533A;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x603B;&#x90E8; FAS&#xFF0C;&#x5E2E;&#x52A9;&#x66F4;&#x65B0;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x8868;&#x3002;</td><td><ul><li>CALIFORNIA, US</li><li>RIGA, EU</li><li>SINGAPORE, AP</li></ul></td></tr><tr><td>HPC</td><td>HPC &#x4E3A;&#x5B9E;&#x9A8C;&#x5BA4;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x4F20;&#x5230;&#x7247;&#x533A;&#x7684;&#x96C6;&#x7FA4;&#xFF0C;&#x9700;&#x8981;&#x8054;&#x7CFB; FAS &#x63D0;&#x524D;&#x505A;&#x597D;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#xFF0C;&#x9002;&#x5408;&#x534E;&#x5927;&#x5185;&#x7F51;&#x4F7F;&#x7528;&#x3002;</td><td><ul><li>CHONGQING, CN</li><li>SHENZHEN, CN</li></ul></td></tr><tr><td>RAYSYNC</td><td><a href="https://www.raysync.io/" target="_blank">RAYSYNC</a> &#x4E3A;&#x956D;&#x901F;&#x4E0A;&#x4F20;&#xFF0C;&#x8FDE;&#x63A5;&#x4E92;&#x8054;&#x7F51;&#x5373;&#x53EF;&#x901A;&#x8FC7;&#x956D;&#x901F;&#x4E0A;&#x4F20;&#x5230;&#x6DF1;&#x5733;&#x96C6;&#x7FA4;&#x65E0;&#x9700;&#x505A;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#x3002;</td><td><ul><li>CHONGQING, CN</li><li>QINGDAO, CN</li><li>SHENZHEN, CN</li></ul></td></tr></tbody></table>
+
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x81EA;&#x5DF1;&#x8D2D;&#x4E70;&#x4E86;&#x963F;&#x91CC;&#x4E91;&#x6216; AWS &#x4E91;&#x670D;&#x52A1;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;&#x5C06;&#x56FE;&#x50CF;&#x4F20;&#x8F93;&#x5230;&#x60A8;&#x7684;&#x4E2A;&#x4EBA;&#x4E91;&#x5B58;&#x50A8;&#x4E2D;&#x3002;</p>
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc%20upload%20custom%20(1).webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc upload custom (1).webp" alt=""></a><figcaption></figcaption></figure>
+
+<p>&#x9009;&#x62E9;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x4E91;&#x670D;&#x52A1;&#x7C7B;&#x578B; <strong>ALICLOUD.CUSTOM</strong> &#x6216; <strong>AWS.CUSTOM</strong>&#xFF0C;&#x533A;&#x57DF;&#x9009;&#x62E9; <strong>OWNER&#xFF0C;</strong>&#x914D;&#x7F6E;&#x60A8;&#x7684;&#x8FDC;&#x7A0B;&#x8DEF;&#x5F84;&#x3001;keyID&#x3001;&#x5BC6;&#x7801;&#x548C; S3 &#x5B58;&#x50A8;&#x6876;&#x7684;&#x540D;&#x79F0;&#x3002;&#x5982;&#x679C;&#x60A8;&#x7684;&#x4E91;&#x670D;&#x52A1;&#x7C7B;&#x578B;&#x662F;&#x963F;&#x91CC;&#x4E91;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5199;&#x57DF;&#x540D;&#x4FE1;&#x606F;&#x3002;</p>
+<div>
+
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_T1XREByuy6fhjwkMJBi1_qc%20upload%20custom%20info%20alicloud.webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_T1XREByuy6fhjwkMJBi1_qc upload custom info alicloud.webp" alt=""></a><figcaption></figcaption></figure>
+
+
+
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ihymmV5y4n4yYVS3kwEg_qc%20upload%20custom%20info%20aws.webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ihymmV5y4n4yYVS3kwEg_qc upload custom info aws.webp" alt=""></a><figcaption></figcaption></figure>
+
+</div>
+
+<p>&#x6700;&#x540E;&#xFF0C;&#x70B9;&#x51FB; <strong>Confirm</strong> &#x914D;&#x7F6E;&#x5B8C;&#x6210;&#xFF0C;&#x5373;&#x53EF;&#x5728;&#x5728; <strong>Upload information configuration</strong> &#x7A97;&#x53E3;&#x4E2D;&#x627E;&#x5230;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x7C7B;&#x578B;&#x3002;</p>
+<div>
+
+<figure><a href="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_8RTfnk66WyKoA4wPlkMW_qc%20upload%20custom%20a%20new%20cloud.webp" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_8RTfnk66WyKoA4wPlkMW_qc upload custom a new cloud.webp" alt=""></a><figcaption></figcaption></figure>
+
+
+
+<figure><a href="../../.gitbook/assets/qc%20upload%20custom%20a%20new%20cloud%20and%20save.png" data-lightbox="1d928b39-68dd-4e4e-96af-7a6b7527184c" data-title=""><img src="../../.gitbook/assets/qc upload custom a new cloud and save.png" alt=""></a><figcaption></figcaption></figure>
+
+</div>
+
+
+<footer class="page-footer"><span class="copyright">&#xA9; 2024 STOmics Tech. All right reserved.</span><span class="footer-modification">Modiftied: 
+2024-07-16 11:36:44
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 小工具指南">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../sheng-xin-fen-xi/" class="navigation navigation-next " aria-label="Next page: 生信分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"图像质控-Image QC","level":"2.4.1","depth":2,"next":{"title":"生信分析","level":"2.5","depth":1,"path":"tutorials/sheng-xin-fen-xi/README.md","ref":"tutorials/sheng-xin-fen-xi/README.md","articles":[{"title":"Stereo-seq T FF","level":"2.5.1","depth":2,"path":"tutorials/sheng-xin-fen-xi/stereo-seq-t-ff.md","ref":"tutorials/sheng-xin-fen-xi/stereo-seq-t-ff.md","articles":[]},{"title":"Stereo-seq N FFPE","level":"2.5.2","depth":2,"path":"tutorials/sheng-xin-fen-xi/stereo-seq-n-ffpe.md","ref":"tutorials/sheng-xin-fen-xi/stereo-seq-n-ffpe.md","articles":[]}]},"previous":{"title":"小工具指南","level":"2.4","depth":1,"path":"tutorials/xiao-gong-ju-zhi-nan/README.md","ref":"tutorials/xiao-gong-ju-zhi-nan/README.md","articles":[{"title":"图像质控-Image QC","level":"2.4.1","depth":2,"path":"tutorials/xiao-gong-ju-zhi-nan/tu-xiang-zhi-kong-image-qc.md","ref":"tutorials/xiao-gong-ju-zhi-nan/tu-xiang-zhi-kong-image-qc.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","insert-logo","tbfed-pagefooter","hide-element","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2024 STOmics Tech.","modify_label":"Modiftied: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tabs":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 20px","url":"data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAACbEAAAVmCAYAAACtZ2FwAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4nOzaMQEAIADDMMC/5yGjTyKhd++2AwAAAAAAAAAAAIWnOgAAAAAAAAAAABUTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkT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AAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAA4N927ZgA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"},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"StereoMap User Manual","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"tutorials/xiao-gong-ju-zhi-nan/tu-xiang-zhi-kong-image-qc.md","mtime":"2024-07-16T03:36:44.387Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-16T04:08:22.787Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
