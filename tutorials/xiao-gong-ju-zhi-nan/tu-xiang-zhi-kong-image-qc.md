@@ -6,7 +6,7 @@
 
 从 StereoMap 启动页的 **Tools** 进入 **Image QC**。
 
-<figure><img src="../../.img/image QC entry (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/image QC entry (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **图像类型** <a href="#input-image-recommendation" id="input-image-recommendation"></a>
 
@@ -33,7 +33,7 @@
 * **显微镜拼接稳定性：**将显微镜拍摄的每个 FOV 小图拼接在一起，可以查看整个组织形态的全景图像。在图像拍摄过程中可能存在：显微镜震动或者移动、实验室台面外部干扰或者拼接算法不佳等原因，可能会导致拼接的全景图像错位，对图像的准确性和可靠性造成影响。在**图像 QC** 的过程中，将每个拼接好的全景图像裁成不同的 FOV，评估相邻 FOV 重叠区域祥形态特征的相似性，确定拼接效果。
 * **图像校准**：在一个芯片的多组图像数据中，每组图像的拼接、配准和组织区域范围必须保持严格的一致性才可以保证跟对应的表达矩阵对齐。由于染色条件和成像系统的限制，跟矩阵配准的图像仅在 DAPI 核染色图像中可见，因此必须保证其它 IF 图像首先跟 DAPI 图像对齐，然后使用相同的配准参数将各个图像与空间特征表达矩阵做配准，算法使用图像的相似性和特征偏移评估两张图像是否对齐。该评估指标仅适用于DAPI+mIF的单通道图像场景。
 
-<table><thead><tr><th width="148">评估指标</th><th>分数</th><th>示例</th></tr></thead><tbody><tr><td><strong>Track线评估</strong></td><td><ul><li>≥ 60，算法检测到足够数量的合个的 track 线，图像可以与空间表达矩阵做自动配准。</li><li>&#x3C; 60，算法检测到较少的 track 线或者未检测出 track线，无法推导出全局模板，您可能需要重新拍照。</li></ul><p><em>QC 是否通过的必要条件。</em></p></td><td><img src="../../.img/trackline detection.png" alt="" data-size="original"></td></tr><tr><td><strong>图像清晰度</strong></td><td><p></p><ul><li> ≥ 80，图像的质量较好，算法有很大的概率可以准确识别或者分割细胞。</li><li>&#x3C; 80，SAW 内置的细胞分割算法自动分割的成功率可能较低，但并不一定意味着无法识别细胞。</li></ul><p><em>QC 中倾向于通过的指标。</em></p></td><td><img src="../../.img/image clarity.png" alt="" data-size="original"></td></tr><tr><td><strong>显微镜稳定性评估（拼接评估）</strong></td><td><ul><li>≥ 60，超过 30% 的 FOV 与相邻 FOV 的重叠区域具有清晰相似的特征，并且这些 FOV 的平均特征偏移分数大于 0.7。</li><li>&#x3C; 60，超过 30% 的 FOV 与相邻 FOV 的重叠区域具有模糊的特征，并且这些 FOV 的平均特征偏移分数小于 0.7。</li></ul><p><em>有条件的评估指标，只适用于 mIF 的小图。</em></p></td><td><img src="../../.img/stitching evaluation.png" alt="" data-size="original"></td></tr><tr><td><strong>校准评估</strong></td><td><ul><li>通过，核染色图像（DAPI）与另一图像(IF)之间的最大偏移量 ≤ 20 像素，且图像的形态相似度 ≥ 1%。</li><li>未通过，核染色图像（DAPI）与另一图像(IF)之间的最大偏移量 > 20 像素，或者图像的形态相似度 &#x3C; 1%。</li></ul><p> <em>有条件的评估指标，只适用于mIF。</em></p></td><td><img src="../../.img/image calibration.png" alt="" data-size="original"></td></tr></tbody></table>
+<table><thead><tr><th width="148">评估指标</th><th>分数</th><th>示例</th></tr></thead><tbody><tr><td><strong>Track线评估</strong></td><td><ul><li>≥ 60，算法检测到足够数量的合个的 track 线，图像可以与空间表达矩阵做自动配准。</li><li>&#x3C; 60，算法检测到较少的 track 线或者未检测出 track线，无法推导出全局模板，您可能需要重新拍照。</li></ul><p><em>QC 是否通过的必要条件。</em></p></td><td><img src="../../img/trackline detection.png" alt="" data-size="original"></td></tr><tr><td><strong>图像清晰度</strong></td><td><p></p><ul><li> ≥ 80，图像的质量较好，算法有很大的概率可以准确识别或者分割细胞。</li><li>&#x3C; 80，SAW 内置的细胞分割算法自动分割的成功率可能较低，但并不一定意味着无法识别细胞。</li></ul><p><em>QC 中倾向于通过的指标。</em></p></td><td><img src="../../img/image clarity.png" alt="" data-size="original"></td></tr><tr><td><strong>显微镜稳定性评估（拼接评估）</strong></td><td><ul><li>≥ 60，超过 30% 的 FOV 与相邻 FOV 的重叠区域具有清晰相似的特征，并且这些 FOV 的平均特征偏移分数大于 0.7。</li><li>&#x3C; 60，超过 30% 的 FOV 与相邻 FOV 的重叠区域具有模糊的特征，并且这些 FOV 的平均特征偏移分数小于 0.7。</li></ul><p><em>有条件的评估指标，只适用于 mIF 的小图。</em></p></td><td><img src="../../img/stitching evaluation.png" alt="" data-size="original"></td></tr><tr><td><strong>校准评估</strong></td><td><ul><li>通过，核染色图像（DAPI）与另一图像(IF)之间的最大偏移量 ≤ 20 像素，且图像的形态相似度 ≥ 1%。</li><li>未通过，核染色图像（DAPI）与另一图像(IF)之间的最大偏移量 > 20 像素，或者图像的形态相似度 &#x3C; 1%。</li></ul><p> <em>有条件的评估指标，只适用于mIF。</em></p></td><td><img src="../../img/image calibration.png" alt="" data-size="original"></td></tr></tbody></table>
 
 备注：可以参考 **STOmics 显微镜评估参考手册**的 **4.3 章节图片示例**获取更多图像相关的信息**。**
 
@@ -41,7 +41,7 @@
 
 图像 QC 的操作界面如下：
 
-<figure><img src="../../.img/image QC interface.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/image QC interface.png" alt=""><figcaption></figcaption></figure>
 
 打开图像 QC 小工具，拖入待QC的文件，填写 **Chip SN**、**Operator**、**Image Path** 和 **Staining Types** 等信息**，**点击 **Run** 按钮，可开始进行图像质控的评估。
 
@@ -53,15 +53,15 @@
 
 如果您输入的图像为 TIFF 格式的拼接大图，系统将提示您提供额外的显微镜详细信息，这些信息对于准确推导模板至关重要。如果无法获取如下显微镜配置的信息，您也可以直接使用系统推荐的默认值，但还是建议尽可能跟显微镜工程师沟通获取准确的信息。
 
-<figure><img src="../../.img/image QC interface microscope info.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/image QC interface microscope info.png" alt=""><figcaption></figcaption></figure>
 
 图像质控全流程可以分为两大步骤：**图像质控评估和图像压缩**。如果您选择了**上传**，会增加图像上传的进度及状态，图像成功上传也是您质控全流程中一个重要的部分。QC 全流程运行完成，界面会展示图像质控指标的状态、分数、耗时、评估结果及进一步分析的建议等信息。
 
-<figure><img src="../../.img/image QC pass.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/image QC pass.png" alt=""><figcaption></figcaption></figure>
 
 QC 运行完成后，可以在 **StereoMapWorkspace** -> **QC** 保存路径中查看 QC 后的的结果文件，[**保存路径**](../../xia-zai.md#bao-cun)可以在[**设置**](../../xia-zai.md#she-zhi)中更改。
 
-<figure><img src="../../.img/image QC output (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/image QC output (1).png" alt=""><figcaption></figcaption></figure>
 
 如果您的图像数据是 QC 成功的，可以通过`--image-tar`参数，将 QC 输出的`.tar.gz`给到`SAW count`模块将图像数据跟矩阵数据一起分析。相反，如果您的图像数据 QC 未通过，又想做图像跟矩阵的可视化展示，需要将图像文件输入[Image Processing](../tu-xiang-chu-li-zhi-nan/) 做手动处理后再接回 SAW。
 
@@ -71,7 +71,7 @@ QC 运行完成后，可以在 **StereoMapWorkspace** -> **QC** 保存路径中�
 
 输入文件示例:
 
-<table><thead><tr><th width="243">文件格式</th><th>示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../.img/nuclei-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code> </td><td><img src="../../.img/nuclei-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../.img/nuclei-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Optical:</li></ul><p><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input tiles-STOmicsGoOptical.webp" alt=""></p><ul><li>Leica:</li></ul><p><img src="../../.img/nuclei-input tiles-leica.png" alt=""></p></td></tr><tr><td>其它格式</td><td><img src="../../.img/nuclei-input czi.png" alt=""></td></tr></tbody></table>
+<table><thead><tr><th width="243">文件格式</th><th>示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../img/nuclei-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code> </td><td><img src="../../img/nuclei-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../img/nuclei-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Optical:</li></ul><p><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input tiles-STOmicsGoOptical.webp" alt=""></p><ul><li>Leica:</li></ul><p><img src="../../img/nuclei-input tiles-leica.png" alt=""></p></td></tr><tr><td>其它格式</td><td><img src="../../img/nuclei-input czi.png" alt=""></td></tr></tbody></table>
 
 核染色图像的评估主要基于 [Track 线评估](tu-xiang-zhi-kong-image-qc.md#qc-biao-zhun)和[图像清晰度](tu-xiang-zhi-kong-image-qc.md#qc-biao-zhun)，[track 线评估](tu-xiang-zhi-kong-image-qc.md#qc-biao-zhun) QC 是否通过的主要指标。
 
@@ -92,7 +92,7 @@ QC 运行完成后，可以在 **StereoMapWorkspace** -> **QC** 保存路径中�
 * IF: <芯片号>\_\<IF名称>\_IF
 {% endhint %}
 
-<table><thead><tr><th width="258">文件格式</th><th width="486">示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../.img/mif-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code> </td><td><img src="../../.img/mif-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图文件</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../.img/mif-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Optical:</li></ul><p><img src="../../.img/mif-input tiles-STOmicsGoOptical.png" alt=""></p></td></tr><tr><td>其它格式</td><td><p></p><ul><li>Zeiss multi-page <code>.czi</code></li></ul><p><img src="../../.img/mif-input czi.png" alt=""></p><p></p></td></tr></tbody></table>
+<table><thead><tr><th width="258">文件格式</th><th width="486">示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../img/mif-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code> </td><td><img src="../../img/mif-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图文件</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../img/mif-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Optical:</li></ul><p><img src="../../img/mif-input tiles-STOmicsGoOptical.png" alt=""></p></td></tr><tr><td>其它格式</td><td><p></p><ul><li>Zeiss multi-page <code>.czi</code></li></ul><p><img src="../../img/mif-input czi.png" alt=""></p><p></p></td></tr></tbody></table>
 
 核染色+免疫荧光图像的评估主要基于：[track线评估](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)、[图像清晰度评估](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)、[拼接评估](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)和[校准评估](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)四个指标，除[图像清晰度](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)的评估结果不做为 QC 是否通过的条件外，其它三个指标都是 QC 是否通过的主要指标。
 
@@ -106,7 +106,7 @@ QC 运行完成后，可以在 **StereoMapWorkspace** -> **QC** 保存路径中�
 
 输入文件示例：
 
-<table><thead><tr><th width="258">文件格式</th><th width="489">示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../.img/HE-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code></td><td><img src="../../.img/HE-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图文件</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../.img/HE-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Spatial:</li></ul><p><img src="../../.img/mif-input tiles-STOmicsGoOptical (1).png" alt=""></p></td></tr><tr><td>其它格式</td><td><img src="../../.img/HE-input czi.png" alt=""></td></tr></tbody></table>
+<table><thead><tr><th width="258">文件格式</th><th width="489">示例</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> 拼接大图</td><td><img src="../../img/HE-input tif.png" alt=""></td></tr><tr><td>QC 的输出文件<code>.tar.gz</code></td><td><img src="../../img/HE-input tar.png" alt=""></td></tr><tr><td><code>.tif</code>小图文件</td><td><p></p><ul><li>Motic:</li></ul><p><img src="../../img/HE-input tiles-motic.png" alt=""></p><ul><li>STOmics Go Spatial:</li></ul><p><img src="../../img/mif-input tiles-STOmicsGoOptical (1).png" alt=""></p></td></tr><tr><td>其它格式</td><td><img src="../../img/HE-input czi.png" alt=""></td></tr></tbody></table>
 
 H&E 图像的评估主要是基于[ track 线评估](tu-xiang-zhi-kong-image-qc.md#qc-zhi-biao-ji-biao-zhun)，确保在显微镜下可以看到清晰的 track 线是至关重要的，对于算法来说，识别 H&E 彩色图像的 track 线比灰度图像具有更大的挑战。
 
@@ -124,15 +124,15 @@ H&E 图像的评估主要是基于[ track 线评估](tu-xiang-zhi-kong-image-qc.
 
 <div>
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc upload settings (1).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc upload settings (1).webp" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc upload type (1).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc upload type (1).webp" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/qc upload region (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/qc upload region (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -142,17 +142,17 @@ H&E 图像的评估主要是基于[ track 线评估](tu-xiang-zhi-kong-image-qc.
 
 如果您自己购买了阿里云或 AWS 云服务，您可以通过设置自定义上传路径将图像传输到您的个人云存储中。
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc upload custom (1).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc upload custom (1).webp" alt=""><figcaption></figcaption></figure>
 
 选择您购买的云服务类型 **ALICLOUD.CUSTOM** 或 **AWS.CUSTOM**，区域选择 **OWNER，**配置您的远程路径、keyID、密码和 S3 存储桶的名称。如果您的云服务类型是阿里云，需要填写域名信息。
 
 <div>
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_T1XREByuy6fhjwkMJBi1_qc upload custom info alicloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_T1XREByuy6fhjwkMJBi1_qc upload custom info alicloud.webp" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ihymmV5y4n4yYVS3kwEg_qc upload custom info aws.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ihymmV5y4n4yYVS3kwEg_qc upload custom info aws.webp" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -160,10 +160,10 @@ H&E 图像的评估主要是基于[ track 线评估](tu-xiang-zhi-kong-image-qc.
 
 <div>
 
-<figure><img src="../../.img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_8RTfnk66WyKoA4wPlkMW_qc upload custom a new cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_8RTfnk66WyKoA4wPlkMW_qc upload custom a new cloud.webp" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/qc upload custom a new cloud and save.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/qc upload custom a new cloud and save.png" alt=""><figcaption></figcaption></figure>
 
 </div>

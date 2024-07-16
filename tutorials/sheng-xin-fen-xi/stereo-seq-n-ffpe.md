@@ -10,11 +10,11 @@
 
 <div>
 
-<figure><img src="../../.img/adjust opacity.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/adjust opacity.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/adjust opacity HE.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/adjust opacity HE.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -22,11 +22,11 @@
 
 <div>
 
-<figure><img src="../../.img/lasso region1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso region1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/lasso region2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso region2.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -34,21 +34,21 @@
 
 <div>
 
-<figure><img src="../../.img/lasso region3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso region3.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/lasso region4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso region4.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 退出 Lasso 并调整基因表达热图的透明度，可以查看在不同图层上展示的标注结果。
 
-<figure><img src="../../.img/lasso region5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso region5.png" alt=""><figcaption></figcaption></figure>
 
-区域标注完成后，如果您需要获取所选区域的空间特征表达矩阵，可以单击右侧的按钮<img src="../../.img/image (125).png" alt="" data-size="line">，选择 **GeoJSON to lasso targeted area** 导出标注的区域文件。当然，如果您想要了解标注区域之间的差异，也可以选择 **GeoJSON for differential expressoin** 。
+区域标注完成后，如果您需要获取所选区域的空间特征表达矩阵，可以单击右侧的按钮<img src="../../img/image (125).png" alt="" data-size="line">，选择 **GeoJSON to lasso targeted area** 导出标注的区域文件。当然，如果您想要了解标注区域之间的差异，也可以选择 **GeoJSON for differential expressoin** 。
 
-<figure><img src="../../.img/export.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/export.png" alt=""><figcaption></figcaption></figure>
 
 您可以在 **StereoMapWorkspace -> Lasso** 目录下找到 Lasso后输出的 `YYYYMMDDHHMMSS.lasso.geojson` 文件，或者在 **StereoMapWorkspace -> Diffexp** 目录下找到差异分析输出的`YYYYMMDDHHMMSS.diffexp.geojson`文件。
 
@@ -62,11 +62,11 @@ Stereo-seq N FFPE 产品可以通过随机探针捕获转录组+微生物的信�
 
 <div>
 
-<figure><img src="../../.img/open micro layer in new window.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/open micro layer in new window.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/micro-host side-by-side.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/micro-host side-by-side.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -76,11 +76,11 @@ Stereo-seq N FFPE 产品可以通过随机探针捕获转录组+微生物的信�
 
 <div>
 
-<figure><img src="../../.img/select cluster.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/select cluster.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.img/lasso cluster region that have bacteria.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/lasso cluster region that have bacteria.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

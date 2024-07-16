@@ -7,7 +7,7 @@
 {% hint style="info" %}
 下载 “StereoMap 4.0.0 exe” 软件安装包，下载过程中如果被操作系统拦截，点击“保留”，将安装包添加到信任中。
 
-![](.img/automatically blocks.png)
+![](img/automatically blocks.png)
 {% endhint %}
 
 ### 更新亮点
@@ -41,17 +41,17 @@
 
 <div align="left">
 
-<figure><img src=".img/image (110).png" alt="" width="76"><figcaption></figcaption></figure>
+<figure><img src="img/image (110).png" alt="" width="76"><figcaption></figcaption></figure>
 
 </div>
 
 选择安装路径，默认为"D:\StereoMap"，可根据需要修改目标文件夹。点击 **Install** 开始安装。
 
-<figure><img src=".img/installing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/installing.png" alt=""><figcaption></figcaption></figure>
 
 安装完成后，点击 **Finish** 即可。
 
-<figure><img src=".img/spaces_q9nLCBaEQA96hC5FzYjG_uploads_pJO9D88tpz6oGPObCuCn_installation done.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/spaces_q9nLCBaEQA96hC5FzYjG_uploads_pJO9D88tpz6oGPObCuCn_installation done.webp" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 首次安装或者在线更新，请确保您的安装目录必须满足至少 20GB 的可用磁盘空间。
@@ -72,19 +72,19 @@
 
 ### 在线更新
 
-点击右上角的设置<img src=".img/image (152).png" alt="" data-size="line">，选择  **About** ，联网状态下可以手动检查版本信息，如果有新版本发布，您可以选择下载并安装新的软件包。
+点击右上角的设置<img src="img/image (152).png" alt="" data-size="line">，选择  **About** ，联网状态下可以手动检查版本信息，如果有新版本发布，您可以选择下载并安装新的软件包。
 
-<figure><img src=".img/setting-about (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/setting-about (1).png" alt=""><figcaption></figcaption></figure>
 
 您也可以勾选软件开机时自动检查最新版本的选项，程序会自动检测是否有新版本的更新。
 
-<figure><img src=".img/setting-general-autoupdate.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/setting-general-autoupdate.png" alt=""><figcaption></figcaption></figure>
 
 ### 保存
 
 设置每个模块输出文件的路径，默认是您的安装目录，您也可以根据需求更改。
 
-<figure><img src=".img/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/image (111).png" alt=""><figcaption></figcaption></figure>
 
 ### 显微镜信息配置
 
@@ -96,15 +96,15 @@
 
 <div>
 
-<figure><img src=".img/microscope settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/microscope settings.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src=".img/microscope settings-add_edit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/microscope settings-add_edit.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
-您可以新增<img src=".img/image (156).png" alt="" data-size="line">、修改<img src=".img/image (157).png" alt="" data-size="line"> 和删除<img src=".img/image (158).png" alt="" data-size="line">已有的显微镜配置信息，参数说明如下：
+您可以新增<img src="img/image (156).png" alt="" data-size="line">、修改<img src="img/image (157).png" alt="" data-size="line"> 和删除<img src="img/image (158).png" alt="" data-size="line">已有的显微镜配置信息，参数说明如下：
 
 * **Config Name**：显微镜配准的名称。
 * **Manufacture**：显微镜品牌的名称。
@@ -116,20 +116,20 @@
 * **FOV Height**：拍摄时的一个FOV的高度。
 * **Set as Default**: 是否设置为默认的显微镜配置。
 
-<figure><img src=".img/add microscope configuration.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/add microscope configuration.png" alt=""><figcaption></figcaption></figure>
 
 点击 **Confirm** 按钮保存编辑的配置。
 
-<figure><img src=".img/2 microscope configurations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/2 microscope configurations.png" alt=""><figcaption></figcaption></figure>
 
 另外，在[图像处理](tutorials/tu-xiang-chu-li-zhi-nan/)的第一步中，如果输入的是TIFF大图，您也可以增加、编辑或者删除该配置信息。
 
 <div>
 
-<figure><img src=".img/tif uploading IP.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/tif uploading IP.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src=".img/microscope config IP.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/microscope config IP.png" alt=""><figcaption></figcaption></figure>
 
 </div>

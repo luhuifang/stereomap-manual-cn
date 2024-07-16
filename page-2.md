@@ -6,7 +6,7 @@ StereoMap is a programming-free desktop application that allows you to interacti
 
 A typical Stereo-seq data analysis workflow involves **StereoMap** at both upstream and downstream steps.
 
-<figure><img src=".img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_qM4qgG1evqMMYJT4cGAw_stereo-seq_data_analysis_workflow.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="img/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_qM4qgG1evqMMYJT4cGAw_stereo-seq_data_analysis_workflow.webp" alt=""><figcaption></figcaption></figure>
 
 In the upstream, you may use **Image QC** tool and **Image Processing** tools to check whether the image can be automatically processed by SAW or needs to be manually processed before analyzing with spatial gene expression matrix.
 

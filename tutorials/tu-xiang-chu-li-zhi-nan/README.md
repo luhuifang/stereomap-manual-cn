@@ -4,7 +4,7 @@
 
 每一种组织在临床上的特征表达（如 mRNA 和蛋白质）可能不均匀，仅基于空间的表达信息去准确识别组织/细胞的边界将会具有较大的挑战。细胞核染色（比如 ssDN 荧光染色）或者苏木精-伊红（ H&E 染色）染色的组织图像在显微镜下可以清晰的显示整个组织区域，使用染色的图像可以显著改善组织或者细胞的轮廓信息。在确定组织边界后，可以将图像数据与空间表达分析的数据对齐，并利用边界信息获取组织或者细胞区域的热图，以进行更深层次的分析。
 
-<figure><img src="../../.img/Basic Stereo-seq image processing logic (1).png" alt=""><figcaption><p> Stereo-seq 图像处理逻辑</p></figcaption></figure>
+<figure><img src="../../img/Basic Stereo-seq image processing logic (1).png" alt=""><figcaption><p> Stereo-seq 图像处理逻辑</p></figcaption></figure>
 
 ## 图像类型和格式
 
@@ -22,7 +22,7 @@ Stereo-seq 芯片表面具有周期性的轨迹线（水平和垂直两个方向
 
 | 荧光图像上的轨迹线                                                                                                                           | 彩色图像上的轨迹线                                                                                             |                                                                                                                |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| <p><img src="../../.img/fluorescence_image_track_lines.png" alt="" data-size="original"></p><p><br>轨迹线为<em>黑色线条</em></p> | <p><img src="../../.img/color_image_track_lines.png" alt=""><br><br>轨迹线为<em>浅白色线条</em></p> | <p><img src="../../.img/bin1_density_heat_map_track_lines.png" alt=""><br><br><em>轨迹线为黑色线条</em></p> |
+| <p><img src="../../img/fluorescence_image_track_lines.png" alt="" data-size="original"></p><p><br>轨迹线为<em>黑色线条</em></p> | <p><img src="../../img/color_image_track_lines.png" alt=""><br><br>轨迹线为<em>浅白色线条</em></p> | <p><img src="../../img/bin1_density_heat_map_track_lines.png" alt=""><br><br><em>轨迹线为黑色线条</em></p> |
 
 Stereo-seq 分析流程软件包（SAW）嵌入了自动化图像处理算法，用于识别组织和细胞的边界，并可以在Stereo-seq 芯片上检测到轨迹线，以便将图像与特征表达矩阵对齐。如果无法检测到轨迹线或组织/细胞边界不清晰，您可能需要手动处理。
 
@@ -41,8 +41,8 @@ Stereo-seq 分析流程软件包（SAW）嵌入了自动化图像处理算法，
 
 从 StereoMap 启动页的 Image Processing 进入可视化。
 
-<figure><img src="../../.img/home page-IP.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/home page-IP.png" alt=""><figcaption></figcaption></figure>
 
 选择与您图像相匹配的类型，目前支持三种图像类型。
 
-<figure><img src="../../.img/IP step1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../img/IP step1 (1).png" alt=""><figcaption></figcaption></figure>
