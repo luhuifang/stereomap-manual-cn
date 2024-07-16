@@ -1,93 +1,12 @@
-# Overview
+# 概览
 
-StereoMap is a desktop application designed to provide the essential analysis functionality you need to explore your Stereo-seq data interactively.
-
-## inline image
-
-![](.gitbook/assets/HE.png)
-
-## Emoji
-
-:tada:
-
-## Link
-
-[#link](./#link "mention")
-
-$$f(x) = x * e^{2 pi i \xi x}$$
-
-paragraph
-
-* list1
-* list2
-* list3
-
-1. ordered list1
-2. ordered list2
-3. ordered list3
-
-* [x] todo1
-* [ ] todo2
-* [ ] todo3
+StereoMap 是一款桌面端软件，可通过软件内提供的多种功能模块对时空组学数据做进一步的探索挖掘。
 
 ***
 
-{% hint style="info" %}
-This is Hint
-{% endhint %}
+<mark style="color:blue;">©2024 华大三箭齐发科技有限责任公司保留所有权利。</mark>
 
-> This is quote
-
-```
-// Some code
-mkdir test
-```
-
-{% embed url="https://www.baidu.com" %}
-baidu.com
-{% endembed %}
-
-| Hd1  | Hd2  | Hd3  |
-| ---- | ---- | ---- |
-| col1 | col2 | col3 |
-|      |      |      |
-|      |      |      |
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td>card1</td></tr><tr><td></td><td></td><td>card2</td></tr><tr><td>card3</td><td></td><td></td></tr></tbody></table>
-
-{% tabs %}
-{% tab title="First Tab" %}
-This first Tab
-{% endtab %}
-
-{% tab title="Second Tab" %}
-This second tab2
-{% endtab %}
-{% endtabs %}
-
-<details>
-
-<summary>Expandable</summary>
-
-
-
-
-
-</details>
-
-<img src=".gitbook/assets/file.excalidraw.svg" alt="this is fig1" class="gitbook-drawing">
-
-$$
-f(x) = x * e^{2 pi i \xi x}
-$$
-
-{% swagger method="get" path="" baseUrl="" summary="" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-{% endswagger %}
-
-{% content-ref url="page-1.md" %}
-[page-1.md](page-1.md)
-{% endcontent-ref %}
-
+1. 本产品仅用于研究，不用于诊断。
+2. 本手册上的内容可能全部或部分受到适用的知识产权法的保护。华大三箭齐发科技有限责任公司和/或相应权利主体依法拥有其知识产权，包括但不限于商标权、版权等。&#x20;
+3. 华大三箭齐发科技有限责任公司不授予或暗示使用我们或任何第三方的任何版权内容或商标（注册或未注册）的权利或许可。未经本单位书面同意，任何人不得擅自使用、修改、复制、公开传播、更改、分发或发布本手册的程序或内容，不得使用或利用设计技巧使用或占有本单位或本单位关联方的商标、标识或其他专有信息（包括图像、文本、网页设计或形式）。
+4. 此处的任何内容都无意于或应被理解为对此处列出或描述的任何产品的性能的任何保证、表达或暗示。适用于本文所列任何产品的任何和所有保证均载于购买该产品所附的适用销售条款和条件。华大三箭齐发科技有限责任公司不做任何保证，并在此声明对本文所述任何第三方产品或协议的使用不做任何保证。
