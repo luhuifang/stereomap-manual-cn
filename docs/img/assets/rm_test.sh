@@ -1,0 +1,1 @@
+rm bin1_density_heat_map_track_lines.png

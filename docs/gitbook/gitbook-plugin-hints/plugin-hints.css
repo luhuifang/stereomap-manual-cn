@@ -7,3 +7,7 @@
 .hints-container {
     display: table-cell;
 }
+
+figcaption {
+    text-align: center;
+}
