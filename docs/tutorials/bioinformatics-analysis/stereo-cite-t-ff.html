@@ -1,0 +1,630 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Stereo-CITE T FF &#xB7; StereoMap User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../algorithms/">
+    
+    
+    <link rel="prev" href="stereo-seq-n-ffpe.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><div class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC" style><p class="book-title" style="font-weight:600">StereoMap &#x7528;&#x6237;&#x624B;&#x518C; 4.2 </p></div></div>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x6982;&#x89C8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../download.html">
+            
+                <a href="../../download.html">
+            
+                    
+                    &#x4E0B;&#x8F7D;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x59CB;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../navigation.html">
+            
+                <a href="../navigation.html">
+            
+                    
+                    &#x4F7F;&#x7528;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../navigation-for-visual-explore.html">
+            
+                <a href="../navigation-for-visual-explore.html">
+            
+                    
+                    &#x53EF;&#x89C6;&#x5316;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../navigation-for-image-processing/">
+            
+                <a href="../navigation-for-image-processing/">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../navigation-for-image-processing/nuclei-staining-image.html">
+            
+                <a href="../navigation-for-image-processing/nuclei-staining-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                <a href="../navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272; + &#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                <a href="../navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                    
+                    H&amp;E&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                <a href="../navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                    
+                    &#x53C2;&#x6570;&#x53EF;&#x8C03;&#x7684;&#x534A;&#x81EA;&#x52A8;&#x5DE5;&#x5177;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../navigation-for-tools/">
+            
+                <a href="../navigation-for-tools/">
+            
+                    
+                    &#x5C0F;&#x5DE5;&#x5177;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../navigation-for-tools/stereo-seq-image-qc.html">
+            
+                <a href="../navigation-for-tools/stereo-seq-image-qc.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x751F;&#x4FE1;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="stereo-seq-t-ff.html">
+            
+                <a href="stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="stereo-seq-n-ffpe.html">
+            
+                <a href="stereo-seq-n-ffpe.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5.3" data-path="stereo-cite-t-ff.html">
+            
+                <a href="stereo-cite-t-ff.html">
+            
+                    
+                    Stereo-CITE T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../algorithms/">
+            
+                <a href="../../algorithms/">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x539F;&#x7406;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../algorithms/image-processing-algorithms.html">
+            
+                <a href="../../algorithms/image-processing-algorithms.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x7B97;&#x6CD5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x6280;&#x672F;&#x652F;&#x6301;</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../support-pages/support.html">
+            
+                <a href="../../support-pages/support.html">
+            
+                    
+                    &#x5EFA;&#x8BAE;&#x548C;&#x652F;&#x6301;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../support-pages/datasets.html">
+            
+                <a href="../../support-pages/datasets.html">
+            
+                    
+                    &#x6570;&#x636E;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../support-pages/software-and-kit-compatibility.html">
+            
+                <a href="../../support-pages/software-and-kit-compatibility.html">
+            
+                    
+                    &#x9002;&#x914D;&#x517C;&#x5BB9;&#x7684;&#x8F6F;&#x4EF6;&#x548C;&#x8BD5;&#x5242;&#x76D2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x7248;&#x672C;&#x8BF4;&#x660E;</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../release-notes/release-notes-for-stereomap.html">
+            
+                <a href="../../release-notes/release-notes-for-stereomap.html">
+            
+                    
+                    StereoMap &#x7248;&#x672C;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">Stereo-CITE T FF</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#stereo-cite-t-ff"><b></b>Stereo-CITE T FF</a></li><ul><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;"><b></b>&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9009;&#x62E9;&#x67D0;&#x4E2A;-cluster-&#x8054;&#x52A8;"><b></b>&#x9009;&#x62E9;&#x67D0;&#x4E2A; cluster &#x8054;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#lasso-&#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;"><b></b>Lasso &#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;</a></li></ul><li><span class="title-icon "></span><a href="#&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;-"><b></b>&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03; </a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x9644;&#x5F55;"><b></b>&#x53C2;&#x8003;&#x9644;&#x5F55;</a></li></ul></ul></div><a href="#stereo-cite-t-ff" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="stereo-cite-t-ff"><a name="stereo-cite-t-ff" class="anchor-navigation-ex-anchor" href="#stereo-cite-t-ff"><i class="fa fa-link" aria-hidden="true"></i></a>Stereo-CITE T FF</h1>
+<h2 id="&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;"><a name="&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7EC4;&#x7EC7;&#x73AF;&#x5883;</h2>
+<p>&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x5229;&#x7528;&#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x63A2;&#x7D22;&#x4E0D;&#x540C;&#x7EC4;&#x5B66;&#x5C42;&#x9762;&#x7EC6;&#x80DE;&#x7684;&#x5F62;&#x6210;&#x8FC7;&#x7A0B;&#x3002;&#x901A;&#x8FC7; RNA &#x7684;&#x8868;&#x8FBE;&#x9884;&#x6D4B;&#x86CB;&#x767D;&#x8D28;&#x6C34;&#x5E73;&#x867D;&#x8BF4;&#x5B58;&#x5728;&#x5C40;&#x9650;&#x6027;&#xFF0C;&#x4F46;&#x5C06;&#x7A7A;&#x95F4;&#x8F6C;&#x5F55;&#x7EC4;&#x5B66;&#x548C;&#x86CB;&#x767D;&#x8D28;&#x7EC4;&#x5B66;&#x7684;&#x6570;&#x636E;&#x6574;&#x5408;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x540E;&#x7EED;&#x7814;&#x7A76;&#x63D0;&#x4F9B;&#x5B9D;&#x8D35;&#x7684;&#x4E92;&#x8865;&#x89C1;&#x89E3;&#xFF0C;&#x5F7B;&#x5E95;&#x6539;&#x53D8;&#x6211;&#x4EEC;&#x5BF9;&#x590D;&#x6742;&#x751F;&#x7269;&#x7684;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x591A;&#x7A97;&#x53E3;&#x7684;&#x8054;&#x52A8;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x76F8;&#x540C;&#x7684;&#x5750;&#x6807;&#x70B9;&#x4FE1;&#x606F;&#xFF0C;&#x540C;&#x65F6;&#x64CD;&#x4F5C;&#x540C;&#x4E00;&#x6570;&#x636E;&#x96C6;&#x7684;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x57FA;&#x4E8E;&#x5750;&#x6807;&#x8054;&#x52A8;&#x64CD;&#x4F5C;&#x7684;&#x70B9;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x4F9D;&#x8D56;&#x52A8;&#x4F5C;&#x7684;&#x53D1;&#x8D77;&#x8005;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;<strong>&#x53EA;&#x6709;&#x4E3B;&#x7A97;&#x53E3;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53D1;&#x8D77;&#x65B9;</strong>&#xFF0C;&#x8054;&#x52A8;&#x7684;&#x4FE1;&#x606F;&#x5C06;&#x53CD;&#x5E94;&#x5230;&#x5DF2;&#x6253;&#x5F00;&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x4E2D;&#x3002;</p>
+</div></div><p></p>
+<h3 id="&#x9009;&#x62E9;&#x67D0;&#x4E2A;-cluster-&#x8054;&#x52A8;"><a name="&#x9009;&#x62E9;&#x67D0;&#x4E2A;-cluster-&#x8054;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x62E9;&#x67D0;&#x4E2A;-cluster-&#x8054;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9009;&#x62E9;&#x67D0;&#x4E2A; cluster &#x8054;&#x52A8;</h3>
+<p>&#x6253;&#x5F00; <a href="../navigation-for-visual-explore.html#feature-menu">Feature &#x83DC;&#x5355;</a>&#x53EF;&#x4EE5;&#x5E76;&#x6392;&#x67E5;&#x770B;&#x86CB;&#x767D;&#x548C;&#x57FA;&#x56E0;&#x7684; cluster &#x56FE;&#x3002;&#x70B9;&#x51FB;&#x86CB;&#x767D;&#x7EC4;&#x5B66; cluster &#x56FE;&#x5C42;&#x524D;&#x9762;&#x7684; <a href="../../img/assets/new_linked_window.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/new_linked_window.png" alt></a>&#x56FE;&#x6807;&#xFF0C;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684; cluster &#x86CB;&#x767D;&#x5B50;&#x7A97;&#x53E3;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x7A97;&#x53E3;&#x4E2D;&#x5207;&#x6362;&#x52A8;&#x4F5C;&#x7684;&#x53D1;&#x8D77;&#x65B9;&#x3002;</p>
+<div><figure><a href="../../img/assets/open%20protein%20cluster%20layer%20in%20new%20linked%20window.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/open protein cluster layer in new linked window.png" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/gene%20cluster%20protein%20cluster%20side%20by%20side.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/gene cluster protein cluster side by side.png" alt></a><figcaption></figcaption></figure></div>
+
+<p>&#x6839;&#x636E;&#x7A7A;&#x95F4;&#x57FA;&#x56E0;&#x6216;&#x86CB;&#x767D;&#x8D28;&#x7684;&#x8868;&#x8FBE;&#x6C34;&#x5E73;&#x505A;&#x805A;&#x7C7B;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x5750;&#x6807;&#x7684;&#x70B9;&#x88AB;&#x5F52;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x522B;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;&#x4E3B;&#x7A97;&#x53E3;&#xFF08;&#x5DE6;&#xFF09;&#x5C55;&#x793A;&#x7684;&#x662F;&#x57FA;&#x4E8E;&#x7A7A;&#x95F4;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#xFF0C;&#x9009;&#x62E9;&#x67D0;&#x4E2A; cluster &#x540E;&#xFF0C;&#x753B;&#x5E03;&#x4E2D;&#x9AD8;&#x4EAE;&#x5C55;&#x793A;&#x8BE5;&#x805A;&#x7C7B;&#x7684;&#x70B9;&#x3002;&#x5728;&#x5B50;&#x7A97;&#x53E3;&#xFF08;&#x53F3;&#xFF09;&#x4E2D;&#xFF0C;&#x753B;&#x5E03;&#x4E0A;&#x4EC5;&#x663E;&#x793A;&#x8DDF;&#x5B57;&#x7A97;&#x8054;&#x52A8;&#x7684;&#x5750;&#x6807;&#x70B9;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x86CB;&#x767D;&#x7684;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x7740;&#x8272;&#x3002;</p>
+<figure><a href="../../img/assets/linked%20by%20coordinates-select%20cluster.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/linked by coordinates-select cluster.png" alt></a><figcaption><p>&#x7A7A;&#x95F4;&#x57FA;&#x56E0;&#x805A;&#x7C7B;&#x7ED3;&#x679C; cluster 1 &#x4E2D;&#x7684;&#x70B9;&#x5750;&#x6807;&#xFF08;&#x5DE6;&#xFF09;&#x5728;&#x7A7A;&#x95F4;&#x86CB;&#x767D;&#x8D28;&#x805A;&#x7C7B;&#x4E2D;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x7C7B;&#xFF08;&#x53F3;&#xFF09;</p></figcaption></figure>
+
+<p>&#x591A;&#x7A97;&#x53E3;&#x7684;&#x8054;&#x52A8;&#x540C;&#x6837;&#x4E5F;&#x9002;&#x7528;&#x4E8E;UMAP&#x56FE;&#x548C;&#x7A7A;&#x95F4;&#x805A;&#x7C7B;&#x56FE;&#x3002;</p>
+<div><figure><a href="../../img/assets/umap%20layer.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/umap layer.png" alt></a><figcaption><p>&#x57FA;&#x56E0;&#x7684;UMAP &#x56FE;&#x548C;&#x86CB;&#x767D;&#x7684;&#x7A7A;&#x95F4;&#x805A;&#x7C7B;&#x56FE;&#xFF08;&#x53F3;&#xFF09;</p></figcaption></figure> <figure><a href="../../img/assets/umap%20spots%20linked%20by%20coordinates-select%20cluster.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/umap spots linked by coordinates-select cluster.png" alt></a><figcaption><p>&#x57FA;&#x56E0;&#x7684;UMAP &#x56FE;&#x548C;&#x86CB;&#x767D;&#x7684;&#x7A7A;&#x95F4;&#x805A;&#x7C7B;&#x56FE;&#xFF08;&#x53F3;&#xFF09;&#x7684;&#x8054;&#x52A8;</p></figcaption></figure></div>
+
+<h3 id="lasso-&#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;"><a name="lasso-&#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;" class="anchor-navigation-ex-anchor" href="#lasso-&#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>Lasso &#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x8054;&#x52A8;</h3>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Lasso &#x529F;&#x80FD;&#x7684;&#x8054;&#x52A8;&#x76EE;&#x524D;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7A7A;&#x95F4;&#x5206;&#x5E03;&#x7684;&#x56FE;&#x50CF;&#x4E2D;&#xFF0C;UMAP &#x6216;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7A7A;&#x95F4;&#x89C6;&#x56FE;&#x4E2D;&#x7684;&#x70B9;&#x65E0;&#x6CD5;&#x8054;&#x52A8;&#x3002;</p>
+</div></div><p></p>
+<p>&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x67D0;&#x4E2A; cluster &#x53EF;&#x4EE5;&#x8054;&#x52A8;&#x5916;&#xFF0C;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../navigation-for-visual-explore.html#xian-shi-she-zhi"> lasso &#x5DE5;&#x5177;</a>&#x9009;&#x62E9;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x7279;&#x5B9A;&#x533A;&#x57DF;&#x3002;&#x4FDD;&#x5B58;&#x5957;&#x7D22;&#x533A;&#x57DF;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x5230;&#x4EFB;&#x610F;&#x7684;&#x7A7A;&#x95F4;&#x56FE;&#x5C42;&#x505A;&#x8054;&#x52A8;&#xFF0C;&#x5305;&#x62EC;&#x57FA;&#x56E0;&#x70ED;&#x56FE;&#x3001;&#x86CB;&#x767D;&#x8D28;&#x70ED;&#x56FE;&#x3001;&#x57FA;&#x56E0;&#x7684; cluster &#x548C;&#x86CB;&#x767D;&#x7684; cluster&#x3002;</p>
+<div><figure><a href="../../img/assets/linked%20by%20coordinates-lasso%20cluster.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/linked by coordinates-lasso cluster.png" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/linked%20by%20coordinates-lasso%20heatmap.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/linked by coordinates-lasso heatmap.png" alt></a><figcaption></figcaption></figure></div>
+
+<h2 id="&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;-"><a name="&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;-" class="anchor-navigation-ex-anchor" href="#&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03; <a href="#dan-bai-yu-qi-dui-ying-biao-ji-ji-yin-de-kong-jian-fen-bu" id="dan-bai-yu-qi-dui-ying-biao-ji-ji-yin-de-kong-jian-fen-bu"></a></h2>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x6B64;&#x529F;&#x80FD;&#x4EC5;&#x9002;&#x7528;&#x4E8E;square bin&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;bin20, 50, 100&#x7B49;</p>
+</div></div><p></p>
+<p>&#x5BF9;&#x4E8E; Stereo-CITE &#x6570;&#x636E;&#x5206;&#x6790;&#xFF0C;SAW (&gt;= 8.1)&#x7684; HTML &#x5206;&#x6790;&#x62A5;&#x544A;&#x4E2D;&#x5C55;&#x793A;&#x4E86;&#x57FA;&#x56E0;&#x548C;&#x86CB;&#x767D;&#x7684;&#x76F8;&#x5173;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://www.stomics.tech/service/new-saw-operation-manual.html" target="_blank">SAW &#x7528;&#x6237;&#x624B;&#x518C;</a>&#x7684;<strong>&#x8FD0;&#x884C;&#x5206;&#x6790;</strong>-<strong>&#x8F93;&#x51FA;&#x7ED3;&#x679C;</strong>-<strong>HTML Report</strong> - <strong>Gene : protein correlations</strong> &#x7AE0;&#x8282;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;&#x5728; StereoMap (&gt;= 4.1) &#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x86CB;&#x767D;&#x4E0E;&#x5176;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x5BF9;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;&#x4EE5;&#x4FBF;&#x66F4;&#x597D;&#x5730;&#x4E86;&#x89E3;&#x76F8;&#x5173;&#x6027;&#x3002;</p>
+<p>&#x60A8;&#x9700;&#x8981;&#x6253;&#x5F00;<a href="../navigation-for-visual-explore.html#feature-menu"> Feature &#x83DC;&#x5355;</a>&#x540C;&#x65F6;&#x67E5;&#x770B;&#x86CB;&#x767D;&#x70ED;&#x56FE;&#x548C;&#x57FA;&#x56E0;&#x70ED;&#x56FE;&#x3002;&#x5355;&#x51FB;<code>Protein_Heatmap_tissue</code> &#x524D;&#x9762;&#x7684;<a href="../../img/assets/new_linked_window.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/new_linked_window.png" alt></a> &#xFF0C;&#x5728;&#x65B0;&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x4E2D;&#x6253;&#x5F00;&#x86CB;&#x767D;&#x7684;&#x70ED;&#x56FE;&#x3002;&#x8FD9;&#x6837;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x5E76;&#x6392;&#x67E5;&#x770B;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7EC4;&#x5B66;&#x7684;&#x70ED;&#x56FE;&#x3002;&#x540C;&#x65F6;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x5148;&#x67E5;&#x770B;&#x86CB;&#x767D;&#x70ED;&#x56FE;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x65B0;&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x4E2D;&#x6253;&#x5F00;&#x57FA;&#x56E0;&#x70ED;&#x56FE;&#x3002;</p>
+<div><figure><a href="../../img/assets/open%20protein%20layer%20in%20new%20linked%20window.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/open protein layer in new linked window.png" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/gene%20protein%20side%20by%20side.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/gene protein side by side.png" alt></a><figcaption></figcaption></figure></div>
+
+<p>&#x4ECE; SAW HTML &#x62A5;&#x544A;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x86CB;&#x767D;&#x8D28; <em><strong>IgM_Ms</strong></em> &#x548C;&#x5176;&#x6807;&#x8BB0;&#x57FA;&#x56E0; <em><strong>Ighm</strong></em> &#x5448;&#x73B0;&#x6B63;&#x76F8;&#x5173;&#x6027;&#xFF08;Pearson&apos;s r = 0.4957&#xFF09;&#xFF0C;&#x4E0E;&#x5148;&#x9A8C;&#x77E5;&#x8BC6;&#x4E00;&#x81F4; <a href="stereo-cite-t-ff.html#can-kao">[1]</a>&#x3002;&#x5728; StereoMap &#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x57FA;&#x56E0;/&#x86CB;&#x767D;&#x540D;&#x79F0;&#x540E;&#x9762;&#x7684;<a href="../../img/assets/link.svg" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/link.svg" alt></a>&#x56FE;&#x6807;&#x6765;&#x786E;&#x8BA4;&#x6807;&#x8BB0;&#x57FA;&#x56E0;&#x4E0E;&#x86CB;&#x767D;&#x8D28;&#x7684;&#x8868;&#x8FBE;&#x5206;&#x5E03;&#x662F;&#x5426;&#x76F8;&#x5173;&#x3002;&#x70B9;&#x51FB; <strong>IgM_Ms</strong> &#x86CB;&#x767D;&#x7684; <a href="../../img/assets/link.svg" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/link.svg" alt></a> &#x56FE;&#x6807;&#xFF0C;&#x5C06;&#x5728;&#x86CB;&#x767D;&#x7684;&#x7A97;&#x53E3;&#x4E2D;&#x663E;&#x793A;&#x5176;&#x86CB;&#x767D;&#x7684;&#x5206;&#x5E03;&#xFF0C;&#x540C;&#x65F6;&#x5728;&#x57FA;&#x56E0;&#x7A97;&#x53E3;&#x4E2D;&#x663E;&#x793A;&#x5BF9;&#x5E94;&#x57FA;&#x56E0; <em><strong>Ighm</strong></em> &#x7684;&#x5206;&#x5E03;&#x3002;</p>
+<div><figure><a href="../../img/assets/gene-protein%20correlation.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/gene-protein correlation.png" alt></a><figcaption><p>SAW HTML &#x62A5;&#x544A;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x6027;</p></figcaption></figure> <figure><a href="../../img/assets/spatial%20distribution%20of%20IgM_Ms%20and%20Ighm%20marker%20gene.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/spatial distribution of IgM_Ms and Ighm marker gene.png" alt></a><figcaption><p>Ighm&#xFF08;&#x5DE6;&#xFF1A;&#x57FA;&#x56E0;&#xFF09;&#x548C; IgM_Ms&#xFF08;&#x53F3;&#xFF1A;&#x86CB;&#x767D;&#x8D28;&#xFF09;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x5E03;</p></figcaption></figure></div>
+
+<p>&#x5982;&#x679C;&#x60A8;&#x60F3;&#x67E5;&#x770B;&#x591A;&#x4E2A;&#x57FA;&#x56E0;&#x4E0E;&#x86CB;&#x767D;&#x7684;&#x8054;&#x52A8;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x9762;&#x677F;&#x4E2D;&#x5355;&#x51FB;&#x57FA;&#x56E0;&#x6216;&#x8005;&#x86CB;&#x767D;&#x540D;&#x79F0;&#x524D;&#x9762;&#x7684;<a href="../../img/assets/checkboxOutline.svg" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/checkboxOutline.svg" alt></a>&#x9009;&#x62E9;&#x3002;</p>
+<figure><a href="../../img/assets/select%20multiple%20pairs.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/select multiple pairs.png" alt></a><figcaption><p>&#x591A;&#x4E2A;&#x57FA;&#x56E0;&#x4E0E;&#x86CB;&#x767D;&#x7684;&#x8054;&#x52A8;</p></figcaption></figure>
+
+<p>&#x5982;&#x679C;&#x60A8;&#x9009;&#x62E9;&#x7684; binszie &#x8FC7;&#x5927;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x770B;&#x6E05;&#x695A;&#x8868;&#x8FBE;&#x7684; pattern&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x7A97;&#x53E3;&#x5207;&#x6362; binsize&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x4F1A;&#x540C;&#x6B65;&#x5207;&#x6362;&#x3002;</p>
+<figure><a href="../../img/assets/change%20bin%20size%20for%20both%20window.png" data-lightbox="6e00bab8-cbc0-4d94-8828-19ea73986674" data-title><img src="../../img/assets/change bin size for both window.png" alt></a><figcaption></figcaption></figure>
+
+<h2 id="&#x53C2;&#x8003;&#x9644;&#x5F55;"><a name="&#x53C2;&#x8003;&#x9644;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x9644;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x9644;&#x5F55;</h2>
+<ol>
+<li>Niu, X., Swett, A. D., Sotelo, J., Jiao, M. S., Stewart, C. M., Potenski, C., Mielinis, P., Roelli, P., Stoeckius, M., &amp; Landau, D. A. (2023). Integration of whole transcriptome spatial profiling with protein markers. <em>Nature Biotechnology</em>, <em>41</em>(6), 788-793. <a href="https://doi.org/10.1038/s41587-022-01536-3" target="_blank">https://doi.org/10.1038/s41587-022-01536-3</a></li>
+</ol>
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-07-11 12:16:40
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="stereo-seq-n-ffpe.html" class="navigation navigation-prev " aria-label="Previous page: Stereo-seq N FFPE">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../algorithms/" class="navigation navigation-next " aria-label="Next page: &#x7B97;&#x6CD5;&#x539F;&#x7406;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Stereo-CITE T FF","level":"2.5.3","depth":2,"next":{"title":"算法原理","level":"3.1","depth":1,"path":"algorithms/README.md","ref":"algorithms/README.md","articles":[{"title":"图像处理算法","level":"3.1.1","depth":2,"path":"algorithms/image-processing-algorithms.md","ref":"algorithms/image-processing-algorithms.md","articles":[]}]},"previous":{"title":"Stereo-seq N FFPE","level":"2.5.2","depth":2,"path":"tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.md","ref":"tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","-insert-logo","logo","tbfed-pagefooter","hide-element","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html","anchor-to-full-links"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"logo":{"logo":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC","title":"StereoMap 用户手册 4.2 ","titleStyle":"font-weight:600"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"anchor-to-full-links":{"myConfigKey":"it's the default value","elements":["a"]},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tabs":{},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"StereoMap User Manual","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"tutorials/bioinformatics-analysis/stereo-cite-t-ff.md","mtime":"2025-07-11T04:16:40.668Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-11T06:03:46.802Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchor-to-full-links/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

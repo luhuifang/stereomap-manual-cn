@@ -1,0 +1,622 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>&#x5FEB;&#x901F;&#x5F00;&#x59CB; &#xB7; StereoMap User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tutorials/navigation.html">
+    
+    
+    <link rel="prev" href="download.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><div class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC" style><p class="book-title" style="font-weight:600">StereoMap &#x7528;&#x6237;&#x624B;&#x518C; 4.2 </p></div></div>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x6982;&#x89C8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="download.html">
+            
+                <a href="download.html">
+            
+                    
+                    &#x4E0B;&#x8F7D;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x59CB;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="tutorials/navigation.html">
+            
+                <a href="tutorials/navigation.html">
+            
+                    
+                    &#x4F7F;&#x7528;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="tutorials/navigation-for-visual-explore.html">
+            
+                <a href="tutorials/navigation-for-visual-explore.html">
+            
+                    
+                    &#x53EF;&#x89C6;&#x5316;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="tutorials/navigation-for-image-processing/">
+            
+                <a href="tutorials/navigation-for-image-processing/">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="tutorials/navigation-for-image-processing/nuclei-staining-image.html">
+            
+                <a href="tutorials/navigation-for-image-processing/nuclei-staining-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="tutorials/navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                <a href="tutorials/navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272; + &#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="tutorials/navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                <a href="tutorials/navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                    
+                    H&amp;E&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="tutorials/navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                <a href="tutorials/navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                    
+                    &#x53C2;&#x6570;&#x53EF;&#x8C03;&#x7684;&#x534A;&#x81EA;&#x52A8;&#x5DE5;&#x5177;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="tutorials/navigation-for-tools/">
+            
+                <a href="tutorials/navigation-for-tools/">
+            
+                    
+                    &#x5C0F;&#x5DE5;&#x5177;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="tutorials/navigation-for-tools/stereo-seq-image-qc.html">
+            
+                <a href="tutorials/navigation-for-tools/stereo-seq-image-qc.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="tutorials/bioinformatics-analysis/">
+            
+                <a href="tutorials/bioinformatics-analysis/">
+            
+                    
+                    &#x751F;&#x4FE1;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="tutorials/bioinformatics-analysis/stereo-seq-t-ff.html">
+            
+                <a href="tutorials/bioinformatics-analysis/stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.html">
+            
+                <a href="tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="tutorials/bioinformatics-analysis/stereo-cite-t-ff.html">
+            
+                <a href="tutorials/bioinformatics-analysis/stereo-cite-t-ff.html">
+            
+                    
+                    Stereo-CITE T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="algorithms/">
+            
+                <a href="algorithms/">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x539F;&#x7406;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="algorithms/image-processing-algorithms.html">
+            
+                <a href="algorithms/image-processing-algorithms.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x7B97;&#x6CD5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x6280;&#x672F;&#x652F;&#x6301;</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="support-pages/support.html">
+            
+                <a href="support-pages/support.html">
+            
+                    
+                    &#x5EFA;&#x8BAE;&#x548C;&#x652F;&#x6301;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="support-pages/datasets.html">
+            
+                <a href="support-pages/datasets.html">
+            
+                    
+                    &#x6570;&#x636E;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="support-pages/software-and-kit-compatibility.html">
+            
+                <a href="support-pages/software-and-kit-compatibility.html">
+            
+                    
+                    &#x9002;&#x914D;&#x517C;&#x5BB9;&#x7684;&#x8F6F;&#x4EF6;&#x548C;&#x8BD5;&#x5242;&#x76D2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x7248;&#x672C;&#x8BF4;&#x660E;</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="release-notes/release-notes-for-stereomap.html">
+            
+                <a href="release-notes/release-notes-for-stereomap.html">
+            
+                    
+                    StereoMap &#x7248;&#x672C;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">&#x5FEB;&#x901F;&#x5F00;&#x59CB;</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x5F00;&#x59CB;"><b></b>&#x5FEB;&#x901F;&#x5F00;&#x59CB;</a></li><ul><li><span class="title-icon "></span><a href="#stereomap-&#x662F;&#x4EC0;&#x4E48;-"><b></b>StereoMap &#x662F;&#x4EC0;&#x4E48;? </a></li><li><span class="title-icon "></span><a href="#stereomap-&#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><b></b>StereoMap &#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6; </a></li><ul><li><span class="title-icon "></span><a href="#&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><b></b>&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6; </a></li><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><b></b>&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6; </a></li></ul></ul></ul></div><a href="#&#x5FEB;&#x901F;&#x5F00;&#x59CB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5FEB;&#x901F;&#x5F00;&#x59CB;"><a name="&#x5FEB;&#x901F;&#x5F00;&#x59CB;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x5F00;&#x59CB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FEB;&#x901F;&#x5F00;&#x59CB;</h1>
+<h2 id="stereomap-&#x662F;&#x4EC0;&#x4E48;-"><a name="stereomap-&#x662F;&#x4EC0;&#x4E48;-" class="anchor-navigation-ex-anchor" href="#stereomap-&#x662F;&#x4EC0;&#x4E48;-"><i class="fa fa-link" aria-hidden="true"></i></a>StereoMap &#x662F;&#x4EC0;&#x4E48;? <a href="#stereomap-shi-shen-me" id="stereomap-shi-shen-me"></a></h2>
+<p>StereoMap &#x662F;&#x4E00;&#x4E2A; 0 &#x4EE3;&#x7801;&#x7684;&#x684C;&#x9762;&#x7AEF;&#x8F6F;&#x4EF6;&#xFF0C;&#x652F;&#x6301; Stereo-seq &#x6570;&#x636E;&#x5206;&#x6790;&#x53CA;&#x4EA4;&#x4E92;&#x5F0F;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x89E3;&#x6790;&#x65F6;&#x7A7A;&#x82AF;&#x7247;&#x6D4B;&#x5E8F;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7A7A;&#x95F4;&#x6761;&#x5F62;&#x7801;&#xFF0C;&#x8FD8;&#x539F;&#x6BCF;&#x4E2A;&#x751F;&#x7269;&#x5206;&#x5B50;&#x5728;&#x7EC4;&#x7EC7;&#x4E2D;&#x7684;&#x7A7A;&#x95F4;&#x5B9A;&#x4F4D;&#x548C;&#x8868;&#x8FBE;&#x6C34;&#x5E73;&#xFF0C;&#x5206;&#x6790;&#x5355;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x57FA;&#x56E0;&#x5728;&#x539F;&#x59CB;&#x5207;&#x7247;&#x4E2D;&#x7684;&#x5206;&#x5B50;&#x8868;&#x8FBE;&#xFF0C;&#x5B9E;&#x73B0;&#x4E9A;&#x7EC6;&#x80DE;&#x5206;&#x8FA8;&#x7387;&#x7684;&#x53EF;&#x89C6;&#x5316;&#xFF0C;&#x5E76;&#x6DF1;&#x5165;&#x53D1;&#x6398;&#x6F5C;&#x5728;&#x7684;&#x751F;&#x7269;&#x5B66;&#x610F;&#x4E49;&#x3002;</p>
+<p>&#x5728; Stereo-seq &#x6570;&#x636E;&#x5206;&#x6790;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E0A;&#x6E38;&#x53CA;&#x4E0B;&#x6E38;&#x7684;&#x5206;&#x6790;&#x6B65;&#x9AA4;&#x4E2D;&#x90FD;&#x4F1A;&#x7528;&#x5230; StereoMap&#x3002;</p>
+<figure><a href="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ee2XDYSKoV428mkQkc5d_workflow.webp" data-lightbox="3015b641-890d-40e9-a131-979fbe46b3c5" data-title><img src="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_ee2XDYSKoV428mkQkc5d_workflow.webp" alt></a><figcaption></figcaption></figure>
+
+<p>&#x5728;&#x4E0A;&#x6E38;&#x5206;&#x6790;&#x4E2D;&#xFF0C;StereoMap &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#xFF1A;<a href="tutorials/navigation-for-tools/stereo-seq-image-qc.html">&#x56FE;&#x50CF; QC</a> &#x5C0F;&#x5DE5;&#x5177;&#xFF0C;&#x8BC4;&#x4F30;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FD0;&#x884C; SAW &#x7684;&#x5168;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#xFF1B;<a href="tutorials/navigation-for-image-processing">&#x56FE;&#x50CF;&#x5904;&#x7406;</a>&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x50CF;&#x505A;&#x624B;&#x52A8;&#x5904;&#x7406;&#x540E;&#x63A5;&#x5165; SAW &#x3002;&#x5728;&#x4E0B;&#x6E38;&#x5206;&#x6790;&#x4E2D;&#xFF0C;StereoMap &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4EA4;&#x4E92;&#x5F0F;<a href="tutorials/navigation-for-visual-explore.html">&#x53EF;&#x89C6;&#x5316;</a>&#x548C;&#x6570;&#x636E;&#x63A2;&#x7D22;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<figure><a href="img/assets/Starting.png" data-lightbox="3015b641-890d-40e9-a131-979fbe46b3c5" data-title><img src="img/assets/Starting.png" alt></a><figcaption></figcaption></figure>
+
+<ul>
+<li><a href="tutorials/navigation-for-visual-explore.html"><strong>&#x53EF;&#x89C6;&#x5316;&#x6307;&#x5357;</strong></a>&#xFF1A;&#x63A2;&#x7D22; Stereo-seq &#x6570;&#x636E;&#x7684;&#x5173;&#x952E;&#x6A21;&#x5757;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4EA4;&#x4E92;&#x5F0F;&#x5730;&#x7814;&#x7A76;&#x7EC4;&#x7EC7;&#x5185;&#x4E0D;&#x540C; bin &#x6216;&#x8005; cell &#x4E0B;&#x7684;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x56FE;&#x50CF;&#x6216;&#x591A;&#x7EC4;&#x5B66;&#x6570;&#x636E;&#x4E00;&#x540C;&#x6216;&#x5E76;&#x6392;&#x5C55;&#x793A;&#xFF0C;&#x4E3A;&#x4E0B;&#x6E38;&#x5206;&#x6790;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x53C2;&#x8003;&#x4FE1;&#x606F;&#x3002;</li>
+<li><a href="tutorials/navigation-for-image-processing"><strong>&#x56FE;&#x50CF;&#x5904;&#x7406;&#x6307;&#x5357;</strong></a>&#xFF1A;&#x56FE;&#x50CF;&#x5904;&#x7406;&#x7684;&#x6838;&#x5FC3;&#x6A21;&#x5757;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x5C06;&#x56FE;&#x50CF;&#x4E0E;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x5BF9;&#x9F50;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x56FE;&#x753B;&#x5DE5;&#x5177;&#x7F16;&#x8F91;&#x56FE;&#x50CF;&#x7684; Mask &#x6216;&#x8005;&#x5BFC;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x5DE5;&#x5177;&#x751F;&#x6210;&#x7684; Mask&#xFF0C;&#x624B;&#x52A8;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x53EF;&#x4EE5;&#x5C06;&#x624B;&#x52A8;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x5230; SAW &#x505A;&#x540E;&#x7EED;&#x5206;&#x6790;&#x3002;</li>
+<li><a href="tutorials/navigation-for-tools"><strong>&#x5C0F;&#x5DE5;&#x5177;&#x6307;&#x5357;</strong></a>&#xFF1A; &#x56FE;&#x50CF;&#x5904;&#x7406;&#x548C; Stereo-seq &#x6570;&#x636E;&#x96C6;&#x6240;&#x9700;&#x7684;&#x5206;&#x6790;&#x5C0F;&#x5DE5;&#x5177;&#x3002;<ul>
+<li><a href="tutorials/navigation-for-tools/stereo-seq-image-qc.html">&#x56FE;&#x50CF;&#x8D28;&#x63A7;- Image QC</a>&#xFF1A;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;&#x7684;&#x8D28;&#x91CF;&#xFF0C;&#x786E;&#x8BA4;&#x5728; SAW &#x4E2D;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="stereomap-&#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><a name="stereomap-&#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6;-" class="anchor-navigation-ex-anchor" href="#stereomap-&#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><i class="fa fa-link" aria-hidden="true"></i></a>StereoMap &#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6; <a href="#stereomap-de-shu-ru-wen-jian" id="stereomap-de-shu-ru-wen-jian"></a></h2>
+<p>&#x5982;&#x4E0B;&#x5C55;&#x793A;&#x4E86;&#x56FE;&#x50CF;&#x5904;&#x7406;&#x548C;&#x53EF;&#x89C6;&#x5316;&#x6A21;&#x5757;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x548C; SAW &#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><a name="&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6;-" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x89C6;&#x5316;&#x8F93;&#x5165;&#x6587;&#x4EF6; <a href="#ke-shi-hua-shu-ru-wen-jian" id="ke-shi-hua-shu-ru-wen-jian"></a></h3>
+<p>&#x4E0B;&#x8F7D;&#x5E76;&#x89E3;&#x538B;&#x7F29; SAW &#x8F93;&#x51FA;&#x7684;&#x538B;&#x7F29;&#x5305;&#x6587;&#x4EF6;(<code>visualization.tar.gz</code>)&#xFF0C;&#x5C06;&#x4F1A;&#x627E;&#x5230;&#x4E00;&#x4E2A;<code>.stereo</code>&#x7684;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8BE5;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x53EF;&#x89C6;&#x5316;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E86; SAW &#x8F93;&#x51FA;&#x7684;<code>visualization.tar.gz</code> &#x6587;&#x4EF6;&#x4E2D;&#x7528;&#x4E8E;&#x53EF;&#x89C6;&#x5316;&#x5C55;&#x793A;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x6620;&#x5C04;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>.stereo</code>&#x7684;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x53EF;&#x89C6;&#x5316;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8BF7;&#x60A8;&#x52A1;&#x5FC5;&#x9075;&#x5FAA;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x89C6;&#x5316;&#x5C55;&#x793A;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4E0E;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x90FD;&#x5728;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x4E2D;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#xFF0C;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4FDD;&#x6301; SAW &#x8F93;&#x51FA;&#x7684;&#x539F;&#x59CB;&#x76EE;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x6216;&#x6587;&#x4EF6;&#x540D;&#x5DF2;&#x66F4;&#x6539;&#xFF0C;&#x8BF7;&#x5207;&#x8BB0;&#x4E00;&#x5B9A;&#x8981;&#x4FEE;&#x6539;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;</li>
+<li><a href="tutorials/navigation-for-visual-explore.html">&#x53EF;&#x89C6;&#x5316;</a>&#x6A21;&#x5757;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#xFF08;&#x77E9;&#x9635;&#xFF09;&#x6587;&#x4EF6;&#xFF08;<code>.gef</code>&#xFF09;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x56FE;&#x50CF;&#x91D1;&#x5B57;&#x5854;&#x6587;&#x4EF6;&#xFF08;<code>.rpi</code>&#xFF09;&#x53EF;&#x7528;&#x3002;</li>
+</ul>
+<table><thead><tr><th width="234">&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;</th><th>&#x63CF;&#x8FF0;</th></tr></thead><tbody><tr><td><code>.stereo</code></td><td><p>&#x662F; JSON &#x683C;&#x5F0F;&#x7684;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x5B9E;&#x9A8C;&#x4FE1;&#x606F;&#x3001;&#x6D41;&#x7A0B;&#x4FE1;&#x606F;&#x3001;&#x57FA;&#x672C;&#x7684;&#x5206;&#x6790;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x53CA; SAW &#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;&#x548C;&#x7A7A;&#x95F4;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x6620;&#x5C04;&#x4FE1;&#x606F;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x6587;&#x4EF6;&#x3002;</p><p><em>&#x89E3;&#x538B; SAW &#x8F93;&#x51FA;&#x7684;&#x538B;&#x7F29;&#x5305;&#x6587;&#x4EF6;(<code>visualization.tar.gz</code>)&#xFF0C;&#x5C06;&#x4F1A;&#x627E;&#x5230;&#x4E00;&#x4E2A;<code>.stereo</code>&#x7684;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#xFF0C;StereoMap &#x652F;&#x6301;&#x6253;&#x5F00; SAW &#x6D41;&#x7A0B;&#x8F93;&#x51FA;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x6587;&#x4EF6;&#x3002;</em></p></td></tr><tr><td><code>.gef</code></td><td>&#x7528;&#x4E8E;&#x53EF;&#x89C6;&#x5316;&#x7684;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#xFF08;&#x77E9;&#x9635;&#xFF09;&#x6587;&#x4EF6;&#xFF0C;&#x662F; HDF5 &#x683C;&#x5F0F;&#x3002;&#x5305;&#x542B;&#x6BCF;&#x4E2A; spot &#x70B9;&#x7684;&#x6BCF;&#x4E2A;&#x57FA;&#x56E0;&#x7684; MID &#x7684;&#x4E2A;&#x6570;&#x3002;Spot &#x70B9;&#x662F;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x6B63;&#x65B9;&#x5F62;&#x5F62;&#x72B6;&#xFF0C;&#x57FA;&#x56E0;&#x5728;&#x6BCF;&#x4E2A; spot &#x70B9;&#x7684;&#x8868;&#x8FBE;&#x91CF;&#x5728;&#x8BE5;&#x6B63;&#x65B9;&#x5F62;&#x4E2D;&#x7684;&#x7D2F;&#x8BA1;&#x52A0;&#x548C;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x89C6;&#x5316;&#x7684;<code>.gef</code>&#x6587;&#x4EF6;&#x5305;&#x542B; bin1&#x3001;bin5&#x3001;bin10&#x3001;bin20&#x3001;bin50&#x3001;bin100&#x548C; bin200&#x7684;&#x70B9;&#x3002;<br><a href="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_my7dfb1Nh0ZH7xVs7z70_bin_size_example.webp" data-lightbox="3015b641-890d-40e9-a131-979fbe46b3c5" data-title><img src="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_my7dfb1Nh0ZH7xVs7z70_bin_size_example.webp" alt></a></td></tr><tr><td><code>.cellbin.gef</code></td><td><p>&#x7528;&#x4E8E;&#x53EF;&#x89C6;&#x5316;&#x7684;&#x7EC6;&#x80DE;&#x7279;&#x5F81;&#x7684;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#xFF08;&#x77E9;&#x9635;&#xFF09;&#x6587;&#x4EF6;&#xFF0C;&#x662F; HDF5 &#x683C;&#x5F0F;&#x3002;&#x5B83;&#x5305;&#x542B;&#x6BCF;&#x4E2A;&#x7EC6;&#x80DE;&#x7684;&#x9762;&#x79EF;&#x548C;&#x7A7A;&#x95F4;&#x4F4D;&#x7F6E;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EC6;&#x80DE;&#x4E2D;&#x6BCF;&#x4E2A;&#x57FA;&#x56E0;&#x7684; MID &#x7684;&#x4E2A;&#x6570;&#x4EE5;&#x53CA;&#x6BCF;&#x4E2A;&#x7EC6;&#x80DE;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#x7FA4;&#x4FE1;&#x606F;&#x3002;&#x5728; <code>.cellbin.gef</code> &#x4E2D;&#xFF0C;&#x6700;&#x5C0F;&#x7684;&#x5355;&#x5143;&#x4E3A;&#x7EC6;&#x80DE;&#x3002;</p><p><a href="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_UOj2rqtoHLn86qXl8ElX_cell_bin_example.webp" data-lightbox="3015b641-890d-40e9-a131-979fbe46b3c5" data-title><img src="img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_UOj2rqtoHLn86qXl8ElX_cell_bin_example.webp" alt></a></p><p><em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;SAW&#x8FD0;&#x884C;&#x6709;&#x56FE;&#x7684;&#x6D41;&#x7A0B;</em></p></td></tr><tr><td><code>.rpi</code></td><td><p><code>.rpi</code>&#x6587;&#x4EF6;&#x4EE5;&#x91D1;&#x5B57;&#x5854;&#x5F62;&#x5F0F;&#x4FDD;&#x5B58;&#x591A;&#x79CD;&#x5206;&#x8FA8;&#x7387;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x4E3B;&#x8981;&#x4E3A;&#x66F4;&#x597D;&#x7684;&#x505A;&#x53EF;&#x89C6;&#x5316;&#x5C55;&#x793A;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x56FE;&#x50CF;&#x88AB;&#x964D;&#x91C7;&#x6837;&#x591A;&#x4E2A;&#x5206;&#x8FA8;&#x7387;&#x7684;&#x56FE;&#x5C42;&#xFF0C;&#x6309;&#x7167; 256*256 &#x7684;&#x50CF;&#x7D20;&#x8FDB;&#x884C;&#x5207;&#x5272;&#x5E76;&#x5C06;&#x56FE;&#x50CF;&#x788E;&#x7247;&#x8FDB;&#x884C;&#x4FDD;&#x5B58;&#x3002;&#x82E5;&#x5728;&#x5F53;&#x524D;&#x5206;&#x8FA8;&#x7387;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;&#x5C0F;&#x4E8E; 256&#x2179;256&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x5207;&#x5272;&#x3002;SAW &#x751F;&#x6210;&#x7684;<code>rpi</code>&#x6587;&#x4EF6;&#x6309;&#x7167;&#x67D3;&#x8272;&#x7C7B;&#x578B;-&gt;&#x56FE;&#x50CF;&#x7C7B;&#x578B;-&gt;&#x5206;&#x8FA8;&#x7387;&#x7684;&#x987A;&#x5E8F;&#x5E73;&#x94FA;&#x5C55;&#x793A;&#xFF0C;&#x5176;&#x4E2D;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x5305;&#x62EC;ssDNA&#x3001;DAPI&#x3001;H&amp;E&#x6216;&#x8005;IF&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x6BCF;&#x4E2A;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x5305;&#x62EC;&#x914D;&#x51C6;&#x56FE;&#x50CF;&#x3001;&#x7EC4;&#x7EC7; Mask &#x548C;&#x7EC6;&#x80DE; Mask&#xFF0C;&#x6BCF;&#x4E2A;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x4E0B;&#x5BF9;&#x5E94;&#x6709; bin 2&#x3001;bin 10&#x3001;bin 50 &#x548C; bin 100 &#x5206;&#x8FA8;&#x7387;&#x7684;&#x6570;&#x636E;&#x3002;</p><p><a href="img/assets/image%20(1).png" data-lightbox="3015b641-890d-40e9-a131-979fbe46b3c5" data-title><img src="img/assets/image (1).png" alt></a></p><p><em>&#x53EF;&#x4EE5;&#x5728; StereoMap &#x7684;</em><a href="tutorials/navigation-for-visual-explore.html"><em>&#x53EF;&#x89C6;&#x5316;</em></a><em>&#x6A21;&#x5757;&#x6253;&#x5F00;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x3002;</em></p></td></tr><tr><td><code>&lt;SN&gt;*.bin&lt;N&gt;_&lt;leiden_res&gt;.h5ad</code></td><td><code>.h5ad</code>&#x6587;&#x4EF6;&#x4EE5; AnnData &#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x8F6C;&#x5F55;&#x7EC4;&#x6216;&#x86CB;&#x767D;&#x7EC4;&#x7684;&#x805A;&#x7C7B;&#x4FE1;&#x606F;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;<code>&lt;SN&gt;.bin&lt;N&gt;_&lt;leiden_res&gt;.h5ad</code>&#x7684;&#x6587;&#x4EF6;&#x53EA;&#x5141;&#x8BB8;&#x5B58;&#x50A8;&#x4E00;&#x4E2A; bin &#x5927;&#x5C0F;&#x7684;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;&#x5728;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;<code>&lt;SN&gt;</code> &#x4EE3;&#x8868; Stereo-seq &#x82AF;&#x7247;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;<code>&lt;N&gt;</code> &#x4EE3;&#x8868; bin &#x5927;&#x5C0F;&#xFF0C;<code>&lt;leiden_res&gt;</code> &#x4EE3;&#x8868; Leiden &#x7684;&#x5206;&#x7FA4;&#x9897;&#x7C92;&#x5EA6;&#x3002;&#x5728; SAW &#x6807;&#x51C6;&#x5206;&#x6790;&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x7A7A;&#x95F4;&#x805A;&#x7C7B;&#x5206;&#x6790;&#x4F7F;&#x7528;&#x7684; binsize &#x4E3A; 200&#xFF0C;Leiden &#x5206;&#x7FA4;&#x9897;&#x7C92;&#x5EA6;&#x4E3A; 1.0 &#x3002;&#x5982;&#x679C;<code>*</code>&#x540E;&#x63A5;&#x7684;&#x662F;<code>.protein</code>&#xFF0C;&#x8868;&#x793A;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#x662F;&#x6839;&#x636E;&#x86CB;&#x767D;&#x77E9;&#x9635;&#x5F97;&#x5230;&#x3002;</td></tr><tr><td><code>&lt;SN&gt;*.cellbin_&lt;leiden_res&gt;*.h5ad</code></td><td><p><code>.h5ad</code>&#x6587;&#x4EF6;&#x4EE5; AnnData &#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#x7EC6;&#x80DE;&#x7684;&#x805A;&#x7C7B;&#x4FE1;&#x606F;&#x3002;&#x5728;</p><p>&#x5728;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C; <code>&lt;SN&gt;</code> &#x4EE3;&#x8868; Stereo-seq &#x82AF;&#x7247;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;<code>&lt;leiden_res&gt;</code> &#x4EE3;&#x8868; Leiden &#x7684;&#x5206;&#x7FA4;&#x9897;&#x7C92;&#x5EA6;&#xFF0C;<code>*</code> &#x8868;&#x793A;&#x53EF;&#x9009;&#x5185;&#x5BB9;&#xFF0C;&#x6307;&#x662F;&#x5426;&#x505A;&#x4E86;&#x7EC6;&#x80DE;&#x4FEE;&#x6B63;&#x3002;&#x5982;&#x679C;<code>*</code> &#x7F3A;&#x5931;&#xFF0C;<code>.h5ad</code> &#x6587;&#x4EF6;&#x5C06;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x57FA;&#x4E8E;&#x7EC6;&#x80DE;&#x6838;&#x8986;&#x76D6;&#x533A;&#x57DF;&#x7684;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#xFF1B;&#x5982;&#x679C; <code>*</code> &#x88AB; <code>.adjusted</code> &#x66FF;&#x6362;&#xFF0C;<code>.h5ad</code> &#x6587;&#x4EF6;&#x5C06;&#x8BB0;&#x5F55;&#x57FA;&#x4E8E;&#x7EC6;&#x80DE;&#x6838;&#x4FEE;&#x6B63;&#x540E;&#x7684;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#xFF0C;&#x4FEE;&#x6B63;&#x7684;&#x903B;&#x8F91;&#x4E3A;&#xFF1A;&#x5728;&#x4FDD;&#x8BC1;&#x4E24;&#x4E2A;&#x7EC6;&#x80DE;&#x4E0D;&#x91CD;&#x53E0;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x5728;&#x539F;&#x6765;&#x7EC6;&#x80DE;&#x6838;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5916;&#x6269;10 &#x4E2A;&#x50CF;&#x7D20;&#x3002;&#x5728; SAW &#x6807;&#x51C6;&#x5206;&#x6790;&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x7EC6;&#x80DE;&#x805A;&#x7C7B;&#x5206;&#x6790;&#x4F7F;&#x7528; 1.0 &#x7684; Leiden &#x5206;&#x7FA4;&#x9897;&#x7C92;&#x5EA6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x5982;&#x679C;<code>*</code>&#x540E;&#x63A5;&#x7684;&#x662F;<code>.protein</code>&#xFF0C;&#x8868;&#x793A;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#x662F;&#x6839;&#x636E;&#x86CB;&#x767D;&#x77E9;&#x9635;&#x5F97;&#x5230;&#x3002;</p><p></p><p><em>SAW&#x7684;&#x6807;&#x51C6;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x4E2D;&#x53EA;&#x6709;&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x624D;&#x4F1A;&#x751F;&#x6210;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x7EC6;&#x80DE;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x662F;&#x4ECE;&#x663E;&#x5FAE;&#x955C;&#x7684;&#x56FE;&#x50CF;&#x4E2D;&#x83B7;&#x53D6;&#x7684;&#x3002;</em></p></td></tr></tbody></table>
+
+<h3 id="&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><a name="&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;-" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6; <a href="#tu-xiang-chu-li-shu-ru-wen-jian" id="tu-xiang-chu-li-shu-ru-wen-jian"></a></h3>
+<p>SAW &#x5D4C;&#x5165;&#x4E86;&#x81EA;&#x52A8;&#x7684;&#x56FE;&#x50CF;&#x5904;&#x7406;&#x7B97;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x56FE;&#x50CF;&#x62FC;&#x63A5;&#xFF08;&#x5C0F;&#x56FE; FOV &#x62FC;&#x63A5;&#x6210;&#x5927;&#x56FE;&#xFF09;&#x3001;&#x7EC4;&#x7EC7;&#x5206;&#x5272;&#x3001;&#x7EC6;&#x80DE;&#x5206;&#x5272;&#x53CA;&#x8BC6;&#x522B; Stereo-seq &#x82AF;&#x7247;&#x4E0A;&#x7684;&#x8F68;&#x8FF9;&#x7EBF;&#xFF08;tracklines&#xFF09;&#xFF0C;&#x53EF;&#x5C06;&#x56FE;&#x50CF;&#x4E0E;&#x5177;&#x6709;&#x76F8;&#x540C;&#x8F68;&#x8FF9;&#x7EBF;&#x7684;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x5BF9;&#x9F50;&#x3002;&#x5BF9;&#x4E8E;&#x7EC4;&#x7EC7;/&#x7EC6;&#x80DE;&#x8FB9;&#x754C;&#x6A21;&#x7CCA;&#x6216;&#x8005;&#x7B97;&#x6CD5;&#x65E0;&#x6CD5;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5230;&#x8F68;&#x8FF9;&#x7EBF;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x60A8;&#x624B;&#x52A8;&#x5708;&#x9009;&#x7EC4;&#x7EC7;/&#x7EC6;&#x80DE;&#x8F6E;&#x5ED3;&#x6216;&#x8005;&#x5BF9;&#x9F50;&#x3002;</p>
+<p><a href="tutorials/navigation-for-image-processing">&#x56FE;&#x50CF;&#x5904;&#x7406;</a>&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x624B;&#x52A8;&#x5904;&#x7406;&#x56FE;&#x50CF;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x64CD;&#x4F5C;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x624B;&#x52A8;&#x5708;&#x9009;&#x7EC4;&#x7EC7;/&#x7EC6;&#x80DE;&#x533A;&#x57DF;&#x3001;&#x5BFC;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x5206;&#x5272;&#x5DE5;&#x5177;&#x7684;Mask &#x7ED3;&#x679C;&#x4EE5;&#x53CA;&#x624B;&#x52A8;&#x5C06;&#x56FE;&#x50CF;&#x4E0E;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x5BF9;&#x9F50;&#x7B49;&#x529F;&#x80FD;&#x3002;&#x624B;&#x52A8;&#x56FE;&#x50CF;&#x5904;&#x7406;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x5305;&#x62EC;&#xFF1A;&#x57FA;&#x4E8E;&#x663E;&#x5FAE;&#x955C;&#x62CD;&#x6444;&#x7684;&#x539F;&#x59CB; TIFF &#x5927;&#x56FE;&#x56FE;&#x50CF;&#x6216;&#x8005;&#x8FD0;&#x884C; SAW &#x81EA;&#x52A8;&#x56FE;&#x50CF;&#x7B97;&#x6CD5;&#x540E;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<table><thead><tr><th width="140">&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;</th><th>&#x63CF;&#x8FF0;</th></tr></thead><tbody><tr><td><code>.tar.gz</code></td><td><p>&#x5B58;&#x50A8;&#x539F;&#x59CB;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;&#x53CA;&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x7684;&#x4FE1;&#x606F;&#x3002;</p><p><br><a href="tutorials/navigation-for-tools">&#x5C0F;&#x5DE5;&#x5177;</a>-&gt;<a href="tutorials/navigation-for-tools/stereo-seq-image-qc.html">&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</a> &#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x3002;</p></td></tr><tr><td><code>.tif</code> &#x6216;&#x8005;<code>.tiff</code></td><td>TIFF &#x683C;&#x5F0F;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x3002;<br><br><em>&#x663E;&#x5FAE;&#x955C;&#x8F93;&#x51FA;&#x7684;&#x5927;&#x56FE;&#x3002;</em></td></tr><tr><td><code>.stereo</code></td><td><p>JSON &#x683C;&#x5F0F;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B; SAW &#x81EA;&#x52A8;&#x5206;&#x6790;&#x7684;&#x56FE;&#x50CF;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x53CA;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x6587;&#x4EF6;&#x3002;<br></p><p><em><code>.stereo</code>&#x7684;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x89E3;&#x538B; SAW &#x8F93;&#x51FA;&#x7684;&#x538B;&#x7F29;&#x5305;&#xFF08;<code>visualization.tar.gz</code>&#xFF09;&#x627E;&#x5230;&#xFF0C;&#x5982;&#x679C;<code>.stereo</code>&#x4F5C;&#x4E3A;&#x56FE;&#x50CF;&#x5904;&#x7406;&#x6A21;&#x5757;&#x7684;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x56FE;&#x50CF;&#xFF08;<code>.tar.gz</code>&#xFF09;&#x6587;&#x4EF6;&#x548C;&#x8868;&#x8FBE;&#x77E9;&#x9635; (<code>.gef</code>) &#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;SAW &#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;&#x538B;&#x7F29;&#x6587;&#x4EF6;<code>.tar.gz</code>&#x8BB0;&#x5F55;&#x4E86;&#x81EA;&#x52A8;&#x7B97;&#x6CD5;&#x5206;&#x5272;&#x548C;&#x914D;&#x51C6;&#x7684;&#x7ED3;&#x679C;&#x3002;</em></p></td></tr></tbody></table>
+
+<p><strong>&#x56FE;&#x50CF;&#x5904;&#x7406;</strong>&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x56E0;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E0D;&#x540C;&#x800C;&#x6709;&#x6240;&#x5DEE;&#x5F02;&#xFF0C;&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x53EF;&#x53C2;&#x8003;&#xFF1A;<a href="tutorials/navigation-for-image-processing">&#x56FE;&#x50CF;&#x5904;&#x7406;&#x6307;&#x5357;</a>&#x3002;</p>
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-07-11 12:16:40
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="download.html" class="navigation navigation-prev " aria-label="Previous page: &#x4E0B;&#x8F7D;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tutorials/navigation.html" class="navigation navigation-next " aria-label="Next page: &#x4F7F;&#x7528;&#x6307;&#x5357;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.3","depth":1,"next":{"title":"使用指南","level":"2.1","depth":1,"path":"tutorials/navigation.md","ref":"tutorials/navigation.md","articles":[]},"previous":{"title":"下载","level":"1.2","depth":1,"path":"download.md","ref":"download.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","-insert-logo","logo","tbfed-pagefooter","hide-element","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html","anchor-to-full-links"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"logo":{"logo":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC","title":"StereoMap 用户手册 4.2 ","titleStyle":"font-weight:600"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"anchor-to-full-links":{"myConfigKey":"it's the default value","elements":["a"]},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tabs":{},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"StereoMap User Manual","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"getting-started.md","mtime":"2025-07-11T04:16:40.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-11T06:03:46.802Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchor-to-full-links/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

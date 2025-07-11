@@ -1,0 +1,766 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC &#xB7; StereoMap User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../bioinformatics-analysis/">
+    
+    
+    <link rel="prev" href="./">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><div class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC" style><p class="book-title" style="font-weight:600">StereoMap &#x7528;&#x6237;&#x624B;&#x518C; 4.2 </p></div></div>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x6982;&#x89C8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../download.html">
+            
+                <a href="../../download.html">
+            
+                    
+                    &#x4E0B;&#x8F7D;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x59CB;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../navigation.html">
+            
+                <a href="../navigation.html">
+            
+                    
+                    &#x4F7F;&#x7528;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../navigation-for-visual-explore.html">
+            
+                <a href="../navigation-for-visual-explore.html">
+            
+                    
+                    &#x53EF;&#x89C6;&#x5316;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../navigation-for-image-processing/">
+            
+                <a href="../navigation-for-image-processing/">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../navigation-for-image-processing/nuclei-staining-image.html">
+            
+                <a href="../navigation-for-image-processing/nuclei-staining-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                <a href="../navigation-for-image-processing/nuclei-staining-+-immunofluorescence-image.html">
+            
+                    
+                    &#x6838;&#x67D3;&#x8272; + &#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                <a href="../navigation-for-image-processing/hematoxylin-and-eosin-staining-image.html">
+            
+                    
+                    H&amp;E&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                <a href="../navigation-for-image-processing/parameter-adjustable-semi-automatic-tool.html">
+            
+                    
+                    &#x53C2;&#x6570;&#x53EF;&#x8C03;&#x7684;&#x534A;&#x81EA;&#x52A8;&#x5DE5;&#x5177;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x5C0F;&#x5DE5;&#x5177;&#x6307;&#x5357;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.1" data-path="stereo-seq-image-qc.html">
+            
+                <a href="stereo-seq-image-qc.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../bioinformatics-analysis/">
+            
+                <a href="../bioinformatics-analysis/">
+            
+                    
+                    &#x751F;&#x4FE1;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../bioinformatics-analysis/stereo-seq-t-ff.html">
+            
+                <a href="../bioinformatics-analysis/stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../bioinformatics-analysis/stereo-seq-n-ffpe.html">
+            
+                <a href="../bioinformatics-analysis/stereo-seq-n-ffpe.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../bioinformatics-analysis/stereo-cite-t-ff.html">
+            
+                <a href="../bioinformatics-analysis/stereo-cite-t-ff.html">
+            
+                    
+                    Stereo-CITE T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../algorithms/">
+            
+                <a href="../../algorithms/">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x539F;&#x7406;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../algorithms/image-processing-algorithms.html">
+            
+                <a href="../../algorithms/image-processing-algorithms.html">
+            
+                    
+                    &#x56FE;&#x50CF;&#x5904;&#x7406;&#x7B97;&#x6CD5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x6280;&#x672F;&#x652F;&#x6301;</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../support-pages/support.html">
+            
+                <a href="../../support-pages/support.html">
+            
+                    
+                    &#x5EFA;&#x8BAE;&#x548C;&#x652F;&#x6301;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../support-pages/datasets.html">
+            
+                <a href="../../support-pages/datasets.html">
+            
+                    
+                    &#x6570;&#x636E;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../support-pages/software-and-kit-compatibility.html">
+            
+                <a href="../../support-pages/software-and-kit-compatibility.html">
+            
+                    
+                    &#x9002;&#x914D;&#x517C;&#x5BB9;&#x7684;&#x8F6F;&#x4EF6;&#x548C;&#x8BD5;&#x5242;&#x76D2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x7248;&#x672C;&#x8BF4;&#x660E;</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../release-notes/release-notes-for-stereomap.html">
+            
+                <a href="../../release-notes/release-notes-for-stereomap.html">
+            
+                    
+                    StereoMap &#x7248;&#x672C;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><b></b>&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</a></li><ul><li><span class="title-icon "></span><a href="#qc-&#x5165;&#x53E3;-"><b></b>QC &#x5165;&#x53E3; </a></li><li><span class="title-icon "></span><a href="#&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE;-"><b></b>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE; </a></li><ul><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><b></b>&#x56FE;&#x50CF;&#x7C7B;&#x578B; </a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><b></b>&#x6587;&#x4EF6;&#x683C;&#x5F0F; </a></li></ul><li><span class="title-icon "></span><a href="#qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;-"><b></b>QC &#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6; </a></li><ul><li><span class="title-icon "></span><a href="#track-&#x7EBF;&#x8BC4;&#x4F30;"><b></b>Track &#x7EBF;&#x8BC4;&#x4F30;</a></li><li><span class="title-icon "></span><a href="#&#x6821;&#x51C6;&#x8BC4;&#x4F30;"><b></b>&#x6821;&#x51C6;&#x8BC4;&#x4F30;</a></li></ul><li><span class="title-icon "></span><a href="#&#x56FE;&#x50CF;-qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;-"><b></b>&#x56FE;&#x50CF; QC &#x64CD;&#x4F5C;&#x6307;&#x5357; </a></li><ul><li><span class="title-icon "></span><a href="#&#x5F00;&#x59CB;-qc"><b></b>&#x5F00;&#x59CB; QC</a></li><li><span class="title-icon "></span><a href="#&#x8FD0;&#x884C;-qc"><b></b>&#x8FD0;&#x884C; QC</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;-qc-&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;"><b></b>&#x67E5;&#x770B; QC &#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#qc-&#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;"><b></b>QC &#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684;-qc-&#x5EFA;&#x8BAE;-"><b></b>&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684; QC &#x5EFA;&#x8BAE; </a></li><ul><li><span class="title-icon "></span><a href="#&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi-"><b></b>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssDNA &#x6216;&#x8005; DAPI </a></li><li><span class="title-icon "></span><a href="#&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif-"><b></b>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;DAPI+mIF </a></li><li><span class="title-icon "></span><a href="#he&#x56FE;&#x50CF;&#xFF1A;he-"><b></b>H&amp;E&#x56FE;&#x50CF;&#xFF1A;H&amp;E </a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;-"><b></b>&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E; </a></li><ul><li><span class="title-icon "></span><a href="#&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><b></b>&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84; </a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><b></b>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84; </a></li></ul></ul></ul></div><a href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><a name="&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;&#x8D28;&#x63A7;-image-qc"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x50CF;&#x8D28;&#x63A7;-Image QC</h1>
+<p>&#x56FE;&#x50CF;&#x8D28;&#x63A7; (Image QC) &#x7528;&#x4E8E;&#x8BC4;&#x4F30; Stereo-seq &#x5B9E;&#x9A8C;&#x62CD;&#x6444;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5728; Stereo-seq &#x5206;&#x6790;&#x6D41;&#x7A0B;&#x8F6F;&#x4EF6;&#x5305;(SAW) &#x4E2D;&#x51C6;&#x786E;&#x7684;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x3002;</p>
+<h2 id="qc-&#x5165;&#x53E3;-"><a name="qc-&#x5165;&#x53E3;-" class="anchor-navigation-ex-anchor" href="#qc-&#x5165;&#x53E3;-"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x5165;&#x53E3; <a href="#qc-ru-kou" id="qc-ru-kou"></a></h2>
+<p>&#x4ECE; StereoMap &#x542F;&#x52A8;&#x9875;&#x7684; <strong>Tools</strong> &#x8FDB;&#x5165; <strong>Image QC</strong>&#x3002;</p>
+<figure><a href="../../img/assets/image%20QC%20entry.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/image QC entry.png" alt></a><figcaption></figcaption></figure>
+
+<h2 id="&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE;-"><a name="&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE;-" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5EFA;&#x8BAE; <a href="#input-image-recommendation" id="input-image-recommendation"></a></h2>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x53EF;&#x7528;&#x4E8E;<strong>&#x56FE;&#x50CF;&#x8D28;&#x63A7;</strong>&#xFF08;Image QC&#xFF09;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x3001;&#x63A8;&#x8350;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0E;&#x4E0D;&#x540C;&#x663E;&#x5FAE;&#x955C;&#x7CFB;&#x7EDF;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x3002;</p>
+<h3 id="&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><a name="&#x56FE;&#x50CF;&#x7C7B;&#x578B;-" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;&#x7C7B;&#x578B;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x50CF;&#x7C7B;&#x578B; <a href="#image-data-types" id="image-data-types"></a></h3>
+<p>StereoMap &#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x6A21;&#x5757;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#x7684;&#x56FE;&#x50CF;&#x8F93;&#x5165;&#xFF1A;</p>
+<ul>
+<li><strong>&#x7EC6;&#x80DE;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;</strong>&#xFF08;&#x5982; ssDNA &#x6216; DAPI&#xFF09;</li>
+<li><strong>&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;</strong>&#xFF1A;&#x5305;&#x542B;&#x4E00;&#x5F20;&#x7EC6;&#x80DE;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;&#x5982; DAPI&#xFF09;&#x548C;&#x6700;&#x591A; 6 &#x5F20;&#x514D;&#x75AB;&#x8367;&#x5149;&#xFF08;IF&#xFF09;&#x56FE;&#x50CF;</li>
+<li><strong>&#x5F69;&#x8272;&#x56FE;&#x50CF;&#xFF1A;</strong>&#x7279;&#x6307; H&amp;E &#x67D3;&#x8272;&#x56FE;&#x50CF;</li>
+</ul>
+<table><thead><tr><th width="148">&#x56FE;&#x50CF;&#x7C7B;&#x578B;</th><th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th><th>&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th></tr></thead><tbody><tr><td>&#x6838;&#x67D3;&#x8272;</td><td><p>8 bit /16 bit &#x7684;&#x5355;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</p><p><em>&#x63A8;&#x8350;&#x8BE5;&#x6570;&#x636E;&#x683C;&#x5F0F;</em></p></td><td><p>TIFF &#x6587;&#x4EF6; (<code>.tif</code> or <code>.tiff</code>)</p><p>CZI (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</p></td></tr><tr><td>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;</td><td>8 bit /16 bit &#x591A;&#x5F20;&#x5355;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</td><td>TIFF &#x6587;&#x4EF6;(<code>.tif</code> or <code>.tiff</code>)</td></tr><tr><td>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;</td><td><p>8 bit /16 bit &#x5355;&#x5F20;&#x591A;&#x901A;&#x9053;&#x7684;&#x7070;&#x5EA6;&#x56FE;&#x50CF;</p><p><em>&#x53EA;&#x9002;&#x914D;&#x4E86;&#x8521;&#x53F8;&#x7684;&#x591A;&#x901A;&#x9053;&#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;</em></p></td><td>CZI (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td></tr><tr><td>H&amp;E</td><td>24 bit /48 bit &#x7684;&#x5355;&#x5F20;&#x5F69;&#x8272;&#x56FE;&#x50CF;</td><td><p>TIFF &#x6587;&#x4EF6;(<code>.tif</code> or <code>.tiff</code>)</p><p>CZI (<code>.czi</code>)&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</p></td></tr></tbody></table>
+
+<h3 id="&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><a name="&#x6587;&#x4EF6;&#x683C;&#x5F0F;-" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x683C;&#x5F0F;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x683C;&#x5F0F; <a href="#image-file-format" id="image-file-format"></a></h3>
+<p>StereoMap &#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x5E38;&#x89C1;&#x7684; TIFF &#x56FE;&#x50CF;&#xFF0C;&#x4EE5;&#x53CA; Zeiss &#x548C; Motic &#x663E;&#x5FAE;&#x955C;&#x7684;&#x4E13;&#x7528;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x3002;&#x4E3A;&#x4E86;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x548C;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF0C;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x60A8;&#x4F7F;&#x7528; TIFF &#x683C;&#x5F0F;&#x7684;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<table><thead><tr><th width="216">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="490">&#x663E;&#x5FAE;&#x955C;&#x578B;&#x53F7;</th></tr></thead><tbody><tr><td>&#x6807;&#x51C6;<code>.tif</code> or <code>.tiff</code> file</td><td><ul><li>&#x4E0D;&#x533A;&#x5206;</li></ul></td></tr><tr><td>QC&#x540E;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code></td><td><ul><li><strong>&#x56FE;&#x50CF;&#x8D28;&#x63A7;</strong>&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;TAR.GZ</li></ul></td></tr><tr><td><code>.tif</code>&#x683C;&#x5F0F;&#x7684;&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><ul><li><strong>STOmics</strong>: Scanner Version 1.2.2</li><li><strong>Motic</strong>: PA53Scanner 1.0.0.14</li><li><strong>Leica</strong>: LAS X 3.7.4.23463</li></ul></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><ul><li><p><strong>ZEISS</strong> (.<code>czi</code> format): </p><ul><li>ZEN Version 3.1.0.0000</li><li>ZEN Version 3.5.093.00009</li></ul></li></ul></td></tr></tbody></table>
+
+<p>&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x786E;&#x5B9A;&#x60A8;&#x7684;&#x663E;&#x5FAE;&#x955C;&#x662F;&#x5426;&#x652F;&#x6301; Stereo-seq&#x7684;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://cdn-newfile.stomics.tech/Stereo-seq%E7%A9%BA%E9%97%B4%E5%A4%9A%E7%BB%84%E5%AD%A6%E6%8A%80%E6%9C%AF%E6%88%90%E5%83%8F%E6%8C%87%E5%8D%97.pdf" target="_blank"><strong>Stereo-seq &#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6280;&#x672F;&#x6210;&#x50CF;&#x6307;&#x5357;</strong></a>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x56FE;&#x50CF;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;-"><a name="qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;-" class="anchor-navigation-ex-anchor" href="#qc-&#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6;-"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x6307;&#x6807;&#x53CA;&#x6807;&#x51C6; <a href="#qc-zhi-biao-ji-biao-zhun" id="qc-zhi-biao-ji-biao-zhun"></a></h2>
+<p>&#x56FE;&#x50CF;&#x7684;&#x8D28;&#x91CF;&#x76F4;&#x63A5;&#x53CD;&#x6620;&#x4E86;&#x663E;&#x5FAE;&#x955C;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x548C;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x52A3;&#x3002;&#x5728;&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#xFF08;Image QC&#xFF09;&#x4E2D;&#xFF0C;&#x56FE;&#x50CF;&#x57FA;&#x672C;&#x7684;&#x8BC4;&#x4F30;&#x5305;&#x62EC; track &#x7EBF;&#x8BC4;&#x4F30;&#xFF0C;&#x5F53;&#x7136;&#x53EF;&#x80FD;&#x4F1A;&#x6839;&#x636E;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x589E;&#x52A0;&#x6821;&#x51C6;&#x8BC4;&#x4F30;&#x3002;&#x5177;&#x4F53;&#x7684;&#x8BC4;&#x4F30;&#x6807;&#x51C6;&#x548C;&#x8BC4;&#x5206;&#x9608;&#x503C;&#x4F1A;&#x6839;&#x636E;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x7565;&#x6709;&#x5DEE;&#x5F02;&#x3002;</p>
+<p>&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x8BC4;&#x4F30;&#x7684;&#x6307;&#x6807;&#x5305;&#x62EC;&#xFF1A;</p>
+<h3 id="track-&#x7EBF;&#x8BC4;&#x4F30;"><a name="track-&#x7EBF;&#x8BC4;&#x4F30;" class="anchor-navigation-ex-anchor" href="#track-&#x7EBF;&#x8BC4;&#x4F30;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Track &#x7EBF;&#x8BC4;&#x4F30;</strong></h3>
+<ul>
+<li>Track &#x7EBF;&#x662F;&#x523B;&#x5728; Stereo-seq &#x82AF;&#x7247;&#x8868;&#x9762;&#x7684;&#x6807;&#x8BB0;&#x7EBF;&#x3002; &#x663E;&#x5FAE;&#x955C;&#x62CD;&#x6444;&#x7684;&#x56FE;&#x50CF;&#x548C;&#x7A7A;&#x95F4;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x68C0;&#x6D4B;&#x5230; track &#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x6A21;&#x6001;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x56FE;&#x50CF;&#x8DDF;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x7684;&#x5BF9;&#x9F50;&#x3002;Track &#x7EBF;&#x5F97;&#x5206;&#x7EFC;&#x5408;&#x8003;&#x8651;&#x4E86; track &#x7EBF;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#xFF08;&#x662F;&#x5426;&#x53EF;&#x89C1;&#xFF09;&#x53CA;&#x76F8;&#x90BB; track &#x7EBF;&#x7684;&#x6570;&#x91CF;&#x7B49;&#x56E0;&#x7D20;&#xFF0C;&#x7B97;&#x6CD5;&#x6839;&#x636E;&#x68C0;&#x6D4B;&#x7684; track &#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x56FE;&#x50CF;&#x7684;&#x89D2;&#x5EA6;&#x3001;&#x5C3A;&#x5EA6;&#x548C;&#x4F4D;&#x7F6E;&#x7B49;&#x5E76;&#x63A8;&#x5BFC;&#x51FA;&#x56FE;&#x50CF;&#x7684;&#x5168;&#x5C40;&#x6A21;&#x677F;&#xFF0C;&#x4EE5;&#x8BC4;&#x4F30;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x6210;&#x529F;&#x914D;&#x51C6;&#x3002;</li>
+</ul>
+<h3 id="&#x6821;&#x51C6;&#x8BC4;&#x4F30;"><a name="&#x6821;&#x51C6;&#x8BC4;&#x4F30;" class="anchor-navigation-ex-anchor" href="#&#x6821;&#x51C6;&#x8BC4;&#x4F30;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x6821;&#x51C6;&#x8BC4;&#x4F30;</strong></h3>
+<ul>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x82AF;&#x7247;&#x7684;&#x591A;&#x7EC4;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x6BCF;&#x7EC4;&#x56FE;&#x50CF;&#x7684;&#x62FC;&#x63A5;&#x3001;&#x914D;&#x51C6;&#x548C;&#x7EC4;&#x7EC7;&#x533A;&#x57DF;&#x8303;&#x56F4;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x4E25;&#x683C;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x624D;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x8DDF;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x5BF9;&#x9F50;&#x3002;&#x7531;&#x4E8E;&#x67D3;&#x8272;&#x6761;&#x4EF6;&#x548C;&#x6210;&#x50CF;&#x7CFB;&#x7EDF;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x8DDF;&#x77E9;&#x9635;&#x914D;&#x51C6;&#x7684;&#x56FE;&#x50CF;&#x4EC5;&#x5728; DAPI &#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x4E2D;&#x53EF;&#x89C1;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x5176;&#x5B83; IF &#x56FE;&#x50CF;&#x9996;&#x5148;&#x8DDF; DAPI &#x56FE;&#x50CF;&#x5BF9;&#x9F50;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x914D;&#x51C6;&#x53C2;&#x6570;&#x5C06;&#x5404;&#x4E2A;&#x56FE;&#x50CF;&#x4E0E;&#x7A7A;&#x95F4;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x505A;&#x914D;&#x51C6;&#xFF0C;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7684;&#x76F8;&#x4F3C;&#x6027;&#x548C;&#x7279;&#x5F81;&#x504F;&#x79FB;&#x8BC4;&#x4F30;&#x4E24;&#x5F20;&#x56FE;&#x50CF;&#x662F;&#x5426;&#x5BF9;&#x9F50;&#x3002;&#x8BE5;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x4EC5;&#x9002;&#x7528;&#x4E8E; DAPI+mIF &#x7684;&#x5355;&#x901A;&#x9053;&#x56FE;&#x50CF;&#x573A;&#x666F;&#x3002;</li>
+</ul>
+<table><thead><tr><th width="148">&#x8BC4;&#x4F30;&#x6307;&#x6807;</th><th>&#x5206;&#x6570;</th><th>&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><strong>Track&#x7EBF;&#x8BC4;&#x4F30;</strong></td><td><ul><li>&#x2265; 60&#xFF0C;&#x7B97;&#x6CD5;&#x68C0;&#x6D4B;&#x5230;&#x8DB3;&#x591F;&#x6570;&#x91CF;&#x7684;&#x5408;&#x4E2A;&#x7684; track &#x7EBF;&#xFF0C;&#x56FE;&#x50CF;&#x53EF;&#x4EE5;&#x4E0E;&#x7A7A;&#x95F4;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x505A;&#x81EA;&#x52A8;&#x914D;&#x51C6;&#x3002;</li><li>&lt; 60&#xFF0C;&#x7B97;&#x6CD5;&#x68C0;&#x6D4B;&#x5230;&#x8F83;&#x5C11;&#x7684; track &#x7EBF;&#x6216;&#x8005;&#x672A;&#x68C0;&#x6D4B;&#x51FA; track&#x7EBF;&#xFF0C;&#x65E0;&#x6CD5;&#x63A8;&#x5BFC;&#x51FA;&#x5168;&#x5C40;&#x6A21;&#x677F;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x62CD;&#x7167;&#x3002;</li></ul><p><em>QC &#x662F;&#x5426;&#x901A;&#x8FC7;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;</em></p></td><td><a href="../../img/assets/trackline%20detection-hqj.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/trackline detection-hqj.png" alt></a></td></tr><tr><td><strong>&#x6821;&#x51C6;&#x8BC4;&#x4F30;</strong></td><td><ul><li>&#x901A;&#x8FC7;&#xFF0C;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;DAPI&#xFF09;&#x4E0E;&#x53E6;&#x4E00;&#x56FE;&#x50CF;(IF)&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x91CF; &#x2264; 20 &#x50CF;&#x7D20;&#xFF0C;&#x4E14;&#x56FE;&#x50CF;&#x7684;&#x5F62;&#x6001;&#x76F8;&#x4F3C;&#x5EA6; &#x2265; 1%&#x3002;</li><li>&#x672A;&#x901A;&#x8FC7;&#xFF0C;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF08;DAPI&#xFF09;&#x4E0E;&#x53E6;&#x4E00;&#x56FE;&#x50CF;(IF)&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x91CF; &gt; 20 &#x50CF;&#x7D20;&#xFF0C;&#x6216;&#x8005;&#x56FE;&#x50CF;&#x7684;&#x5F62;&#x6001;&#x76F8;&#x4F3C;&#x5EA6; &lt; 1%&#x3002;</li></ul><p><em>&#x6709;&#x6761;&#x4EF6;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF0C;&#x53EA;&#x9002;&#x7528;&#x4E8E;mIF&#x3002;</em>&#x6821;&#x51C6;&#x8BC4;&#x4F30;&#x7684;&#x901A;&#x8FC7;&#x4E0E;&#x5426;&#x4E0D;&#x5F71;&#x54CD;&#x6574;&#x4F53;&#x8D28;&#x63A7;&#xFF08;QC&#xFF09;&#x7ED3;&#x679C;&#x7684;&#x5224;&#x5B9A;&#x3002;</p></td><td><a href="../../img/assets/image%20calibration-hqj.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/image calibration-hqj.png" alt></a></td></tr></tbody></table>
+
+<p>&#x5907;&#x6CE8;&#xFF1A;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://cdn-newfile.stomics.tech/Stereo-seq%E7%A9%BA%E9%97%B4%E5%A4%9A%E7%BB%84%E5%AD%A6%E6%8A%80%E6%9C%AF%E6%88%90%E5%83%8F%E6%8C%87%E5%8D%97.pdf" target="_blank"><strong>Stereo-seq &#x7A7A;&#x95F4;&#x591A;&#x7EC4;&#x5B66;&#x6280;&#x672F;&#x6210;&#x50CF;&#x6307;&#x5357;</strong></a>&#x7684; <strong>4.3 &#x7AE0;&#x8282;&#x56FE;&#x7247;&#x793A;&#x4F8B;</strong>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x56FE;&#x50CF;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="&#x56FE;&#x50CF;-qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;-"><a name="&#x56FE;&#x50CF;-qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;-" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x50CF;-qc-&#x64CD;&#x4F5C;&#x6307;&#x5357;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x50CF; QC &#x64CD;&#x4F5C;&#x6307;&#x5357; <a href="#qc-cao-zuo-zhi-nan" id="qc-cao-zuo-zhi-nan"></a></h2>
+<p>&#x4E0B;&#x9762;&#x5C55;&#x793A;&#x4E86;&#x56FE;&#x50CF; QC &#x7684;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#xFF1A;</p>
+<figure><a href="../../img/assets/image%20QC%20interface.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/image QC interface.png" alt></a><figcaption></figcaption></figure>
+
+
+
+<h3 id="&#x5F00;&#x59CB;-qc"><a name="&#x5F00;&#x59CB;-qc" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x59CB;-qc"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x59CB; QC</h3>
+<ul>
+<li>&#x6253;&#x5F00;&#x56FE;&#x50CF; QC &#x5C0F;&#x5DE5;&#x5177;&#xFF0C;&#x62D6;&#x5165;&#x5F85;QC&#x7684;&#x6587;&#x4EF6;&#x3002;&#x6709;&#x5173;<strong>&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x547D;&#x540D;</strong>&#x7684;&#x66F4;&#x591A;&#x5B9E;&#x7528;&#x5EFA;&#x8BAE;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="stereo-seq-image-qc.html#qc-shu-ru-wen-jian-shuo-ming">&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684; QC &#x5EFA;&#x8BAE;</a>&#xFF0C;&#x907F;&#x514D;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+<figure><a href="../../img/assets/nuclei-input%20tif.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input tif.png" alt></a><figcaption></figcaption></figure>
+
+<ul>
+<li>&#x90E8;&#x5206;<strong>&#x56FE;&#x50CF;&#x4FE1;&#x606F;</strong>&#x4F1A;&#x81EA;&#x52A8;&#x586B;&#x5199;&#xFF0C;&#x786E;&#x4FDD;&#x81F3;&#x5C11;&#x586B;&#x5199;&#x5FC5;&#x586B;&#x5B57;&#x6BB5;&#x5E76;&#x4FDD;&#x8BC1;&#x5176;&#x51C6;&#x786E;&#x6027;&#x3002;</li>
+</ul>
+<table><thead><tr><th width="185">&#x56FE;&#x50CF;&#x4FE1;&#x606F;</th><th>&#x63CF;&#x8FF0;&#x53CA;&#x4F8B;&#x5B50;</th></tr></thead><tbody><tr><td><strong>Chip SN</strong></td><td>&#x3010;&#x5FC5;&#x9009;&#x3011; Stereo-seq &#x82AF;&#x7247;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; Stereo-seq &#x82AF;&#x7247;&#x5E95;&#x90E8;&#x627E;&#x5230;&#x3002;<br><br><em>E.g. S1 (1x1) &#x82AF;&#x7247;: SS200000135TL_D1, C02533C</em><br><em>S0.5 (0.5x0.5) &#x82AF;&#x7247;: FP200009107_E414, B03210C211</em><br>&#x5927;&#x82AF;&#x7247;<em>: S200000108BR_A3A4, D02070C3D3</em><br><em>&#x8BF7;&#x786E;&#x4FDD;&#x586B;&#x5199;&#x7684; SN &#x8DDF;&#x5B9E;&#x9645;&#x62CD;&#x6444;&#x56FE;&#x50CF;&#x7684; SN &#x662F;&#x5BF9;&#x5E94;&#x7684;&#x3002;</em></td></tr><tr><td><strong>Operator</strong></td><td>&#x3010;&#x5FC5;&#x9009;&#x3011; &#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x5EFA;&#x8BAE;&#x8F93;&#x5165;&#x62CD;&#x6444;&#x4EBA;&#x5458;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x3002;</td></tr><tr><td><strong>Image Path</strong></td><td>&#x3010;&#x5FC5;&#x9009;&#x3011; &#x5F85; QC &#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x62D6;&#x5165;&#x540E;&#x81EA;&#x52A8;&#x586B;&#x5145;&#x3002;<br><br><em>&#x5EFA;&#x8BAE;&#x62D6;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E2D;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x3002;</em></td></tr><tr><td><strong>Staining Types</strong></td><td>&#x3010;&#x5FC5;&#x9009;&#x3011; &#x56FE;&#x50CF;&#x7684;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#xFF0C;&#x5305;&#x62EC; ssDNA&#xFF0C;DAPI&#xFF0C;DAPI+mIF&#x548C;H&amp;E&#x3002;</td></tr><tr><td><strong>Upload</strong></td><td><p>&#x3010;&#x5FC5;&#x9009;&#x3011; &#x5C06;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x4E0A;&#x4F20;&#x5230; <a href="https://cloud.stomics.tech/" target="_blank">STOmcis Cloud</a> &#x6216;&#x8005;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x9009;&#x9879;&#x5305;&#x62EC;&#xFF1A;</p><ul><li>No&#xFF1A;&#x4E0D;&#x4E0A;&#x4F20;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#x3002;</li><li>QC Input Files &#xFF1A;&#x4EC5;&#x4E0A;&#x4F20;&#x5F85; QC &#x7684;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x3002;</li><li>QC Output Files (TAR.GZ): &#x4EC5;&#x4E0A;&#x4F20; QC &#x540E;&#x7684;&#x6587;&#x4EF6;&#x3002;</li><li>Select all: &#x4E0A;&#x4F20;&#x5F85; QC &#x7684;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x53CA; QC &#x540E;&#x7684;&#x6587;&#x4EF6;.</li></ul><p>&#x53EF;&#x4EE5;&#x67E5;&#x9605;<a href="stereo-seq-image-qc.html#shang-chuan-she-zhi">&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;</a>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p></td></tr><tr><td><strong>Remark</strong></td><td>&#x3010;&#x53EF;&#x9009;&#x3011; &#x8F93;&#x5165;&#x56FE;&#x50CF;&#x6216;&#x8005; QC &#x7684;&#x989D;&#x5916;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x5404;&#x7C7B;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x3002;</td></tr></tbody></table>
+
+<h3 id="&#x8FD0;&#x884C;-qc"><a name="&#x8FD0;&#x884C;-qc" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;-qc"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C; QC</h3>
+<p>&#x5F53;&#x60A8;&#x586B;&#x5199;&#x5B8C;&#x6240;&#x6709;&#x5FC5;&#x9700;&#x7684;&#x5B57;&#x6BB5;&#x540E;&#xFF0C;<strong>&#x8FD0;&#x884C;</strong>&#x6309;&#x94AE;&#x4F1A;&#x53D8;&#x4E3A;&#x53EF;&#x70B9;&#x51FB;&#x72B6;&#x6001;&#xFF0C;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB; QC &#x8BC4;&#x4F30;&#x4E86;&#x3002;</p>
+<p>&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x5168;&#x6D41;&#x7A0B;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li><strong>QC&#x6307;&#x6570;&#x8BC4;&#x4F30;</strong>&#xFF1A;&#x6211;&#x4EEC;&#x4F1A;&#x5BF9;&#x56FE;&#x50CF;&#x7684; track &#x7EBF;&#x548C;&#x6821;&#x51C6;&#x505A;&#x8BC4;&#x4F30;&#x3002;</li>
+<li><strong>&#x56FE;&#x50CF;&#x538B;&#x7F29;</strong>&#xFF1A;&#x7CFB;&#x7EDF;&#x4F1A;&#x751F;&#x6210;&#x538B;&#x7F29;&#x540E;&#x7684; QC &#x7ED3;&#x679C;&#x6587;&#x4EF6;&#xFF0C;&#x4F9B;&#x540E;&#x7EED;&#x4F7F;&#x7528;&#x3002;</li>
+<li><strong>&#xFF08;&#x53EF;&#x9009;&#xFF09;QC&#x6587;&#x4EF6;&#x4E0A;&#x4F20;</strong>&#xFF1A;&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x56FE;&#x50CF;&#x5C06;&#x5728;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0A;&#x4F20;&#x3002;</li>
+</ol>
+<p>&#x5728;&#x6574;&#x4E2A;&#x8BC4;&#x4F30;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x770B;&#x56FE;&#x50CF;&#x8D28;&#x63A7;&#x6307;&#x6807;&#x7684;<strong>&#x8FDB;&#x5EA6;</strong>&#x3001;<strong>&#x7ED3;&#x679C;</strong>&#x548C; <strong>QC</strong> &#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x8BBA;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x6839;&#x636E;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;<strong>&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x5206;&#x6790;&#x5EFA;&#x8BAE;</strong>&#x3002;</p>
+<p><strong>&#x591A;&#x4E2A;&#x56FE;&#x50CF;&#x540C;&#x65F6;QC</strong></p>
+<p>&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x5BF9;&#x591A;&#x4E2A;&#x56FE;&#x50CF;&#x540C;&#x65F6;&#x505A; QC&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x5F20;&#x56FE;&#x7247;&#x6DFB;&#x52A0;&#x5355;&#x72EC;&#x7684; tab &#x9875;&#x9762;&#xFF0C;&#x586B;&#x5199;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;&#x540E;&#x63D0;&#x4EA4;&#x4EFB;&#x52A1;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4EFB;&#x52A1;&#x5C06;&#x5728;&#x540E;&#x53F0;&#x6309;&#x987A;&#x5E8F;&#x9010;&#x4E00;&#x6267;&#x884C;&#x3002;</p>
+<figure><a href="../../img/assets/image%20QC%20interface%20multi-SN.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/image QC interface multi-SN.png" alt></a><figcaption></figcaption></figure>
+
+<h3 id="&#x67E5;&#x770B;-qc-&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;"><a name="&#x67E5;&#x770B;-qc-&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;-qc-&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B; QC &#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;</h3>
+<p>QC &#x8FD0;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x754C;&#x9762;&#x4E2D;&#x67E5;&#x770B;QC &#x540E;&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x5728; <strong>StereoMapWorkspace</strong> -&gt; <strong>QC</strong> &#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x4E2D;&#x67E5;&#x770B; QC &#x540E;&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#xFF0C;<a href="../../download.html#bao-cun"><strong>&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;</strong></a>&#x53EF;&#x4EE5;&#x5728;<a href="../../download.html#she-zhi"><strong>&#x8BBE;&#x7F6E;</strong></a>&#x4E2D;&#x66F4;&#x6539;&#x3002;</p>
+<figure><a href="../../img/assets/image%20QC%20pass.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/image QC pass.png" alt></a><figcaption></figcaption></figure>
+
+<h3 id="qc-&#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;"><a name="qc-&#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#qc-&#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>QC &#x5B8C;&#x6210;&#x7684;&#x540E;&#x7EED;&#x6B65;&#x9AA4;</h3>
+<p><strong>&#x5982;&#x679C;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x662F; QC &#x6210;&#x529F;&#x7684;&#x3002;</strong></p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>--image-tar</code>&#x53C2;&#x6570;&#xFF0C;&#x5C06; QC &#x8F93;&#x51FA;&#x7684;<code>.tar.gz</code>&#x4F20;&#x5165;&#x5230;<code>SAW count</code>&#x6D41;&#x7A0B;&#xFF0C;&#x8FD9;&#x6837;&#x7CFB;&#x7EDF;&#x5C31;&#x53EF;&#x4EE5;<strong>&#x81EA;&#x52A8;</strong>&#x5C06;&#x56FE;&#x50CF;&#x548C;&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x77E9;&#x9635;&#x4E00;&#x8D77;&#x5904;&#x7406;&#x3002;</p>
+<p><strong>&#x5982;&#x679C;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x662F; QC &#x5931;&#x8D25;&#x7684;&#x3002;</strong></p>
+<p>&#x5982;&#x679C;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E; QC &#x672A;&#x901A;&#x8FC7;&#xFF0C;&#x60A8;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x5C06;&#x56FE;&#x50CF;&#x8DDF;&#x77E9;&#x9635;&#x5728;&#x53EF;&#x89C6;&#x5316;<strong>&#x5171;&#x540C;&#x5C55;&#x793A;</strong>&#x3002;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x8F93;&#x5165;<strong>StereoMap</strong> &#x7684;<a href="../navigation-for-image-processing">Image Processing</a> &#x505A;&#x624B;&#x52A8;&#x5904;&#x7406;&#x540E;&#x518D;&#x63A5;&#x56DE; SAW&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684;-qc-&#x5EFA;&#x8BAE;-"><a name="&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684;-qc-&#x5EFA;&#x8BAE;-" class="anchor-navigation-ex-anchor" href="#&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684;-qc-&#x5EFA;&#x8BAE;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x56FE;&#x50CF;&#x7684; QC &#x5EFA;&#x8BAE; <a href="#qc-shu-ru-wen-jian-shuo-ming" id="qc-shu-ru-wen-jian-shuo-ming"></a></h2>
+<p>&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x56FE;&#x50CF;&#x5728;&#x56FE;&#x50CF; QC &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3002;&#x4E3A;&#x4FDD;&#x8BC1;&#x5206;&#x6790;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A; <strong>ssDNA/DAPI</strong>&#x3001;<strong>DAPI+mIF</strong> &#x548C; <strong>H&amp;E</strong> &#x56FE;&#x50CF;&#x5206;&#x522B;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x5B9E;&#x7528;&#x7684;&#x5C0F;&#x8D34;&#x58EB;&#x3002;</p>
+<h3 id="&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi-"><a name="&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi-" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssdna-&#x6216;&#x8005;-dapi-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#xFF1A;ssDNA &#x6216;&#x8005; DAPI <a href="#he-ran-se-tu-xiang-ssdna-huo-zhe-dapi" id="he-ran-se-tu-xiang-ssdna-huo-zhe-dapi"></a></h3>
+<p>&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x57FA;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li><a href="stereo-seq-image-qc.html#qc-biao-zhun">track &#x7EBF;&#x8BC4;&#x4F30;</a>&#xFF08;&#x5FC5;&#x8981;&#x7684;&#x8D28;&#x63A7;&#x6307;&#x6807;&#xFF09;</li>
+</ul>
+<p>&#x5982;&#x4E0B;&#x5C55;&#x793A;&#x4E86;&#x56FE;&#x50CF;&#x7684;&#x8017;&#x65F6;&#x53CA;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF1A;&#x8017;&#x65F6;&#x4E3A;~1 &#x5206;&#x949F;&#xFF08;&#x4E00;&#x5F20; S1 &#x7684;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;10 &#x500D;&#x7269;&#x955C;&#xFF0C;8 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6;20,000 &#x50CF;&#x7D20; x 20,000 &#x50CF;&#x7D20;&#xFF09;&#x3002;</li>
+<li>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x4F1A;&#x8BA9;&#x65F6;&#x95F4;&#x53D8;&#x6162;&#xFF1A;<ul>
+<li>&#x56FE;&#x50CF;&#x5C3A;&#x5BF8;&#x8F83;&#x5927;</li>
+<li>&#x56FE;&#x50CF;&#x4F4D;&#x6DF1;&#x8F83;&#x9AD8;&#xFF08;16 bit &#x800C;&#x4E0D;&#x662F; 8 bit&#xFF09;</li>
+<li>&#x8F93;&#x5165;&#x4E3A; <code>.tar.gz</code> &#x6587;&#x4EF6;&#xFF08;&#x7531;&#x4E8E;&#x9700;&#x989D;&#x5916;&#x89E3;&#x538B;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;:</p>
+<table><thead><tr><th width="243">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th>&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../img/assets/nuclei-input%20tif.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input tif.png" alt></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code></td><td><a href="../../img/assets/nuclei-input%20tar.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input tar.png" alt></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;</td><td><ul><li>Motic:</li></ul><p><a href="../../img/assets/nuclei-input%20tiles-motic.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input tiles-motic.png" alt></a></p><ul><li>STOmics Microscope Go Optical:</li></ul><p><a href="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input%20tiles-STOmicsGoOptical.webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_zfXtDODJw7v1l8YgOcbp_nuclei-input tiles-STOmicsGoOptical.webp" alt></a></p><ul><li>Leica:</li></ul><p><a href="../../img/assets/nuclei-input%20tiles-leica.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input tiles-leica.png" alt></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><a href="../../img/assets/nuclei-input%20czi.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/nuclei-input czi.png" alt></a></td></tr></tbody></table>
+
+<h3 id="&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif-"><a name="&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif-" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x67D3;&#x8272;&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;dapimif-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#xFF1A;DAPI+mIF <a href="#he-ran-se-mian-yi-ying-guang-tu-xiang-dapi-mif" id="he-ran-se-mian-yi-ying-guang-tu-xiang-dapi-mif"></a></h3>
+<p>&#x6838;&#x67D3;&#x8272;+&#x514D;&#x75AB;&#x8367;&#x5149;&#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x57FA;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li><a href="stereo-seq-image-qc.html#qc-zhi-biao-ji-biao-zhun">Track&#x7EBF;&#x8BC4;</a> <em>(</em>&#x5FC5;&#x8981;&#x7684;&#x8D28;&#x63A7;&#x6307;&#x6807;<em>)</em></li>
+<li><a href="stereo-seq-image-qc.html#qc-zhi-biao-ji-biao-zhun">&#x6821;&#x51C6;&#x8BC4;&#x4F30;</a><em>(</em>&#x53C2;&#x4E0E;&#x8BC4;&#x4F30;&#xFF0C;&#x4F46;&#x4E0D;&#x5F71;&#x54CD;&#x6700;&#x7EC8;&#x7684;&#x8D28;&#x63A7;&#x7ED3;&#x679C;<em>)</em></li>
+</ul>
+<p>&#x5982;&#x4E0B;&#x5C55;&#x793A;&#x4E86;&#x56FE;&#x50CF;&#x7684;&#x8017;&#x65F6;&#x53CA;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF1A;&#x8017;&#x65F6;&#x4E3A;~3 &#x5206;&#x949F;&#xFF08;&#x4E00;&#x5F20; S1 &#x7684;&#x6838;&#x67D3;&#x8272;&#x56FE;&#x50CF;&#x52A0;&#x4E8C;&#x5F20;IF&#x56FE;&#x50CF;&#xFF0C;10 &#x500D;&#x7269;&#x955C;&#xFF0C;8 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6;20,000 &#x50CF;&#x7D20; x 20,000 &#x50CF;&#x7D20;&#xFF09;&#x3002;</li>
+<li>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x4F1A;&#x8BA9;&#x65F6;&#x95F4;&#x53D8;&#x6162;&#xFF1A;<ul>
+<li>&#x56FE;&#x50CF;&#x4F4D;&#x6DF1;&#x8F83;&#x9AD8;&#xFF08;16 bit &#x800C;&#x4E0D;&#x662F; 8 bit&#xFF09;</li>
+<li>&#x8F93;&#x5165;&#x4E3A; <code>.tar.gz</code> &#x6587;&#x4EF6;&#xFF08;&#x7531;&#x4E8E;&#x9700;&#x989D;&#x5916;&#x89E3;&#x538B;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x8BF7;&#x5C06;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x6216;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x5939;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#x91CD;&#x65B0;&#x547D;&#x540D;&#xFF0C;&#x4EE5;&#x4FBF;&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x67D3;&#x8272;&#x7C7B;&#x578B;&#x53CA; IF &#x7684;&#x4ECE;&#x540D;&#x79F0;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&quot;&lt;&gt;&quot;&#x5185;&#x662F;&#x9700;&#x8981;&#x66FF;&#x6362;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<ul>
+<li>DAPI: &lt;&#x82AF;&#x7247;&#x53F7;&gt;</li>
+<li>IF: &lt;&#x82AF;&#x7247;&#x53F7;&gt;_&lt; IF&#x540D;&#x79F0; &gt;_IF</li>
+</ul>
+</div></div><p></p>
+<table><thead><tr><th width="258">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="486">&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../img/assets/mif-input%20tif.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input tif.png" alt></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code></td><td><a href="../../img/assets/mif-input%20tar.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input tar.png" alt></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><ul><li>Motic:</li></ul><p><a href="../../img/assets/mif-input%20tiles-motic-hqj.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input tiles-motic-hqj.png" alt></a></p><ul><li>STOmics Microscope Go Optical:</li></ul><p><a href="../../img/assets/mif-input%20tiles-STOmicsGoOptical.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input tiles-STOmicsGoOptical.png" alt></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><ul><li>Zeiss multi-page <code>.czi</code></li></ul><p><a href="../../img/assets/mif-input%20czi.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input czi.png" alt></a></p></td></tr></tbody></table>
+
+<h3 id="he&#x56FE;&#x50CF;&#xFF1A;he-"><a name="he&#x56FE;&#x50CF;&#xFF1A;he-" class="anchor-navigation-ex-anchor" href="#he&#x56FE;&#x50CF;&#xFF1A;he-"><i class="fa fa-link" aria-hidden="true"></i></a>H&amp;E&#x56FE;&#x50CF;&#xFF1A;H&amp;E <a href="#he-tu-xiang-he" id="he-tu-xiang-he"></a></h3>
+<p>H&amp;E &#x56FE;&#x50CF;&#x7684;&#x8BC4;&#x4F30;&#x4E3B;&#x8981;&#x57FA;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li><a href="stereo-seq-image-qc.html#qc-biao-zhun">track &#x7EBF;&#x8BC4;&#x4F30;</a>&#xFF08;&#x5FC5;&#x8981;&#x7684;&#x8D28;&#x63A7;&#x6307;&#x6807;&#xFF09;</li>
+</ul>
+<p>&#x786E;&#x4FDD;&#x5728;&#x663E;&#x5FAE;&#x955C;&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6E05;&#x6670;&#x7684; track &#x7EBF;&#x662F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B97;&#x6CD5;&#x6765;&#x8BF4;&#xFF0C;&#x8BC6;&#x522B; H&amp;E &#x5F69;&#x8272;&#x56FE;&#x50CF;&#x7684; track &#x7EBF;&#x6BD4;&#x7070;&#x5EA6;&#x56FE;&#x50CF;&#x5177;&#x6709;&#x66F4;&#x5927;&#x7684;&#x6311;&#x6218;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x5C55;&#x793A;&#x4E86;&#x56FE;&#x50CF;&#x7684;&#x8017;&#x65F6;&#x53CA;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF1A;&#x8017;&#x65F6;&#x4E3A;~4 &#x5206;&#x949F;&#xFF08;&#x4E00;&#x5F20; S1 &#x7684;&#x67D3;&#x8272;&#x56FE;&#x50CF;10 &#x500D;&#x7269;&#x955C;&#xFF0C;16 &#x4F4D;&#x6DF1;&#x7684;<code>.tif</code>&#xFF0C;&#x7EA6;20,000 &#x50CF;&#x7D20; x 20,000 &#x50CF;&#x7D20;&#xFF09;&#x3002;</li>
+<li>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x4F1A;&#x8BA9;&#x65F6;&#x95F4;&#x53D8;&#x6162;&#xFF1A;<ul>
+<li>&#x5F69;&#x8272;&#x56FE;&#x50CF;&#xFF08;&#x56E0; H&amp;E &#x56FE;&#x50CF;&#x662F;&#x4E00;&#x79CD;&#x5F69;&#x8272;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x5176;&#x5927;&#x5C0F;&#x7EA6;&#x4E3A;&#x7070;&#x5EA6;&#x56FE;&#x50CF;&#x7684;&#x4E09;&#x500D;&#xFF09;</li>
+<li>&#x8F93;&#x5165;&#x4E3A; <code>.tar.gz</code> &#x6587;&#x4EF6;&#xFF08;&#x7531;&#x4E8E;&#x9700;&#x989D;&#x5916;&#x89E3;&#x538B;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#xFF1A;</p>
+<table><thead><tr><th width="258">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th><th width="489">&#x793A;&#x4F8B;</th></tr></thead><tbody><tr><td><code>.tif</code> /<code>.tiff</code> &#x62FC;&#x63A5;&#x5927;&#x56FE;</td><td><a href="../../img/assets/HE-input%20tif.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/HE-input tif.png" alt></a></td></tr><tr><td>QC &#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;<code>.tar.gz</code></td><td><a href="../../img/assets/HE-input%20tar.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/HE-input tar.png" alt></a></td></tr><tr><td><code>.tif</code>&#x5C0F;&#x56FE;&#x6587;&#x4EF6;</td><td><ul><li>Motic:</li></ul><p><a href="../../img/assets/HE-input%20tiles-motic.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/HE-input tiles-motic.png" alt></a></p><ul><li>STOmics Microscope Go Optical:</li></ul><p><a href="../../img/assets/mif-input%20tiles-STOmicsGoOptical%20(1).png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/mif-input tiles-STOmicsGoOptical (1).png" alt></a></p></td></tr><tr><td>&#x5176;&#x5B83;&#x683C;&#x5F0F;</td><td><a href="../../img/assets/HE-input%20czi-hqj.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/HE-input czi-hqj.png" alt></a></td></tr></tbody></table>
+
+
+
+<h2 id="&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;-"><a name="&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;-" class="anchor-navigation-ex-anchor" href="#&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E; <a href="#shang-chuan-she-zhi" id="shang-chuan-she-zhi"></a></h2>
+<p>&#x4E0A;&#x4F20;&#x8BBE;&#x7F6E;&#x5E2E;&#x52A9;&#x60A8;&#x5C06;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x5230;<strong>&#x9AD8;&#x6027;&#x80FD;&#x8BA1;&#x7B97;</strong>&#xFF08;HPC&#xFF09;&#x96C6;&#x7FA4;&#x6216;<strong>&#x4E91;&#x5B58;&#x50A8;</strong>&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x5904;&#x7406;&#x3002;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x786E;&#x5B9A;&#x5E94;&#x8BE5;&#x9009;&#x62E9;&#x54EA;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;&#x8BF7;&#x968F;&#x65F6;&#x5411;&#x60A8;&#x7684; FAS &#x54A8;&#x8BE2;&#x3002;</p>
+<h3 id="&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><a name="&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x7F6E;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84; <a href="#nei-zhi-de-shang-chuan-lu-jing" id="nei-zhi-de-shang-chuan-lu-jing"></a></h3>
+<div><figure><a href="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc%20upload%20settings%20(1).webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_RtufvbpnTA9gWe1PTuLV_qc upload settings (1).webp" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc%20upload%20type%20(1).webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1dZSOMVnefW5gaZpxuNf_qc upload type (1).webp" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/qc%20upload%20region%20(1).png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/qc upload region (1).png" alt></a><figcaption></figcaption></figure></div>
+
+<table><thead><tr><th width="183">&#x4E0A;&#x4F20;&#x7C7B;&#x578B;</th><th>&#x63CF;&#x8FF0;</th><th>&#x533A;&#x57DF;</th></tr></thead><tbody><tr><td>ALICLOUD</td><td><a href="https://cn.aliyun.com/" target="_blank">ALICLOUD</a> &#x4E3A;&#x963F;&#x91CC;&#x4E91;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#xFF0C;&#x9002;&#x5408;&#x5C06;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x90E8;&#x7F72;&#x5728;&#x963F;&#x91CC;&#x4E91;&#x7684;&#x7247;&#x533A;&#x7528;&#x6237;&#x3002;&#x5982;&#x6709;&#x5176;&#x4ED6;&#x65B0;&#x589E;&#x7247;&#x533A;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x603B;&#x90E8; FAS&#xFF0C;&#x5E2E;&#x52A9;&#x66F4;&#x65B0;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x8868;&#x3002;</td><td><ul><li>SINGAPORE, AP</li></ul></td></tr><tr><td>AWS</td><td><a href="https://aws.amazon.com/cn/" target="_blank">AWS</a> &#x4E3A;&#x4E9A;&#x9A6C;&#x900A;&#x4E91;&#x4E0A;&#x4F20;&#x65B9;&#x5F0F;&#xFF0C;&#x9002;&#x5408;&#x5C06;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x90E8;&#x7F72;&#x5728; AWS &#x4E91;&#x7684;&#x7247;&#x533A;&#x7528;&#x6237;&#x3002;&#x5982;&#x6709;&#x5176;&#x4ED6;&#x65B0;&#x589E;&#x7247;&#x533A;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x603B;&#x90E8; FAS&#xFF0C;&#x5E2E;&#x52A9;&#x66F4;&#x65B0;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x8868;&#x3002;</td><td><ul><li>CALIFORNIA, US</li><li>RIGA, EU</li><li>SINGAPORE, AP</li></ul></td></tr><tr><td>HPC</td><td>HPC &#x4E3A;&#x5B9E;&#x9A8C;&#x5BA4;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x4F20;&#x5230;&#x7247;&#x533A;&#x7684;&#x96C6;&#x7FA4;&#xFF0C;&#x9700;&#x8981;&#x8054;&#x7CFB; FAS &#x63D0;&#x524D;&#x505A;&#x597D;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#xFF0C;&#x9002;&#x5408;&#x534E;&#x5927;&#x5185;&#x7F51;&#x4F7F;&#x7528;&#x3002;</td><td><ul><li>CHONGQING, CN</li><li>SHENZHEN, CN</li><li>QINGDAO, CN</li><li>HAINAN, CN</li></ul></td></tr><tr><td>RAYSYNC</td><td><a href="https://www.raysync.io/" target="_blank">RAYSYNC</a> &#x4E3A;&#x956D;&#x901F;&#x4E0A;&#x4F20;&#xFF0C;&#x8FDE;&#x63A5;&#x4E92;&#x8054;&#x7F51;&#x5373;&#x53EF;&#x901A;&#x8FC7;&#x956D;&#x901F;&#x4E0A;&#x4F20;&#x5230;&#x6DF1;&#x5733;&#x96C6;&#x7FA4;&#x65E0;&#x9700;&#x505A;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#x3002;</td><td><ul><li>CHONGQING, CN</li><li>QINGDAO, CN</li><li>SHENZHEN, CN</li><li>HAINAN, CN</li></ul></td></tr></tbody></table>
+
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84; <a href="#zi-ding-yi-de-shang-chuan-lu-jing" id="zi-ding-yi-de-shang-chuan-lu-jing"></a></h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x81EA;&#x5DF1;&#x8D2D;&#x4E70;&#x4E86;<strong>&#x963F;&#x91CC;&#x4E91;</strong>&#x6216; <strong>AWS &#x4E91;</strong>&#x670D;&#x52A1;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;&#x5C06;&#x56FE;&#x50CF;&#x4F20;&#x8F93;&#x5230;&#x60A8;&#x7684;<strong>&#x4E2A;&#x4EBA;&#x4E91;&#x5B58;&#x50A8;</strong>&#x4E2D;&#x3002;</p>
+<figure><a href="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc%20upload%20custom%20(1).webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/spaces_KPjxR1Lv74t5QCTxNb8d_uploads_1iiQclHP578OX2BVDlU3_qc upload custom (1).webp" alt></a><figcaption></figcaption></figure>
+
+<p><strong>&#x914D;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;&#x7684;&#x6B65;&#x9AA4;</strong></p>
+<ol>
+<li><p><strong>&#x9009;&#x62E9;&#x4E91;&#x670D;&#x52A1;&#x7C7B;&#x578B;</strong></p>
+<ul>
+<li>&#x9009;&#x62E9;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x4E91;&#x670D;&#x52A1;&#x7C7B;&#x578B; <strong>ALICLOUD.CUSTOM</strong> &#x6216; <strong>AWS.CUSTOM&#x3002;</strong></li>
+</ul>
+<div data-full-width="true"><figure><a href="../../img/assets/qc%20upload%20custom%20info%20alicloud.webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/qc upload custom info alicloud.webp" alt></a><figcaption></figcaption></figure></div>
+
+<ul>
+<li>&#x533A;&#x57DF;&#x9009;&#x62E9; **OWNER</li>
+</ul>
+</li>
+</ol>
+<pre><code>&lt;figure&gt;&lt;img src=&quot;../../img/assets/qc upload custom info alicloud.webp&quot; alt=&quot;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+</code></pre><ol>
+<li><strong>&#x8F93;&#x5165;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;</strong><ol>
+<li>&#x914D;&#x7F6E;&#x60A8;&#x7684;&#x8FDC;&#x7A0B;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x60A8;&#x7684;keyID&#x548C;&#x5BC6;&#x7801;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x60A8;&#x7684;S3 &#x5B58;&#x50A8;&#x6876;&#x7684;&#x540D;&#x79F0;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x60A8;&#x7684;&#x4E91;&#x670D;&#x52A1;&#x7C7B;&#x578B;&#x662F;&#x963F;&#x91CC;&#x4E91;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5199;&#x57DF;&#x540D;&#x4FE1;&#x606F;&#x3002;</li>
+</ol>
+</li>
+<li><strong>&#x786E;&#x8BA4;&#x548C;&#x4FDD;&#x5B58;</strong></li>
+</ol>
+<p>&#x70B9;&#x51FB; <strong>Confirm</strong> &#x914D;&#x7F6E;&#x5B8C;&#x6210;&#xFF0C;&#x5373;&#x53EF;&#x5728;&#x5728; <strong>Upload information configuration</strong> &#x7A97;&#x53E3;&#x4E2D;&#x627E;&#x5230;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x7C7B;&#x578B;&#x3002;</p>
+<div><figure><a href="../../img/assets/qc%20upload%20custom%20a%20new%20cloud.webp" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/qc upload custom a new cloud.webp" alt></a><figcaption></figcaption></figure> <figure><a href="../../img/assets/qc%20upload%20custom%20a%20new%20cloud%20and%20save-hqj.png" data-lightbox="15ad0755-9709-4ac8-a181-92c7e24bc9e6" data-title><img src="../../img/assets/qc upload custom a new cloud and save-hqj.png" alt></a><figcaption></figcaption></figure></div>
+
+
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-07-11 12:16:57
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: &#x5C0F;&#x5DE5;&#x5177;&#x6307;&#x5357;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../bioinformatics-analysis/" class="navigation navigation-next " aria-label="Next page: &#x751F;&#x4FE1;&#x5206;&#x6790;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":{"width":"default","title":{"visible":true},"description":{"visible":false},"tableOfContents":{"visible":true},"outline":{"visible":true},"pagination":{"visible":true}},"title":"图像质控-Image QC","level":"2.4.1","depth":2,"next":{"title":"生信分析","level":"2.5","depth":1,"path":"tutorials/bioinformatics-analysis/README.md","ref":"tutorials/bioinformatics-analysis/README.md","articles":[{"title":"Stereo-seq T FF","level":"2.5.1","depth":2,"path":"tutorials/bioinformatics-analysis/stereo-seq-t-ff.md","ref":"tutorials/bioinformatics-analysis/stereo-seq-t-ff.md","articles":[]},{"title":"Stereo-seq N FFPE","level":"2.5.2","depth":2,"path":"tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.md","ref":"tutorials/bioinformatics-analysis/stereo-seq-n-ffpe.md","articles":[]},{"title":"Stereo-CITE T FF","level":"2.5.3","depth":2,"path":"tutorials/bioinformatics-analysis/stereo-cite-t-ff.md","ref":"tutorials/bioinformatics-analysis/stereo-cite-t-ff.md","articles":[]}]},"previous":{"title":"小工具指南","level":"2.4","depth":1,"path":"tutorials/navigation-for-tools/README.md","ref":"tutorials/navigation-for-tools/README.md","articles":[{"title":"图像质控-Image QC","level":"2.4.1","depth":2,"path":"tutorials/navigation-for-tools/stereo-seq-image-qc.md","ref":"tutorials/navigation-for-tools/stereo-seq-image-qc.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","-insert-logo","logo","tbfed-pagefooter","hide-element","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html","anchor-to-full-links"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"logo":{"logo":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAtCAMAAAD4OpkYAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHaUExURVoWfVoUfVsVfVwWfV0Yfl4Zf18cf2Adf2IfgGIggWMhgWQigWUjgmYkgmclg2gmg2kng2oohGwqhG0rhW4shm8thnAuh3EwiHMxiHQyiXUziXY0inc1ing2i3k4jHo7i1oTfWIfg2koiGgoh2Qig2Acf2EegIxbpJ51splurphtrZ1zsJtxr5BgpXE2jWIggHI2kHU6kXY8kn1Gl4NOm4ZSnYFMmm0wil0XfV4Zfl8bflsWflwXfl8af2EdgFoVfWUkhmcmhl4af2Qjg2ssiGgohWQiglkSfItcpqmEu6B3s5hsrJxzsJlurZ10sbKSwaV/tqB3splsq2wshlkTfXQ7k4RPnYtbo4ZSnohVoItaoolXoINPm4pYoZtxrpVmp2ophGglg2MhhGkpiHM3j3Y8kXAzjHI2jnQ6j3Y8kHc9kXY7kG8xiXpBk3Y5jXA0j3tDloRQnXtDlYVSno5epItaoYxbooJMmY9eo4tYn3M1i2AdgmUjhWYlhWkph2YlhGUkg2cnhGkphmwtiGsrhnAyinAwiFwWfl8bf2UigmUkgmkmg18bgWEegmIegWMhg2MhgmcoiG0vi2wuinAzjW4vim0viWQihWkqiGwvimoqh2Ykg10Zfv///+mxLYcAAAABYktHRJ0Gu/KxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH6AcXBDo5NIh+1AAAAQ1JREFUOMtjYGBkYmZhZWPn4OTi5uHl4xcQFBIWERUTl5CUkpaRlZNnYFBQVFJWUeVUw61AXUNTS1tHV08flwIDQyNjE1Mzc1wKGBmZLFgsrdg5cFnBaG1jaatqh9uRw0SBPTNIgRrOcFBwcHRyUmV3dnF1w67A3cPTy9vH188/IDAoGJuCkNCw8IjIqOiY2Lj4BN5ELG5ISk4xTE1Lz8jMys7JzRPEVJBfEBZZWFRcUhpdVl5RWYXpyOqa2rp6twbXxqbmnJbWNkwTmNpZLDvYQSmqs4svsXtwxsWoghGlgMmGxQmSJnEo6Ont65/QwIVbwcRJk6dMndaAW8H05BkzZ81Ww+fIOUA3kO0LAC/oqZw8kFd3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA3LTIzVDA0OjU4OjQ1KzAwOjAwk7z98QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNy0yM1QwNDo1ODo0NSswMDowMOLhRU0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDctMjNUMDQ6NTg6NTcrMDA6MDDuwXUlAAAAAElFTkSuQmCC","title":"StereoMap 用户手册 4.2 ","titleStyle":"font-weight:600"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"anchor-to-full-links":{"myConfigKey":"it's the default value","elements":["a"]},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tabs":{},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"StereoMap User Manual","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"tutorials/navigation-for-tools/stereo-seq-image-qc.md","mtime":"2025-07-11T04:16:57.309Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-11T06:03:46.802Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchor-to-full-links/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
